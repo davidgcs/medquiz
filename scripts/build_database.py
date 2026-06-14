@@ -146,7 +146,7 @@ def parse_main_pdf_pairs(text: str, source: str) -> list[QAPair]:
     best_run = max(runs, key=lambda r: (1 if r[0][0] == 1 else 0, len(r)))
 
     pairs: list[QAPair] = []
-    seen: set[tuple[str, str]] = set()
+    used_numbers: set[int] = set()
 
     for number, block in best_run:
         maybe = split_qa_line(block)
@@ -158,10 +158,9 @@ def parse_main_pdf_pairs(text: str, source: str) -> list[QAPair]:
         if not looks_like_question(question) and looks_like_question(answer):
             question, answer = answer, sanitize_answer(left)
 
-        key = (normalize_key(question), normalize_key(answer))
-        if key in seen or not answer:
+        if number in used_numbers or not answer:
             continue
-        seen.add(key)
+        used_numbers.add(number)
 
         pairs.append(QAPair(number=number, question=question, answer=answer, source=source))
 
