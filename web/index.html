@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedQuiz</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>MedQuiz</h1>
+      <p class="subtitle">Choose a game mode and answer anatomy questions.</p>
+
+      <section class="controls">
+        <button id="modeRandom">Random mode</button>
+        <button id="modeOrdered">In-order mode</button>
+      </section>
+
+      <section class="scoreboard" id="scoreboard">
+        <div><strong>Correct:</strong> <span id="correctCount">0</span></div>
+        <div><strong>Incorrect:</strong> <span id="incorrectCount">0</span></div>
+        <div><strong>Total answered:</strong> <span id="totalCount">0</span></div>
+      </section>
+
+      <section class="question-card" id="questionCard" hidden>
+        <div class="meta">
+          <span id="questionNumber"></span>
+          <span id="sourceInfo"></span>
+        </div>
+        <h2 id="questionText"></h2>
+        <div id="answers" class="answers"></div>
+        <p id="feedback"></p>
+      </section>
+
+      <p id="status" class="status">Loading questions...</p>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
