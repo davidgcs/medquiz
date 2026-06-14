@@ -1,0 +1,597 @@
+[
+  {
+    "id": 1,
+    "topic": "Anatomy",
+    "question": "What is the largest organ in the human body?",
+    "correct": "Skin",
+    "wrong": ["Liver", "Brain", "Lung"]
+  },
+  {
+    "id": 2,
+    "topic": "Anatomy",
+    "question": "Which is the longest bone in the human body?",
+    "correct": "Femur",
+    "wrong": ["Tibia", "Fibula", "Humerus"]
+  },
+  {
+    "id": 3,
+    "topic": "Anatomy",
+    "question": "How many chambers does the human heart have?",
+    "correct": "4",
+    "wrong": ["2", "3", "5"]
+  },
+  {
+    "id": 4,
+    "topic": "Anatomy",
+    "question": "What is the smallest bone in the human body?",
+    "correct": "Stapes (in the ear)",
+    "wrong": ["Incus", "Malleus", "Hyoid"]
+  },
+  {
+    "id": 5,
+    "topic": "Anatomy",
+    "question": "How many pairs of cranial nerves exist in humans?",
+    "correct": "12",
+    "wrong": ["10", "8", "14"]
+  },
+  {
+    "id": 6,
+    "topic": "Anatomy",
+    "question": "At which vertebral level does the spinal cord typically end in adults?",
+    "correct": "L1–L2",
+    "wrong": ["L3–L4", "T12", "L4–L5"]
+  },
+  {
+    "id": 7,
+    "topic": "Anatomy",
+    "question": "Which valve lies between the left atrium and left ventricle?",
+    "correct": "Mitral valve (bicuspid)",
+    "wrong": ["Tricuspid valve", "Aortic valve", "Pulmonary valve"]
+  },
+  {
+    "id": 8,
+    "topic": "Anatomy",
+    "question": "Where is the appendix normally located?",
+    "correct": "Right iliac fossa",
+    "wrong": ["Left iliac fossa", "Right hypochondriac region", "Epigastric region"]
+  },
+  {
+    "id": 9,
+    "topic": "Anatomy",
+    "question": "At which thoracic level does the trachea bifurcate into main bronchi?",
+    "correct": "T4–T5 (sternal angle / carina)",
+    "wrong": ["T2–T3", "T6–T7", "T8"]
+  },
+  {
+    "id": 10,
+    "topic": "Anatomy",
+    "question": "Which arteries directly supply blood to the heart muscle?",
+    "correct": "Coronary arteries",
+    "wrong": ["Pulmonary arteries", "Subclavian arteries", "Internal mammary arteries"]
+  },
+  {
+    "id": 11,
+    "topic": "Anatomy",
+    "question": "The kidneys are described as which type of organ with regard to the peritoneum?",
+    "correct": "Retroperitoneal",
+    "wrong": ["Intraperitoneal", "Extraperitoneal", "Subperitoneal"]
+  },
+  {
+    "id": 12,
+    "topic": "Anatomy",
+    "question": "How many lobes does the liver have?",
+    "correct": "4 (right, left, caudate, quadrate)",
+    "wrong": ["2", "3", "5"]
+  },
+  {
+    "id": 13,
+    "topic": "Anatomy",
+    "question": "What is the total number of vertebrae in the adult human vertebral column?",
+    "correct": "33 (26 movable bones in adults due to fusion)",
+    "wrong": ["24", "31", "36"]
+  },
+  {
+    "id": 14,
+    "topic": "Anatomy",
+    "question": "The Circle of Willis is an arterial circle located at the base of which organ?",
+    "correct": "Brain",
+    "wrong": ["Heart", "Kidney", "Liver"]
+  },
+  {
+    "id": 15,
+    "topic": "Anatomy",
+    "question": "Which is the largest endocrine gland in the body?",
+    "correct": "Thyroid gland",
+    "wrong": ["Adrenal gland", "Pituitary gland", "Parathyroid gland"]
+  },
+  {
+    "id": 16,
+    "topic": "Anatomy",
+    "question": "What type of cartilage covers articular surfaces of bones in synovial joints?",
+    "correct": "Hyaline cartilage",
+    "wrong": ["Fibrocartilage", "Elastic cartilage", "Fibrous cartilage"]
+  },
+  {
+    "id": 17,
+    "topic": "Anatomy",
+    "question": "Which nerve is responsible for diaphragm contraction?",
+    "correct": "Phrenic nerve (C3–C5)",
+    "wrong": ["Vagus nerve", "Intercostal nerves", "Accessory nerve"]
+  },
+  {
+    "id": 18,
+    "topic": "Physiology",
+    "question": "What is the normal resting heart rate range in adults?",
+    "correct": "60–100 beats per minute",
+    "wrong": ["40–60 beats per minute", "80–120 beats per minute", "50–80 beats per minute"]
+  },
+  {
+    "id": 19,
+    "topic": "Physiology",
+    "question": "What is the normal resting systolic blood pressure in a healthy adult?",
+    "correct": "Less than 120 mmHg",
+    "wrong": ["Less than 140 mmHg", "Less than 100 mmHg", "Less than 160 mmHg"]
+  },
+  {
+    "id": 20,
+    "topic": "Physiology",
+    "question": "What is the normal core body temperature in humans?",
+    "correct": "37°C (98.6°F)",
+    "wrong": ["36°C", "38°C", "35.5°C"]
+  },
+  {
+    "id": 21,
+    "topic": "Physiology",
+    "question": "What is the normal arterial blood pH range?",
+    "correct": "7.35–7.45",
+    "wrong": ["7.0–7.2", "7.5–7.6", "7.2–7.35"]
+  },
+  {
+    "id": 22,
+    "topic": "Physiology",
+    "question": "What is the normal cardiac output at rest in an adult?",
+    "correct": "Approximately 5 L/min",
+    "wrong": ["Approximately 3 L/min", "Approximately 7 L/min", "Approximately 10 L/min"]
+  },
+  {
+    "id": 23,
+    "topic": "Physiology",
+    "question": "What is the average lifespan of a red blood cell (RBC)?",
+    "correct": "120 days",
+    "wrong": ["60 days", "7–10 days", "180 days"]
+  },
+  {
+    "id": 24,
+    "topic": "Physiology",
+    "question": "What is the approximate normal glomerular filtration rate (GFR) in adults?",
+    "correct": "90–125 mL/min",
+    "wrong": ["40–50 mL/min", "200–250 mL/min", "60–70 mL/min"]
+  },
+  {
+    "id": 25,
+    "topic": "Physiology",
+    "question": "What is the normal tidal volume (amount of air per breath at rest)?",
+    "correct": "~500 mL",
+    "wrong": ["~250 mL", "~1000 mL", "~200 mL"]
+  },
+  {
+    "id": 26,
+    "topic": "Physiology",
+    "question": "Which node is the dominant pacemaker of the heart?",
+    "correct": "Sinoatrial (SA) node",
+    "wrong": ["Atrioventricular (AV) node", "Bundle of His", "Purkinje fibers"]
+  },
+  {
+    "id": 27,
+    "topic": "Physiology",
+    "question": "What does the first heart sound (S1) correspond to?",
+    "correct": "Closure of the mitral and tricuspid valves",
+    "wrong": ["Closure of the aortic and pulmonic valves", "Opening of the mitral and tricuspid valves", "Atrial contraction"]
+  },
+  {
+    "id": 28,
+    "topic": "Physiology",
+    "question": "Which organ primarily produces erythropoietin (EPO)?",
+    "correct": "Kidney",
+    "wrong": ["Liver", "Bone marrow", "Spleen"]
+  },
+  {
+    "id": 29,
+    "topic": "Physiology",
+    "question": "Where is antidiuretic hormone (ADH/vasopressin) synthesized?",
+    "correct": "Hypothalamus",
+    "wrong": ["Posterior pituitary", "Anterior pituitary", "Adrenal gland"]
+  },
+  {
+    "id": 30,
+    "topic": "Physiology",
+    "question": "What is the approximate total blood volume in a 70 kg adult?",
+    "correct": "~5 liters",
+    "wrong": ["~3 liters", "~8 liters", "~10 liters"]
+  },
+  {
+    "id": 31,
+    "topic": "Physiology",
+    "question": "The average lifespan of a platelet is approximately how long?",
+    "correct": "7–10 days",
+    "wrong": ["120 days", "24 hours", "30 days"]
+  },
+  {
+    "id": 32,
+    "topic": "Physiology",
+    "question": "Which lung volume represents the maximum amount of air that can be exhaled after a maximal inhalation?",
+    "correct": "Vital capacity (VC)",
+    "wrong": ["Functional residual capacity", "Tidal volume", "Total lung capacity"]
+  },
+  {
+    "id": 33,
+    "topic": "Physiology",
+    "question": "What is the normal oxygen saturation (SpO2) in a healthy adult breathing room air?",
+    "correct": "95–100%",
+    "wrong": ["85–95%", "80–90%", "90–94%"]
+  },
+  {
+    "id": 34,
+    "topic": "Pharmacology",
+    "question": "What is the primary mechanism of action of aspirin?",
+    "correct": "Irreversible inhibition of cyclooxygenase (COX-1 and COX-2)",
+    "wrong": ["ACE inhibition", "Beta-adrenergic receptor blockade", "Calcium channel blockade"]
+  },
+  {
+    "id": 35,
+    "topic": "Pharmacology",
+    "question": "How do penicillin antibiotics kill bacteria?",
+    "correct": "Inhibiting cell wall synthesis (block transpeptidase/PBPs)",
+    "wrong": ["Inhibiting protein synthesis at the 30S ribosome", "Inhibiting DNA gyrase", "Disrupting the cell membrane"]
+  },
+  {
+    "id": 36,
+    "topic": "Pharmacology",
+    "question": "What is the first-line pharmacological treatment for type 2 diabetes mellitus?",
+    "correct": "Metformin",
+    "wrong": ["Insulin glargine", "Glipizide", "Sitagliptin"]
+  },
+  {
+    "id": 37,
+    "topic": "Pharmacology",
+    "question": "What is the mechanism of action of warfarin?",
+    "correct": "Vitamin K antagonist (inhibits clotting factors II, VII, IX, X)",
+    "wrong": ["Direct thrombin inhibitor", "Platelet aggregation inhibitor", "Factor Xa inhibitor"]
+  },
+  {
+    "id": 38,
+    "topic": "Pharmacology",
+    "question": "What is the target enzyme inhibited by statin drugs (e.g., atorvastatin)?",
+    "correct": "HMG-CoA reductase",
+    "wrong": ["Cyclooxygenase", "Angiotensin-converting enzyme (ACE)", "Beta-1 adrenergic receptor"]
+  },
+  {
+    "id": 39,
+    "topic": "Pharmacology",
+    "question": "What is the pharmacological class of naloxone?",
+    "correct": "Opioid receptor antagonist",
+    "wrong": ["Opioid receptor agonist", "Benzodiazepine receptor antagonist", "Muscarinic receptor antagonist"]
+  },
+  {
+    "id": 40,
+    "topic": "Pharmacology",
+    "question": "What is the mechanism of action of atropine?",
+    "correct": "Competitive muscarinic (M) receptor antagonist",
+    "wrong": ["Nicotinic receptor antagonist", "Alpha-1 adrenergic agonist", "Beta-2 adrenergic agonist"]
+  },
+  {
+    "id": 41,
+    "topic": "Pharmacology",
+    "question": "Which antibiotic class inhibits the 50S ribosomal subunit to block protein synthesis?",
+    "correct": "Macrolides (e.g., azithromycin, erythromycin)",
+    "wrong": ["Aminoglycosides", "Tetracyclines", "Fluoroquinolones"]
+  },
+  {
+    "id": 42,
+    "topic": "Pharmacology",
+    "question": "Which drug is used to reverse benzodiazepine overdose?",
+    "correct": "Flumazenil",
+    "wrong": ["Naloxone", "N-acetylcysteine", "Physostigmine"]
+  },
+  {
+    "id": 43,
+    "topic": "Pharmacology",
+    "question": "Which antiepileptic drug is classically associated with gingival hyperplasia?",
+    "correct": "Phenytoin",
+    "wrong": ["Valproate", "Carbamazepine", "Levetiracetam"]
+  },
+  {
+    "id": 44,
+    "topic": "Pharmacology",
+    "question": "What is the antidote for acetaminophen (paracetamol) overdose?",
+    "correct": "N-acetylcysteine (NAC)",
+    "wrong": ["Naloxone", "Flumazenil", "Activated charcoal alone"]
+  },
+  {
+    "id": 45,
+    "topic": "Pathology",
+    "question": "What is the most common cancer in women worldwide?",
+    "correct": "Breast cancer",
+    "wrong": ["Lung cancer", "Cervical cancer", "Ovarian cancer"]
+  },
+  {
+    "id": 46,
+    "topic": "Pathology",
+    "question": "What is the leading cause of cancer-related death in both men and women?",
+    "correct": "Lung cancer",
+    "wrong": ["Breast cancer", "Colorectal cancer", "Pancreatic cancer"]
+  },
+  {
+    "id": 47,
+    "topic": "Pathology",
+    "question": "Which triad of factors predisposes to venous thrombosis (Virchow's triad)?",
+    "correct": "Stasis, endothelial injury, hypercoagulability",
+    "wrong": ["Pain, pallor, pulselessness", "Fever, rigors, diaphoresis", "Inflammation, infection, infarction"]
+  },
+  {
+    "id": 48,
+    "topic": "Pathology",
+    "question": "What cellular hallmark is characteristic of Hodgkin lymphoma?",
+    "correct": "Reed-Sternberg cells",
+    "wrong": ["Auer rods", "Smudge cells", "Philadelphia chromosome"]
+  },
+  {
+    "id": 49,
+    "topic": "Pathology",
+    "question": "The Philadelphia chromosome (BCR-ABL translocation t(9;22)) is classically associated with which malignancy?",
+    "correct": "Chronic myeloid leukemia (CML)",
+    "wrong": ["Acute myeloid leukemia (AML)", "Acute lymphoblastic leukemia (ALL)", "Chronic lymphocytic leukemia (CLL)"]
+  },
+  {
+    "id": 50,
+    "topic": "Pathology",
+    "question": "Psammoma bodies are calcified concentric rings found in which tumor?",
+    "correct": "Papillary thyroid carcinoma",
+    "wrong": ["Invasive ductal carcinoma of the breast", "Small cell lung carcinoma", "Glioblastoma multiforme"]
+  },
+  {
+    "id": 51,
+    "topic": "Pathology",
+    "question": "What is the most common site of myocardial infarction (MI)?",
+    "correct": "Left ventricular wall (anterior wall via LAD artery)",
+    "wrong": ["Right ventricular wall", "Left atrium", "Interventricular septum only"]
+  },
+  {
+    "id": 52,
+    "topic": "Pathology",
+    "question": "Intranuclear Cowdry A inclusion bodies are associated with which virus?",
+    "correct": "Herpes simplex virus (HSV)",
+    "wrong": ["Rabies virus", "Cytomegalovirus (CMV)", "Measles virus"]
+  },
+  {
+    "id": 53,
+    "topic": "Pathology",
+    "question": "Which type of necrosis is classically seen in tuberculosis?",
+    "correct": "Caseous necrosis",
+    "wrong": ["Coagulative necrosis", "Liquefactive necrosis", "Fat necrosis"]
+  },
+  {
+    "id": 54,
+    "topic": "Pathology",
+    "question": "What is the most common type of kidney stone?",
+    "correct": "Calcium oxalate stones",
+    "wrong": ["Uric acid stones", "Struvite (magnesium ammonium phosphate) stones", "Cystine stones"]
+  },
+  {
+    "id": 55,
+    "topic": "Pathology",
+    "question": "Which tumor marker is elevated in prostate cancer?",
+    "correct": "PSA (prostate-specific antigen)",
+    "wrong": ["AFP (alpha-fetoprotein)", "CEA (carcinoembryonic antigen)", "CA-125"]
+  },
+  {
+    "id": 56,
+    "topic": "Microbiology",
+    "question": "What type of virus is HIV?",
+    "correct": "Retrovirus (positive-sense single-stranded RNA virus with reverse transcriptase)",
+    "wrong": ["Herpesvirus (double-stranded DNA)", "Flavivirus (positive-sense ssRNA)", "Paramyxovirus (negative-sense ssRNA)"]
+  },
+  {
+    "id": 57,
+    "topic": "Microbiology",
+    "question": "Which genus of parasites causes malaria?",
+    "correct": "Plasmodium",
+    "wrong": ["Trypanosoma", "Leishmania", "Toxoplasma"]
+  },
+  {
+    "id": 58,
+    "topic": "Microbiology",
+    "question": "What is the causative organism of tuberculosis?",
+    "correct": "Mycobacterium tuberculosis",
+    "wrong": ["Streptococcus pneumoniae", "Klebsiella pneumoniae", "Legionella pneumophila"]
+  },
+  {
+    "id": 59,
+    "topic": "Microbiology",
+    "question": "Gram-positive cocci arranged in clusters are characteristic of which genus?",
+    "correct": "Staphylococcus",
+    "wrong": ["Streptococcus", "Enterococcus", "Micrococcus"]
+  },
+  {
+    "id": 60,
+    "topic": "Microbiology",
+    "question": "Which organism causes cholera, presenting with profuse 'rice-water' diarrhea?",
+    "correct": "Vibrio cholerae",
+    "wrong": ["Salmonella typhi", "Shigella dysenteriae", "Clostridium difficile"]
+  },
+  {
+    "id": 61,
+    "topic": "Microbiology",
+    "question": "What is the first-line treatment for MRSA bacteremia?",
+    "correct": "Vancomycin",
+    "wrong": ["Penicillin G", "Amoxicillin", "Methicillin"]
+  },
+  {
+    "id": 62,
+    "topic": "Microbiology",
+    "question": "Which spore-forming anaerobic bacterium causes gas gangrene (clostridial myonecrosis)?",
+    "correct": "Clostridium perfringens",
+    "wrong": ["Bacteroides fragilis", "Peptostreptococcus", "Fusobacterium necrophorum"]
+  },
+  {
+    "id": 63,
+    "topic": "Microbiology",
+    "question": "What is the most common cause of community-acquired pneumonia in adults?",
+    "correct": "Streptococcus pneumoniae",
+    "wrong": ["Haemophilus influenzae", "Mycoplasma pneumoniae", "Klebsiella pneumoniae"]
+  },
+  {
+    "id": 64,
+    "topic": "Microbiology",
+    "question": "Which gram-negative diplococcus is the causative agent of gonorrhea?",
+    "correct": "Neisseria gonorrhoeae",
+    "wrong": ["Neisseria meningitidis", "Haemophilus ducreyi", "Treponema pallidum"]
+  },
+  {
+    "id": 65,
+    "topic": "Microbiology",
+    "question": "What is the most common nosocomial (hospital-acquired) infection?",
+    "correct": "Urinary tract infection (UTI)",
+    "wrong": ["Pneumonia", "Surgical site infection", "Bloodstream infection"]
+  },
+  {
+    "id": 66,
+    "topic": "Microbiology",
+    "question": "Which organism is identified by the Ziehl-Neelsen (acid-fast) stain?",
+    "correct": "Mycobacteria (e.g., M. tuberculosis)",
+    "wrong": ["Staphylococcus aureus", "Candida albicans", "Treponema pallidum"]
+  },
+  {
+    "id": 67,
+    "topic": "Biochemistry",
+    "question": "In DNA, which nitrogenous base pairs with adenine?",
+    "correct": "Thymine",
+    "wrong": ["Uracil", "Guanine", "Cytosine"]
+  },
+  {
+    "id": 68,
+    "topic": "Biochemistry",
+    "question": "Approximately how many ATP molecules are produced from the complete oxidation of one glucose molecule?",
+    "correct": "30–32 ATP (net)",
+    "wrong": ["12 ATP", "24 ATP", "50 ATP"]
+  },
+  {
+    "id": 69,
+    "topic": "Biochemistry",
+    "question": "Where in the cell does the Krebs cycle (TCA cycle) take place?",
+    "correct": "Mitochondrial matrix",
+    "wrong": ["Cytoplasm", "Nucleus", "Endoplasmic reticulum"]
+  },
+  {
+    "id": 70,
+    "topic": "Biochemistry",
+    "question": "Where in the cell does glycolysis take place?",
+    "correct": "Cytoplasm (cytosol)",
+    "wrong": ["Mitochondria", "Nucleus", "Peroxisome"]
+  },
+  {
+    "id": 71,
+    "topic": "Biochemistry",
+    "question": "What does a hemoglobin A1c (HbA1c) level reflect?",
+    "correct": "Average blood glucose over the preceding 2–3 months",
+    "wrong": ["Daily blood glucose fluctuation", "Fasting blood glucose only", "Peak blood glucose after meals"]
+  },
+  {
+    "id": 72,
+    "topic": "Biochemistry",
+    "question": "Deficiency of which vitamin causes scurvy?",
+    "correct": "Vitamin C (ascorbic acid)",
+    "wrong": ["Vitamin D", "Vitamin B12", "Vitamin K"]
+  },
+  {
+    "id": 73,
+    "topic": "Biochemistry",
+    "question": "Deficiency of vitamin D in children leads to which disease?",
+    "correct": "Rickets",
+    "wrong": ["Scurvy", "Night blindness", "Pellagra"]
+  },
+  {
+    "id": 74,
+    "topic": "Biochemistry",
+    "question": "Deficiency of vitamin B12 most characteristically causes which type of anemia?",
+    "correct": "Megaloblastic (macrocytic) anemia",
+    "wrong": ["Iron-deficiency (microcytic) anemia", "Hemolytic anemia", "Aplastic anemia"]
+  },
+  {
+    "id": 75,
+    "topic": "Biochemistry",
+    "question": "Which enzyme is responsible for synthesizing DNA from an RNA template (used by HIV)?",
+    "correct": "Reverse transcriptase",
+    "wrong": ["DNA polymerase I", "RNA polymerase II", "Primase"]
+  },
+  {
+    "id": 76,
+    "topic": "Biochemistry",
+    "question": "Where does protein synthesis (translation) occur in the cell?",
+    "correct": "Ribosomes",
+    "wrong": ["Nucleus", "Golgi apparatus", "Smooth endoplasmic reticulum"]
+  },
+  {
+    "id": 77,
+    "topic": "Biochemistry",
+    "question": "Which amino acid is the precursor for both serotonin and melatonin?",
+    "correct": "Tryptophan",
+    "wrong": ["Tyrosine", "Phenylalanine", "Histidine"]
+  },
+  {
+    "id": 78,
+    "topic": "Biochemistry",
+    "question": "Deficiency of which vitamin causes night blindness (nyctalopia)?",
+    "correct": "Vitamin A (retinol)",
+    "wrong": ["Vitamin C", "Vitamin E", "Vitamin D"]
+  },
+  {
+    "id": 79,
+    "topic": "Pathology",
+    "question": "Which autoimmune disease is characterized by antibodies against double-stranded DNA (anti-dsDNA)?",
+    "correct": "Systemic lupus erythematosus (SLE)",
+    "wrong": ["Rheumatoid arthritis", "Sjögren syndrome", "Scleroderma (systemic sclerosis)"]
+  },
+  {
+    "id": 80,
+    "topic": "Physiology",
+    "question": "Which hormone is primarily responsible for regulating blood calcium levels by increasing intestinal calcium absorption and renal reabsorption?",
+    "correct": "Parathyroid hormone (PTH)",
+    "wrong": ["Calcitonin", "Aldosterone", "Cortisol"]
+  },
+  {
+    "id": 81,
+    "topic": "Pharmacology",
+    "question": "Which drug class is first-line for managing hypertension in a patient with chronic kidney disease (CKD) and proteinuria?",
+    "correct": "ACE inhibitors (e.g., lisinopril) or ARBs",
+    "wrong": ["Thiazide diuretics", "Calcium channel blockers", "Beta-blockers"]
+  },
+  {
+    "id": 82,
+    "topic": "Anatomy",
+    "question": "Which structure passes through the carpal tunnel and is compressed in carpal tunnel syndrome?",
+    "correct": "Median nerve",
+    "wrong": ["Ulnar nerve", "Radial nerve", "Musculocutaneous nerve"]
+  },
+  {
+    "id": 83,
+    "topic": "Microbiology",
+    "question": "Which fungal pathogen causes Pneumocystis pneumonia (PCP) in immunocompromised patients?",
+    "correct": "Pneumocystis jirovecii",
+    "wrong": ["Aspergillus fumigatus", "Candida albicans", "Cryptococcus neoformans"]
+  },
+  {
+    "id": 84,
+    "topic": "Physiology",
+    "question": "Which part of the nephron is primarily responsible for concentrating urine?",
+    "correct": "Collecting duct (under the influence of ADH)",
+    "wrong": ["Proximal convoluted tubule", "Distal convoluted tubule", "Loop of Henle (ascending limb)"]
+  },
+  {
+    "id": 85,
+    "topic": "Pathology",
+    "question": "A 'strawberry gallbladder' appearance with cholesterol deposits is characteristic of which condition?",
+    "correct": "Cholesterolosis of the gallbladder",
+    "wrong": ["Acute cholecystitis", "Primary biliary cholangitis", "Gallbladder adenocarcinoma"]
+  }
+]

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedQuiz — Medical Knowledge Game</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="app">
+
+    <!-- ── Menu Screen ──────────────────────────────────────────── -->
+    <div id="menu-screen" class="screen active">
+      <div class="menu-inner">
+        <div class="logo">🩺</div>
+        <h1>MedQuiz</h1>
+        <p class="subtitle">Medical Knowledge Quiz</p>
+
+        <h2 class="mode-title">Select Play Mode</h2>
+
+        <div class="mode-cards">
+          <button class="mode-card" onclick="startGame('random')">
+            <span class="mode-icon">🔀</span>
+            <span class="mode-name">Random</span>
+            <span class="mode-desc">All questions in a random order. Complete the full deck before any question repeats.</span>
+          </button>
+          <button class="mode-card" onclick="startGame('ordered')">
+            <span class="mode-icon">📋</span>
+            <span class="mode-name">In Order</span>
+            <span class="mode-desc">Questions presented in sequential order. Complete the full deck before any question repeats.</span>
+          </button>
+        </div>
+
+        <p class="question-count" id="total-count"></p>
+      </div>
+    </div>
+
+    <!-- ── Quiz Screen ───────────────────────────────────────────── -->
+    <div id="quiz-screen" class="screen">
+      <header class="quiz-header">
+        <button class="btn-back" onclick="showMenu()">← Menu</button>
+        <div class="header-info">
+          <span id="question-counter" class="counter">1 / 85</span>
+          <span id="score-display" class="score">Score: 0</span>
+        </div>
+      </header>
+
+      <div class="progress-track">
+        <div id="progress-bar" class="progress-fill"></div>
+      </div>
+
+      <main class="quiz-body">
+        <span id="topic-badge" class="topic-badge">Anatomy</span>
+        <p id="question-text" class="question-text">Loading…</p>
+
+        <div id="answers-grid" class="answers-grid">
+          <button class="answer-btn" id="answer-0" onclick="selectAnswer(0)"></button>
+          <button class="answer-btn" id="answer-1" onclick="selectAnswer(1)"></button>
+          <button class="answer-btn" id="answer-2" onclick="selectAnswer(2)"></button>
+          <button class="answer-btn" id="answer-3" onclick="selectAnswer(3)"></button>
+        </div>
+
+        <div id="feedback" class="feedback hidden"></div>
+        <button id="next-btn" class="btn-next hidden" onclick="nextQuestion()">Next Question →</button>
+      </main>
+    </div>
+
+    <!-- ── Results Screen ────────────────────────────────────────── -->
+    <div id="results-screen" class="screen">
+      <div class="results-inner">
+        <h2>Round Complete!</h2>
+        <div class="result-score-ring">
+          <span id="final-score">0</span>
+          <span class="slash">/</span>
+          <span id="result-total">85</span>
+        </div>
+        <p id="result-pct" class="result-pct">0%</p>
+        <p id="result-message" class="result-message"></p>
+
+        <div class="result-actions">
+          <button class="btn-primary" onclick="restartGame()">Play Again</button>
+          <button class="btn-secondary" onclick="showMenu()">Main Menu</button>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /#app -->
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>
