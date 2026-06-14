@@ -4,9 +4,9 @@ import json
 import random
 import re
 import sqlite3
+import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterable
 
 from docx import Document
 from pypdf import PdfReader
@@ -16,41 +16,77 @@ DOCS_DIR = ROOT / "documents"
 DATA_DIR = ROOT / "data"
 DB_PATH = DATA_DIR / "medquiz.db"
 QUESTIONS_JSON_PATH = DATA_DIR / "questions.json"
+MAIN_QUESTIONS_FILE = "main.pdf"
 
 ARROW_SEPARATORS = ("→", "->", "=>", "⇒")
-LEADING_NUMBER_RE = re.compile(r"^\s*\d+[\.)]\s*")
-
-STOPWORDS = {
-    "de",
-    "del",
-    "la",
-    "el",
-    "los",
-    "las",
-    "en",
-    "y",
+QUESTION_MARKERS = {
     "que",
-    "con",
-    "por",
-    "para",
-    "al",
-    "se",
-    "no",
-    "es",
-    "un",
-    "una",
+    "cuál",
+    "cual",
+    "tipo",
+    "función",
+    "funcion",
+    "nervio",
+    "músculo",
+    "musculo",
+    "arteria",
+    "vena",
+    "ligamento",
+    "articulación",
+    "articulacion",
+    "estructura",
+    "inervado",
+    "inserción",
+    "insercion",
+    "derivado",
+    "pared",
+    "suelo",
+    "contenido",
 }
 
-
-@dataclass(frozen=True)
-class QAPair:
-    question: str
-    answer: str
-    source: str
+TOPIC_KEYWORDS = {
+    "nervio": "nerve",
+    "músculo": "muscle",
+    "musculo": "muscle",
+    "arteria": "artery",
+    "vena": "vein",
+    "ligamento": "ligament",
+    "articulación": "joint",
+    "articulacion": "joint",
+    "hueso": "bone",
+    "foramen": "foramen",
+    "conducto": "canal",
+    "canal": "canal",
+    "hiato": "hiatus",
+    "derivado": "embryology",
+    "origen": "origin",
+    "inserción": "insertion",
+    "insercion": "insertion",
+    "inervado": "innervation",
+    "inervación": "innervation",
+    "inervacion": "innervation",
+    "espacio": "space",
+    "cara": "surface",
+}
 
 
 def normalize_space(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
+
+
+def normalize_key(text: str) -> str:
+    text = unicodedata.normalize("NFD", text)
+    text = "".join(ch for ch in text if unicodedata.category(ch) != "Mn")
+    text = re.sub(r"[^a-zA-Z0-9]+", " ", text.lower())
+    return normalize_space(text)
+
+
+@dataclass(frozen=True)
+class QAPair:
+    number: int
+    question: str
+    answer: str
+    source: str
 
 
 def extract_text(path: Path) -> str:
@@ -64,35 +100,70 @@ def extract_text(path: Path) -> str:
     return ""
 
 
-def split_qa_line(line: str) -> tuple[str, str] | None:
-    line = normalize_space(LEADING_NUMBER_RE.sub("", line))
-    if len(line) < 8:
-        return None
-
+def split_qa_line(text: str) -> tuple[str, str] | None:
+    line = normalize_space(text)
     for sep in ARROW_SEPARATORS:
-        if sep in line:
-            left, right = line.split(sep, 1)
-            question = normalize_space(left)
-            answer = normalize_space(right)
-            if len(question) >= 5 and len(answer) >= 1:
-                return question, answer
+        if sep not in line:
+            continue
+        left, right = line.split(sep, 1)
+        question = normalize_space(left)
+        answer = normalize_space(right)
+        if len(question) >= 5 and len(answer) >= 2:
+            return question, answer
     return None
 
 
-def parse_qa_pairs(text: str, source: str) -> list[QAPair]:
+def looks_like_question(text: str) -> bool:
+    tokens = set(re.findall(r"[a-záéíóúñ]+", text.lower()))
+    return bool(tokens & QUESTION_MARKERS)
+
+
+def sanitize_answer(answer: str) -> str:
+    clean = normalize_space(answer)
+    clean = re.sub(r"\((?:[^)]*según[^)]*|[^)]*opcion[^)]*|[^)]*a veces[^)]*)\)", "", clean, flags=re.IGNORECASE)
+    clean = normalize_space(clean).strip(".;, ")
+    return clean
+
+
+def parse_main_pdf_pairs(text: str, source: str) -> list[QAPair]:
+    entry_pattern = re.compile(r"(?ms)^\s*(\d+)\.\s*(.+?)(?=^\s*\d+\.\s|\Z)")
+    entries = [(int(m.group(1)), normalize_space(m.group(2))) for m in entry_pattern.finditer(text)]
+    if not entries:
+        return []
+
+    runs: list[list[tuple[int, str]]] = []
+    current: list[tuple[int, str]] = []
+
+    for number, block in entries:
+        if not current or number == current[-1][0] + 1:
+            current.append((number, block))
+        else:
+            runs.append(current)
+            current = [(number, block)]
+    if current:
+        runs.append(current)
+
+    best_run = max(runs, key=lambda r: (1 if r[0][0] == 1 else 0, len(r)))
+
     pairs: list[QAPair] = []
     seen: set[tuple[str, str]] = set()
 
-    for raw in text.splitlines():
-        maybe = split_qa_line(raw)
+    for number, block in best_run:
+        maybe = split_qa_line(block)
         if not maybe:
             continue
-        question, answer = maybe
-        key = (question.lower(), answer.lower())
-        if key in seen:
+        left, right = maybe
+
+        question, answer = left, sanitize_answer(right)
+        if not looks_like_question(question) and looks_like_question(answer):
+            question, answer = answer, sanitize_answer(left)
+
+        key = (normalize_key(question), normalize_key(answer))
+        if key in seen or not answer:
             continue
         seen.add(key)
-        pairs.append(QAPair(question=question, answer=answer, source=source))
+
+        pairs.append(QAPair(number=number, question=question, answer=answer, source=source))
 
     return pairs
 
@@ -107,55 +178,54 @@ def load_documents() -> list[tuple[Path, str]]:
     return docs
 
 
-def score_related(question: str, other_question: str) -> int:
-    q_tokens = {
-        t
-        for t in re.findall(r"[a-záéíóúñ]+", question.lower())
-        if len(t) > 2 and t not in STOPWORDS
-    }
-    o_tokens = {
-        t
-        for t in re.findall(r"[a-záéíóúñ]+", other_question.lower())
-        if len(t) > 2 and t not in STOPWORDS
-    }
-    return len(q_tokens & o_tokens)
+def classify_topic(question: str, answer: str) -> str:
+    joined = f"{question} {answer}".lower()
+    for keyword, topic in TOPIC_KEYWORDS.items():
+        if keyword in joined:
+            return topic
+    return "general"
 
 
-def build_options(current: QAPair, all_pairs: list[QAPair], rng: random.Random) -> list[str]:
-    candidates: list[tuple[int, str]] = []
-    for pair in all_pairs:
-        if pair.answer.lower() == current.answer.lower():
-            continue
-        similarity = score_related(current.question, pair.question)
-        candidates.append((similarity, pair.answer))
+def token_set(text: str) -> set[str]:
+    return {t for t in re.findall(r"[a-záéíóúñ]+", text.lower()) if len(t) > 2}
 
-    candidates.sort(key=lambda item: item[0], reverse=True)
 
+def similarity_score(base_q: str, base_a: str, other_q: str, other_a: str) -> int:
+    q_overlap = len(token_set(base_q) & token_set(other_q))
+    a_overlap = len(token_set(base_a) & token_set(other_a))
+    return (q_overlap * 2) + a_overlap
+
+
+def build_options(current: QAPair, qa_pairs: list[QAPair], pool_by_topic: dict[str, list[QAPair]], rng: random.Random) -> list[str]:
+    used = {normalize_key(current.answer)}
     distractors: list[str] = []
-    used = {current.answer.lower()}
+    current_topic = classify_topic(current.question, current.answer)
 
-    for similarity, answer in candidates:
-        key = answer.lower()
-        if key in used:
-            continue
-        if similarity == 0 and len(distractors) >= 2:
-            break
-        distractors.append(answer)
-        used.add(key)
-        if len(distractors) == 3:
-            break
-
-    if len(distractors) < 3:
-        fallback_answers = [pair.answer for pair in all_pairs if pair.answer.lower() not in used]
-        rng.shuffle(fallback_answers)
-        for answer in fallback_answers:
-            key = answer.lower()
+    def choose_from_pool(pool: list[QAPair]) -> None:
+        ranked = sorted(
+            pool,
+            key=lambda p: similarity_score(current.question, current.answer, p.question, p.answer),
+            reverse=True,
+        )
+        for pair in ranked:
+            key = normalize_key(pair.answer)
             if key in used:
                 continue
-            distractors.append(answer)
             used.add(key)
+            distractors.append(pair.answer)
             if len(distractors) == 3:
-                break
+                return
+
+    choose_from_pool([p for p in pool_by_topic.get(current_topic, []) if p.number != current.number])
+
+    if len(distractors) < 3:
+        choose_from_pool([p for p in qa_pairs if p.number != current.number])
+
+    while len(distractors) < 3:
+        filler = f"Opción anatómica alternativa {len(distractors) + 1}"
+        if normalize_key(filler) not in used:
+            distractors.append(filler)
+            used.add(normalize_key(filler))
 
     options = [current.answer, *distractors[:3]]
     rng.shuffle(options)
@@ -185,6 +255,7 @@ def create_database(documents: list[tuple[Path, str]], qa_pairs: list[QAPair]) -
             """
             CREATE TABLE qa_pairs (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
+                question_number INTEGER NOT NULL,
                 question TEXT NOT NULL,
                 correct_answer TEXT NOT NULL,
                 source_document TEXT NOT NULL
@@ -211,10 +282,10 @@ def create_database(documents: list[tuple[Path, str]], qa_pairs: list[QAPair]) -
 
         cur.executemany(
             """
-            INSERT INTO qa_pairs (question, correct_answer, source_document)
-            VALUES (?, ?, ?)
+            INSERT INTO qa_pairs (question_number, question, correct_answer, source_document)
+            VALUES (?, ?, ?, ?)
             """,
-            [(pair.question, pair.answer, pair.source) for pair in qa_pairs],
+            [(pair.number, pair.question, pair.answer, pair.source) for pair in qa_pairs],
         )
 
         conn.commit()
@@ -222,13 +293,18 @@ def create_database(documents: list[tuple[Path, str]], qa_pairs: list[QAPair]) -
 
 def create_quiz_json(qa_pairs: list[QAPair]) -> None:
     rng = random.Random(42)
+    pool_by_topic: dict[str, list[QAPair]] = {}
+
+    for pair in qa_pairs:
+        topic = classify_topic(pair.question, pair.answer)
+        pool_by_topic.setdefault(topic, []).append(pair)
 
     output = []
-    for idx, pair in enumerate(qa_pairs, start=1):
-        options = build_options(pair, qa_pairs, rng)
+    for pair in qa_pairs:
+        options = build_options(pair, qa_pairs, pool_by_topic, rng)
         output.append(
             {
-                "id": idx,
+                "id": pair.number,
                 "question": pair.question,
                 "correctAnswer": pair.answer,
                 "options": options,
@@ -242,38 +318,21 @@ def create_quiz_json(qa_pairs: list[QAPair]) -> None:
     )
 
 
-def prioritize_pairs(pairs: Iterable[QAPair]) -> list[QAPair]:
-    unique: dict[tuple[str, str], QAPair] = {}
-
-    for pair in pairs:
-        key = (pair.question.lower(), pair.answer.lower())
-        if key not in unique:
-            unique[key] = pair
-
-    ordered = sorted(
-        unique.values(),
-        key=lambda p: (0 if p.source == "main.pdf" else 1, p.source.lower(), p.question.lower()),
-    )
-    return ordered
-
-
 def main() -> None:
     documents = load_documents()
-    all_pairs: list[QAPair] = []
+    main_doc = next((doc for doc in documents if doc[0].name == MAIN_QUESTIONS_FILE), None)
+    if not main_doc:
+        raise SystemExit(f"Missing {MAIN_QUESTIONS_FILE} in documents directory")
 
-    for path, text in documents:
-        all_pairs.extend(parse_qa_pairs(text, source=path.name))
+    qa_pairs = parse_main_pdf_pairs(main_doc[1], MAIN_QUESTIONS_FILE)
+    if not qa_pairs:
+        raise SystemExit("No question-answer pairs were found in main.pdf")
 
-    prioritized = prioritize_pairs(all_pairs)
-
-    if not prioritized:
-        raise SystemExit("No question-answer pairs were found in documents.")
-
-    create_database(documents, prioritized)
-    create_quiz_json(prioritized)
+    create_database(documents, qa_pairs)
+    create_quiz_json(qa_pairs)
 
     print(f"Loaded {len(documents)} documents")
-    print(f"Stored {len(prioritized)} unique question-answer pairs")
+    print(f"Stored {len(qa_pairs)} question-answer pairs from {MAIN_QUESTIONS_FILE}")
     print(f"Database: {DB_PATH}")
     print(f"Quiz data: {QUESTIONS_JSON_PATH}")
 

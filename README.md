@@ -11,8 +11,11 @@ python scripts/build_database.py
 ```
 
 This creates:
-- `/home/runner/work/medquiz/medquiz/davidgcs/medquiz/data/medquiz.db` with all extracted document content and parsed question-answer pairs.
+- `/home/runner/work/medquiz/medquiz/davidgcs/medquiz/data/medquiz.db` with all extracted document content and the quiz question bank.
 - `/home/runner/work/medquiz/medquiz/davidgcs/medquiz/data/questions.json` used by the web quiz.
+
+Question generation is currently restricted to:
+- `documents/main.pdf` only
 
 ## Run the quiz UI
 
