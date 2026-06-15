@@ -32,11 +32,9 @@ python scripts/build_database.py
 
 Then commit and push — the GitHub Action will redeploy automatically.
 
-Question generation currently includes all supported documents with extractable answer keys or answer markers, including:
-- `documents/main.pdf`
-- `documents/Anato 2005.pdf`
-- `documents/Anatomia Junio 2025.pdf`
-- `documents/Preguntes bego.pdf`
+Question generation currently includes:
+- extracted pairs from `documents/main.pdf`
+- curated reviewed questions from `data/reviewed_questions.tsv`
 
 ## Run locally
 

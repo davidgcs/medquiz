@@ -17,7 +17,22 @@ DOCS_DIR = ROOT / "documents"
 DATA_DIR = ROOT / "data"
 DB_PATH = DATA_DIR / "medquiz.db"
 QUESTIONS_JSON_PATH = DATA_DIR / "questions.json"
+REVIEWED_QUESTIONS_PATH = DATA_DIR / "reviewed_questions.tsv"
 MAIN_QUESTIONS_FILE = "main.pdf"
+REVIEWED_BLOCK_STARTS = {
+    "Cuál es el derivado embrionario de las vértebras?": "Bloque 1. Embriología",
+    "Qué tipo de articulación es la ATM?": "Bloque 2. ATM y masticación",
+    "Cuál es un músculo prevertebral típico?": "Bloque 3. Cuello y columna",
+    "Cuál es la afirmación correcta sobre la carótida común en el cuello?": "Bloque 4. Carótidas",
+    "Qué tipo de articulación son los discos intervertebrales?": "Bloque 5. Diafragma y tronco",
+    "Cuál es el contenido principal del conducto inguinal en el varón?": "Bloque 6. Conducto inguinal y abdomen",
+    "Qué nervio pasa por el cuadrilátero de Velpeau?": "Bloque 7. Hombro, axila y plexo braquial",
+    "Cuál es la función principal del braquiorradial?": "Bloque 8. Codo y antebrazo",
+    "Qué nervio atraviesa el canal de Guyon?": "Bloque 9. Mano",
+    "Cuál es el límite medial de la tabaquera anatómica?": "Bloque 10. Tabaquera anatómica",
+    "Qué ligamento intracapsular pertenece a la articulación de la cadera?": "Bloque 11. Pelvis, cadera y muslo",
+    "Qué músculos forman la pata de ganso superficial?": "Bloque 12. Rodilla, pierna y pie",
+}
 ANSWER_LETTER_RE = re.compile(r"RESPUESTA\s*[:：]?\s*([A-D1-4])", re.IGNORECASE)
 OPTION_RE = re.compile(r"([a-d])\)\s*(.*?)(?=(?:[a-d]\)\s*)|$)", re.IGNORECASE | re.DOTALL)
 
@@ -51,6 +66,78 @@ QUESTION_MARKERS = {
 }
 
 TOPIC_KEYWORDS = {
+    "embrionario": "embryology",
+    "somito": "embryology",
+    "esclerotomo": "embryology",
+    "miotomo": "embryology",
+    "dermatomo": "embryology",
+    "fisarias": "embryology",
+    "atm": "tmj",
+    "mandíbula": "tmj",
+    "mandibula": "tmj",
+    "mastic": "tmj",
+    "bucinador": "tmj",
+    "cigomático": "tmj",
+    "cigomatico": "tmj",
+    "cuello": "neck",
+    "escaleno": "neck",
+    "frénico": "neck",
+    "frenico": "neck",
+    "subclavia": "neck",
+    "nucal": "neck",
+    "carótida": "carotid",
+    "carotida": "carotid",
+    "salfopms": "carotid",
+    "tiroidea": "carotid",
+    "cervical ascendente": "carotid",
+    "diafragma": "diaphragm",
+    "hiato": "diaphragm",
+    "vago": "diaphragm",
+    "aórtico": "diaphragm",
+    "aortico": "diaphragm",
+    "esofágico": "diaphragm",
+    "esofagico": "diaphragm",
+    "inguinal": "inguinal",
+    "recto": "inguinal",
+    "epigástricos": "inguinal",
+    "epigastricos": "inguinal",
+    "glenohumeral": "shoulder",
+    "manguito": "shoulder",
+    "axila": "shoulder",
+    "axilar": "shoulder",
+    "supraescapular": "shoulder",
+    "coracobraquial": "shoulder",
+    "serrato": "shoulder",
+    "romboides": "shoulder",
+    "braquiorradial": "elbow",
+    "pronador": "elbow",
+    "supinador": "elbow",
+    "fosa cubital": "elbow",
+    "carpiano": "elbow",
+    "epicóndilo": "elbow",
+    "epicondilo": "elbow",
+    "guyon": "hand",
+    "lumbrical": "hand",
+    "interóseo": "hand",
+    "interoseo": "hand",
+    "tenar": "hand",
+    "hipotenar": "hand",
+    "pisiforme": "hand",
+    "tabaquera": "snuffbox",
+    "escafoides": "snuffbox",
+    "cadera": "hip",
+    "obturador": "hip",
+    "glúteo": "hip",
+    "gluteo": "hip",
+    "femoral": "hip",
+    "rodilla": "leg",
+    "peron": "leg",
+    "safeno": "leg",
+    "sural": "leg",
+    "aquiles": "leg",
+    "cuádriceps": "leg",
+    "cuadriceps": "leg",
+    "pata de ganso": "leg",
     "nervio": "nerve",
     "músculo": "muscle",
     "musculo": "muscle",
@@ -101,6 +188,22 @@ def normalize_key_relaxed(text: str) -> str:
     # Remove Spanish/English conjunctions used as list connectors ("y", "e", "and")
     clean = re.sub(r"\b(y|e|and)\b", " ", clean, flags=re.IGNORECASE)
     return normalize_key(clean)
+
+
+def option_token_set(text: str) -> set[str]:
+    return {token for token in normalize_key(text).split() if len(token) > 2}
+
+
+def answers_are_equivalent(left: str, right: str) -> bool:
+    if normalize_key(left) == normalize_key(right):
+        return True
+    if normalize_key_relaxed(left) == normalize_key_relaxed(right):
+        return True
+    left_tokens = option_token_set(left)
+    right_tokens = option_token_set(right)
+    if left_tokens and right_tokens and (left_tokens <= right_tokens or right_tokens <= left_tokens):
+        return True
+    return False
 
 
 @dataclass(frozen=True)
@@ -292,11 +395,11 @@ def parse_this_marker_pairs(text: str, source: str) -> list[QAPair]:
 
 
 def dedupe_pairs(qa_pairs: list[QAPair]) -> list[QAPair]:
-    seen: set[tuple[str, int, str, str]] = set()
+    seen: set[tuple[str, str]] = set()
     deduped: list[QAPair] = []
 
     for pair in qa_pairs:
-        key = (pair.source, pair.number, normalize_key(pair.question), normalize_key(pair.answer))
+        key = (normalize_key(pair.question), normalize_key(pair.answer))
         if key in seen:
             continue
         seen.add(key)
@@ -325,6 +428,30 @@ def load_documents() -> list[tuple[Path, str]]:
     return docs
 
 
+def load_reviewed_questions() -> list[QAPair]:
+    if not REVIEWED_QUESTIONS_PATH.exists():
+        return []
+
+    pairs: list[QAPair] = []
+    current_block = "Bloque 1. Embriología"
+    for number, raw_line in enumerate(REVIEWED_QUESTIONS_PATH.read_text(encoding="utf-8").splitlines(), start=1):
+        line = raw_line.strip()
+        if not line:
+            continue
+        question, answer = line.split("\t", 1)
+        clean_question = sanitize_question(question)
+        current_block = REVIEWED_BLOCK_STARTS.get(clean_question, current_block)
+        pairs.append(
+            QAPair(
+                number=number,
+                question=clean_question,
+                answer=sanitize_answer(answer),
+                source=current_block,
+            )
+        )
+    return dedupe_pairs(pairs)
+
+
 def classify_topic(question: str, answer: str) -> str:
     joined = f"{question} {answer}".lower()
     for keyword, topic in TOPIC_KEYWORDS.items():
@@ -346,6 +473,7 @@ def similarity_score(base_q: str, base_a: str, other_q: str, other_a: str) -> in
 def build_options(current: QAPair, qa_pairs: list[QAPair], pool_by_topic: dict[str, list[QAPair]], rng: random.Random) -> list[str]:
     used_strict: set[str] = {normalize_key(current.answer)}
     used_relaxed: set[str] = {normalize_key_relaxed(current.answer)}
+    used_answers: list[str] = [current.answer]
     distractors: list[str] = []
     current_topic = classify_topic(current.question, current.answer)
 
@@ -360,13 +488,19 @@ def build_options(current: QAPair, qa_pairs: list[QAPair], pool_by_topic: dict[s
             key_relaxed = normalize_key_relaxed(pair.answer)
             if key_strict in used_strict or key_relaxed in used_relaxed:
                 continue
+            if any(answers_are_equivalent(pair.answer, kept) for kept in used_answers):
+                continue
             used_strict.add(key_strict)
             used_relaxed.add(key_relaxed)
+            used_answers.append(pair.answer)
             distractors.append(pair.answer)
             if len(distractors) == 3:
                 return
 
-    choose_from_pool([p for p in pool_by_topic.get(current_topic, []) if p is not current])
+    choose_from_pool([p for p in qa_pairs if p.source == current.source and p is not current])
+
+    if len(distractors) < 3:
+        choose_from_pool([p for p in pool_by_topic.get(current_topic, []) if p is not current])
 
     if len(distractors) < 3:
         choose_from_pool([p for p in qa_pairs if p is not current])
@@ -497,6 +631,7 @@ def repair_quiz_json() -> None:
         # distractors are dropped instead of the correct answer.
         seen_strict: set[str] = {normalize_key(correct_clean)}
         seen_relaxed: set[str] = {normalize_key_relaxed(correct_clean)}
+        seen_answers: list[str] = [correct_clean]
         new_options: list[str] = []
         correct_added = False
 
@@ -521,9 +656,14 @@ def repair_quiz_json() -> None:
                 # Near-duplicate of an already-kept option — skip it.
                 changed = True
                 continue
+            if any(answers_are_equivalent(clean_opt, kept) for kept in seen_answers):
+                # Near-duplicate of an already-kept option — skip it.
+                changed = True
+                continue
 
             seen_strict.add(k_strict)
             seen_relaxed.add(k_relaxed)
+            seen_answers.append(clean_opt)
             new_options.append(clean_opt)
 
         # Guarantee the correct answer is present in options.
@@ -553,7 +693,9 @@ def main() -> None:
     documents = load_documents()
     qa_pairs: list[QAPair] = []
     for path, text in documents:
-        qa_pairs.extend(parse_document_pairs(path, text))
+        if path.name == MAIN_QUESTIONS_FILE:
+            qa_pairs.extend(parse_document_pairs(path, text))
+    qa_pairs.extend(load_reviewed_questions())
     qa_pairs = dedupe_pairs(qa_pairs)
     if not qa_pairs:
         raise SystemExit("No question-answer pairs were found in the supported documents")
