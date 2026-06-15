@@ -64,10 +64,10 @@
     "question": "Articulación sinovial de un eje",
     "correctAnswer": "Gínglimo (tróclea)",
     "options": [
-      "Radiocarpiana",
       "Selar (silla de montar)",
-      "Gínglimo (tróclea)",
-      "Esferoidea (enartrosis)"
+      "Trocoide",
+      "Radiocarpiana",
+      "Gínglimo (tróclea)"
     ],
     "source": "main.pdf"
   },
@@ -292,10 +292,10 @@
     "question": "Ligamento intracapsular de la cadera",
     "correctAnswer": "Ligamento de la cabeza del fémur",
     "options": [
-      "Anular del radio",
-      "Ligamento de la cabeza del fémur",
       "Transverso del atlas",
-      "Ligamento colateral cubital"
+      "Ligamento de la cabeza del fémur",
+      "Anular del radio",
+      "Coracohumeral"
     ],
     "source": "main.pdf"
   },
@@ -304,10 +304,10 @@
     "question": "Pata de ganso superficial",
     "correctAnswer": "Sartorio, grácil y semitendinoso",
     "options": [
-      "Bíceps femoral",
-      "Sartorio, grácil y semitendinoso",
       "Flexión del codo",
-      "Semimembranoso"
+      "Extensor largo del pulgar",
+      "Sartorio, grácil y semitendinoso",
+      "Bíceps femoral"
     ],
     "source": "main.pdf"
   },
@@ -532,10 +532,10 @@
     "question": "Fibrocartílago de la glenohumeral",
     "correctAnswer": "Rodete glenoideo (labrum)",
     "options": [
-      "Rodete glenoideo (labrum)",
-      "Flexión del codo",
       "Coracohumeral",
-      "Menisco medial"
+      "Rodete glenoideo (labrum)",
+      "Sartorio, grácil y semitendinoso",
+      "Flexión del codo"
     ],
     "source": "main.pdf"
   },
@@ -629,9 +629,9 @@
     "correctAnswer": "Redondo mayor",
     "options": [
       "Redondo mayor",
+      "Semimembranoso",
       "Supraespinoso",
-      "Infraespinoso",
-      "Subescapular"
+      "Flexor profundo de los dedos"
     ],
     "source": "main.pdf"
   },
@@ -917,9 +917,9 @@
     "correctAnswer": "Anular del radio",
     "options": [
       "Transverso del atlas",
+      "Ligamento inguinal",
       "Ligamento de la cabeza del fémur",
-      "Anular del radio",
-      "Ligamento coracoclavicular"
+      "Anular del radio"
     ],
     "source": "main.pdf"
   },
@@ -930,8 +930,8 @@
     "options": [
       "Anular del radio",
       "Ligamento de la cabeza del fémur",
-      "Transverso del atlas",
-      "Ligamento alar"
+      "Coracohumeral",
+      "Transverso del atlas"
     ],
     "source": "main.pdf"
   },
@@ -941,9 +941,9 @@
     "correctAnswer": "Coracohumeral",
     "options": [
       "Coracohumeral",
-      "Rodete glenoideo",
       "Flexión del codo",
-      "Ligamento glenohumeral inferior"
+      "Rodete glenoideo (labrum)",
+      "Sartorio, grácil y semitendinoso"
     ],
     "source": "main.pdf"
   },
@@ -952,10 +952,10 @@
     "question": "Fibrocartílago de la glenohumeral",
     "correctAnswer": "Rodete glenoideo",
     "options": [
-      "Coracohumeral",
-      "Rodete glenoideo",
       "Flexión del codo",
-      "Menisco medial"
+      "Rodete glenoideo",
+      "Sartorio, grácil y semitendinoso",
+      "Coracohumeral"
     ],
     "source": "main.pdf"
   },
@@ -1144,10 +1144,10 @@
     "question": "Ligamento intracapsular de la cadera",
     "correctAnswer": "Ligamento de la cabeza del fémur",
     "options": [
-      "Anular del radio",
-      "Ligamento de la cabeza del fémur",
       "Transverso del atlas",
-      "Ligamento colateral cubital"
+      "Ligamento de la cabeza del fémur",
+      "Anular del radio",
+      "Coracohumeral"
     ],
     "source": "main.pdf"
   },
@@ -1228,10 +1228,10 @@
     "question": "Pata de ganso superficial",
     "correctAnswer": "Sartorio + Grácil + Semitendinoso",
     "options": [
-      "Sartorio + Grácil + Semitendinoso",
-      "Bíceps femoral",
       "Flexión del codo",
-      "Semimembranoso"
+      "Sartorio + Grácil + Semitendinoso",
+      "Extensor largo del pulgar",
+      "Bíceps femoral"
     ],
     "source": "main.pdf"
   },
@@ -2070,8 +2070,8 @@
     "options": [
       "Ligamento redondo",
       "Ligamento inguinal",
-      "Ligamento de la cabeza del fémur",
-      "Tendón conjunto"
+      "Coracohumeral",
+      "Ligamento de la cabeza del fémur"
     ],
     "source": "main.pdf"
   },
@@ -2143,7 +2143,7 @@
       "Ligamento de la cabeza del fémur",
       "Ligamento redondo",
       "Ligamento inguinal",
-      "Arteria femoral"
+      "Coracohumeral"
     ],
     "source": "main.pdf"
   },
@@ -2152,10 +2152,10 @@
     "question": "Ligamento intracapsular de la cadera",
     "correctAnswer": "Ligamento de la cabeza del fémur",
     "options": [
-      "Anular del radio",
-      "Ligamento de la cabeza del fémur",
       "Transverso del atlas",
-      "Ligamento colateral cubital"
+      "Ligamento de la cabeza del fémur",
+      "Anular del radio",
+      "Coracohumeral"
     ],
     "source": "main.pdf"
   }
