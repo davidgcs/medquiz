@@ -22,6 +22,8 @@ let mode = "random";
 let queue = [];
 let pointer = 0;
 let history = [];
+let pendingQuestion = null;
+let nextQuestionTimeout = null;
 
 const score = {
   correct: 0,
@@ -47,6 +49,12 @@ function startCycle() {
 function nextQuestion() {
   if (!questions.length) return null;
 
+  if (pendingQuestion) {
+    const q = pendingQuestion;
+    pendingQuestion = null;
+    return q;
+  }
+
   if (pointer >= queue.length) {
     startCycle();
   }
@@ -60,42 +68,82 @@ function updateScore() {
   correctCountEl.textContent = String(score.correct);
   incorrectCountEl.textContent = String(score.incorrect);
   totalCountEl.textContent = String(score.total);
+}
 
-  if (score.total > 0) {
-    toggleReviewBtn.hidden = false;
-    toggleReviewBtn.textContent = `Review answers (${score.total})`;
+function updateToggleReviewBtn() {
+  if (reviewPanel.hidden) {
+    toggleReviewBtn.textContent = `All questions (${questions.length})`;
+  } else {
+    toggleReviewBtn.textContent = `Hide questions (${questions.length})`;
   }
+}
+
+function getLastAnswerForQuestion(questionId) {
+  for (let i = history.length - 1; i >= 0; i -= 1) {
+    if (history[i].id === questionId) return history[i];
+  }
+  return null;
 }
 
 function renderReview() {
   reviewListEl.innerHTML = "";
-  [...history].reverse().forEach((entry) => {
+
+  questions.forEach((question) => {
+    const entry = getLastAnswerForQuestion(question.id);
+
     const item = document.createElement("div");
-    item.className = `review-item ${entry.isCorrect ? "review-correct" : "review-incorrect"}`;
+    let statusClass = "review-unanswered";
+    if (entry) {
+      statusClass = entry.isCorrect ? "review-correct" : "review-incorrect";
+    }
+    item.className = `review-item ${statusClass}`;
+    item.title = "Go to this question";
+    item.style.cursor = "pointer";
+    item.addEventListener("click", () => jumpToQuestion(question));
 
     const num = document.createElement("p");
     num.className = "review-meta";
-    num.textContent = `Question #${entry.id} — ${entry.source}`;
+    num.textContent = `Question #${question.id} — ${question.source}`;
 
     const q = document.createElement("p");
     q.className = "review-question";
-    q.textContent = entry.question;
-
-    const your = document.createElement("p");
-    your.className = "review-answer";
-    your.textContent = `Your answer: ${entry.selected}`;
-
-    const correct = document.createElement("p");
-    correct.className = "review-answer";
-    correct.textContent = `Correct answer: ${entry.correctAnswer}`;
+    q.textContent = question.question;
 
     item.appendChild(num);
     item.appendChild(q);
-    item.appendChild(your);
-    if (!entry.isCorrect) item.appendChild(correct);
+
+    const optionsList = document.createElement("ul");
+    optionsList.className = "review-options";
+
+    question.options.forEach((optionText) => {
+      const li = document.createElement("li");
+      li.textContent = optionText;
+      li.className = "review-option";
+
+      if (optionText === question.correctAnswer) {
+        li.classList.add("review-option-correct");
+      }
+      if (entry && optionText === entry.selected && !entry.isCorrect) {
+        li.classList.add("review-option-selected-wrong");
+      }
+
+      optionsList.appendChild(li);
+    });
+
+    item.appendChild(optionsList);
 
     reviewListEl.appendChild(item);
   });
+}
+
+function jumpToQuestion(question) {
+  if (nextQuestionTimeout !== null) {
+    clearTimeout(nextQuestionTimeout);
+    nextQuestionTimeout = null;
+  }
+  pendingQuestion = question;
+  const q = nextQuestion();
+  if (q) renderQuestion(q);
 }
 
 function renderQuestion(question) {
@@ -155,7 +203,8 @@ function handleAnswer(question, selectedAnswer, clickedButton) {
   updateScore();
   if (!reviewPanel.hidden) renderReview();
 
-  setTimeout(() => {
+  nextQuestionTimeout = setTimeout(() => {
+    nextQuestionTimeout = null;
     const following = nextQuestion();
     if (!following) return;
     renderQuestion(following);
@@ -184,6 +233,8 @@ async function loadQuestions() {
     try {
       questions = await fetchQuestionsFrom(path);
       statusEl.textContent = `Loaded ${questions.length} questions.`;
+      toggleReviewBtn.hidden = false;
+      updateToggleReviewBtn();
       return;
     } catch (error) {
       errors.push(error.message);
@@ -209,12 +260,9 @@ modeRandomBtn.addEventListener("click", () => startGame("random"));
 modeOrderedBtn.addEventListener("click", () => startGame("ordered"));
 
 toggleReviewBtn.addEventListener("click", () => {
-  const isHidden = reviewPanel.hidden;
-  reviewPanel.hidden = !isHidden;
-  toggleReviewBtn.textContent = isHidden
-    ? `Hide answers (${score.total})`
-    : `Review answers (${score.total})`;
-  if (isHidden) renderReview();
+  reviewPanel.hidden = !reviewPanel.hidden;
+  updateToggleReviewBtn();
+  if (!reviewPanel.hidden) renderReview();
 });
 
 loadQuestions();
