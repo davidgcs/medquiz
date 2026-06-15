@@ -17,6 +17,7 @@ DOCS_DIR = ROOT / "documents"
 DATA_DIR = ROOT / "data"
 DB_PATH = DATA_DIR / "medquiz.db"
 QUESTIONS_JSON_PATH = DATA_DIR / "questions.json"
+REVIEWED_QUESTIONS_PATH = DATA_DIR / "reviewed_questions.tsv"
 MAIN_QUESTIONS_FILE = "main.pdf"
 ANSWER_LETTER_RE = re.compile(r"RESPUESTA\s*[:：]?\s*([A-D1-4])", re.IGNORECASE)
 OPTION_RE = re.compile(r"([a-d])\)\s*(.*?)(?=(?:[a-d]\)\s*)|$)", re.IGNORECASE | re.DOTALL)
@@ -292,11 +293,11 @@ def parse_this_marker_pairs(text: str, source: str) -> list[QAPair]:
 
 
 def dedupe_pairs(qa_pairs: list[QAPair]) -> list[QAPair]:
-    seen: set[tuple[str, int, str, str]] = set()
+    seen: set[tuple[str, str]] = set()
     deduped: list[QAPair] = []
 
     for pair in qa_pairs:
-        key = (pair.source, pair.number, normalize_key(pair.question), normalize_key(pair.answer))
+        key = (normalize_key(pair.question), normalize_key(pair.answer))
         if key in seen:
             continue
         seen.add(key)
@@ -323,6 +324,27 @@ def load_documents() -> list[tuple[Path, str]]:
         text = extract_text(path)
         docs.append((path, text))
     return docs
+
+
+def load_reviewed_questions() -> list[QAPair]:
+    if not REVIEWED_QUESTIONS_PATH.exists():
+        return []
+
+    pairs: list[QAPair] = []
+    for number, raw_line in enumerate(REVIEWED_QUESTIONS_PATH.read_text(encoding="utf-8").splitlines(), start=1):
+        line = raw_line.strip()
+        if not line:
+            continue
+        question, answer = line.split("\t", 1)
+        pairs.append(
+            QAPair(
+                number=number,
+                question=sanitize_question(question),
+                answer=sanitize_answer(answer),
+                source=REVIEWED_QUESTIONS_PATH.name,
+            )
+        )
+    return dedupe_pairs(pairs)
 
 
 def classify_topic(question: str, answer: str) -> str:
@@ -553,7 +575,9 @@ def main() -> None:
     documents = load_documents()
     qa_pairs: list[QAPair] = []
     for path, text in documents:
-        qa_pairs.extend(parse_document_pairs(path, text))
+        if path.name == MAIN_QUESTIONS_FILE:
+            qa_pairs.extend(parse_document_pairs(path, text))
+    qa_pairs.extend(load_reviewed_questions())
     qa_pairs = dedupe_pairs(qa_pairs)
     if not qa_pairs:
         raise SystemExit("No question-answer pairs were found in the supported documents")
