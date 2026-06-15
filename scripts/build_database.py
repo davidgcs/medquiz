@@ -4,6 +4,7 @@ import json
 import random
 import re
 import sqlite3
+import sys
 import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
@@ -19,6 +20,9 @@ QUESTIONS_JSON_PATH = DATA_DIR / "questions.json"
 MAIN_QUESTIONS_FILE = "main.pdf"
 
 ARROW_SEPARATORS = ("→", "->", "=>", "⇒")
+
+# Matches trailing exam annotations like "MÁS REPETIDAS:", "MÁS REPETIDA:", etc.
+TRAILING_ANNOTATION_RE = re.compile(r"\s*MÁS\s+REPET\w*[:\s].*$", re.IGNORECASE)
 QUESTION_MARKERS = {
     "que",
     "cuál",
@@ -81,6 +85,22 @@ def normalize_key(text: str) -> str:
     return normalize_space(text)
 
 
+def normalize_key_relaxed(text: str) -> str:
+    """Like normalize_key but also strips parenthetical notes and list separators.
+
+    Used for near-duplicate detection so that e.g. "Gínglimo" and
+    "Gínglimo (tróclea)" or "Sartorio + Grácil + Semitendinoso" and
+    "Sartorio, grácil y semitendinoso" are treated as the same option.
+    """
+    # Drop parenthetical notes
+    clean = re.sub(r"\([^)]*\)", " ", text)
+    # Normalise list separators (+, comma, slash) to space
+    clean = re.sub(r"[+,/]", " ", clean)
+    # Remove Spanish/English conjunctions used as list connectors ("y", "e", "and")
+    clean = re.sub(r"\b(y|e|and)\b", " ", clean, flags=re.IGNORECASE)
+    return normalize_key(clean)
+
+
 @dataclass(frozen=True)
 class QAPair:
     number: int
@@ -121,6 +141,8 @@ def looks_like_question(text: str) -> bool:
 def sanitize_answer(answer: str) -> str:
     clean = normalize_space(answer)
     clean = re.sub(r"\((?:[^)]*según[^)]*|[^)]*opcion[^)]*|[^)]*a veces[^)]*)\)", "", clean, flags=re.IGNORECASE)
+    # Strip trailing exam annotations like "MÁS REPETIDAS:", "MÁS REPETIDA:", etc.
+    clean = TRAILING_ANNOTATION_RE.sub("", clean)
     clean = normalize_space(clean).strip(".;, ")
     return clean
 
@@ -196,7 +218,8 @@ def similarity_score(base_q: str, base_a: str, other_q: str, other_a: str) -> in
 
 
 def build_options(current: QAPair, qa_pairs: list[QAPair], pool_by_topic: dict[str, list[QAPair]], rng: random.Random) -> list[str]:
-    used = {normalize_key(current.answer)}
+    used_strict: set[str] = {normalize_key(current.answer)}
+    used_relaxed: set[str] = {normalize_key_relaxed(current.answer)}
     distractors: list[str] = []
     current_topic = classify_topic(current.question, current.answer)
 
@@ -207,10 +230,12 @@ def build_options(current: QAPair, qa_pairs: list[QAPair], pool_by_topic: dict[s
             reverse=True,
         )
         for pair in ranked:
-            key = normalize_key(pair.answer)
-            if key in used:
+            key_strict = normalize_key(pair.answer)
+            key_relaxed = normalize_key_relaxed(pair.answer)
+            if key_strict in used_strict or key_relaxed in used_relaxed:
                 continue
-            used.add(key)
+            used_strict.add(key_strict)
+            used_relaxed.add(key_relaxed)
             distractors.append(pair.answer)
             if len(distractors) == 3:
                 return
@@ -222,9 +247,9 @@ def build_options(current: QAPair, qa_pairs: list[QAPair], pool_by_topic: dict[s
 
     while len(distractors) < 3:
         filler = f"Opción anatómica alternativa {len(distractors) + 1}"
-        if normalize_key(filler) not in used:
+        if normalize_key(filler) not in used_strict:
             distractors.append(filler)
-            used.add(normalize_key(filler))
+            used_strict.add(normalize_key(filler))
 
     options = [current.answer, *distractors[:3]]
     rng.shuffle(options)
@@ -317,7 +342,87 @@ def create_quiz_json(qa_pairs: list[QAPair]) -> None:
     )
 
 
+def repair_quiz_json() -> None:
+    """Clean the existing questions.json in-place.
+
+    Removes trailing annotations (e.g. "MÁS REPETIDAS:") from every answer
+    string and eliminates near-duplicate options within each question (e.g.
+    "Gínglimo" and "Gínglimo (tróclea)" cannot both be options for the same
+    question).  The correct answer is always preserved even if a looser
+    duplicate of it exists; that duplicate distractor is dropped instead.
+    """
+    if not QUESTIONS_JSON_PATH.exists():
+        print(f"{QUESTIONS_JSON_PATH.name} not found — nothing to repair.", file=sys.stderr)
+        return
+
+    with QUESTIONS_JSON_PATH.open(encoding="utf-8") as f:
+        questions = json.load(f)
+
+    changed = False
+    for q in questions:
+        # --- clean the correct answer ---
+        correct_clean = sanitize_answer(q["correctAnswer"])
+        if correct_clean != q["correctAnswer"]:
+            q["correctAnswer"] = correct_clean
+            changed = True
+
+        # Pre-seed dedup sets with the correct answer so near-duplicate
+        # distractors are dropped instead of the correct answer.
+        seen_strict: set[str] = {normalize_key(correct_clean)}
+        seen_relaxed: set[str] = {normalize_key_relaxed(correct_clean)}
+        new_options: list[str] = []
+        correct_added = False
+
+        for opt in q["options"]:
+            clean_opt = sanitize_answer(opt)
+            if not clean_opt:
+                changed = True
+                continue
+
+            # If this option IS the correct answer, keep it (but only once).
+            if normalize_key(clean_opt) == normalize_key(correct_clean):
+                if not correct_added:
+                    new_options.append(clean_opt)
+                    correct_added = True
+                else:
+                    changed = True  # duplicate correct-answer entry — drop it
+                continue
+
+            k_strict = normalize_key(clean_opt)
+            k_relaxed = normalize_key_relaxed(clean_opt)
+            if k_strict in seen_strict or k_relaxed in seen_relaxed:
+                # Near-duplicate of an already-kept option — skip it.
+                changed = True
+                continue
+
+            seen_strict.add(k_strict)
+            seen_relaxed.add(k_relaxed)
+            new_options.append(clean_opt)
+
+        # Guarantee the correct answer is present in options.
+        if not any(normalize_key(o) == normalize_key(correct_clean) for o in new_options):
+            new_options.insert(0, correct_clean)
+            changed = True
+
+        if new_options != q["options"]:
+            q["options"] = new_options
+            changed = True
+
+    if changed:
+        QUESTIONS_JSON_PATH.write_text(
+            json.dumps(questions, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+        print(f"Repaired {QUESTIONS_JSON_PATH.name}: annotations stripped and near-duplicate options removed.")
+    else:
+        print(f"{QUESTIONS_JSON_PATH.name}: no repairs needed.")
+
+
 def main() -> None:
+    if "--repair-only" in sys.argv:
+        repair_quiz_json()
+        return
+
     documents = load_documents()
     main_doc = next((doc for doc in documents if doc[0].name == MAIN_QUESTIONS_FILE), None)
     if not main_doc:
@@ -329,6 +434,7 @@ def main() -> None:
 
     create_database(documents, qa_pairs)
     create_quiz_json(qa_pairs)
+    repair_quiz_json()  # Final cleanup pass on the freshly generated JSON
 
     print(f"Loaded {len(documents)} documents")
     print(f"Stored {len(qa_pairs)} question-answer pairs from {MAIN_QUESTIONS_FILE}")

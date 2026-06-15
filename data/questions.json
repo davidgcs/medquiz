@@ -64,7 +64,6 @@
     "question": "Articulación sinovial de un eje",
     "correctAnswer": "Gínglimo (tróclea)",
     "options": [
-      "Gínglimo",
       "Radiocarpiana",
       "Selar (silla de montar)",
       "Gínglimo (tróclea)"
@@ -294,7 +293,6 @@
     "options": [
       "Anular del radio",
       "Ligamento de la cabeza del fémur",
-      "Ligamento de la cabeza del fémur MÁS REPETIDAS:",
       "Transverso del atlas"
     ],
     "source": "main.pdf"
@@ -304,7 +302,6 @@
     "question": "Pata de ganso superficial",
     "correctAnswer": "Sartorio, grácil y semitendinoso",
     "options": [
-      "Sartorio + Grácil + Semitendinoso",
       "Bíceps femoral",
       "Sartorio, grácil y semitendinoso",
       "Flexión del codo"
@@ -532,7 +529,6 @@
     "question": "Fibrocartílago de la glenohumeral",
     "correctAnswer": "Rodete glenoideo (labrum)",
     "options": [
-      "Rodete glenoideo",
       "Rodete glenoideo (labrum)",
       "Flexión del codo",
       "Coracohumeral"
@@ -917,7 +913,6 @@
     "correctAnswer": "Anular del radio",
     "options": [
       "Transverso del atlas",
-      "Ligamento de la cabeza del fémur MÁS REPETIDAS:",
       "Ligamento de la cabeza del fémur",
       "Anular del radio"
     ],
@@ -930,7 +925,6 @@
     "options": [
       "Anular del radio",
       "Ligamento de la cabeza del fémur",
-      "Ligamento de la cabeza del fémur MÁS REPETIDAS:",
       "Transverso del atlas"
     ],
     "source": "main.pdf"
@@ -942,7 +936,6 @@
     "options": [
       "Coracohumeral",
       "Rodete glenoideo",
-      "Rodete glenoideo (labrum)",
       "Flexión del codo"
     ],
     "source": "main.pdf"
@@ -954,8 +947,7 @@
     "options": [
       "Coracohumeral",
       "Rodete glenoideo",
-      "Flexión del codo",
-      "Rodete glenoideo (labrum)"
+      "Flexión del codo"
     ],
     "source": "main.pdf"
   },
@@ -1146,7 +1138,6 @@
     "options": [
       "Anular del radio",
       "Ligamento de la cabeza del fémur",
-      "Ligamento de la cabeza del fémur MÁS REPETIDAS:",
       "Transverso del atlas"
     ],
     "source": "main.pdf"
@@ -1228,7 +1219,6 @@
     "question": "Pata de ganso superficial",
     "correctAnswer": "Sartorio + Grácil + Semitendinoso",
     "options": [
-      "Sartorio, grácil y semitendinoso",
       "Sartorio + Grácil + Semitendinoso",
       "Bíceps femoral",
       "Flexión del codo"
@@ -2070,7 +2060,6 @@
     "options": [
       "Ligamento redondo",
       "Ligamento inguinal",
-      "Ligamento de la cabeza del fémur MÁS REPETIDAS:",
       "Ligamento de la cabeza del fémur"
     ],
     "source": "main.pdf"
@@ -2142,18 +2131,16 @@
     "options": [
       "Ligamento de la cabeza del fémur",
       "Ligamento redondo",
-      "Ligamento inguinal",
-      "Ligamento de la cabeza del fémur MÁS REPETIDAS:"
+      "Ligamento inguinal"
     ],
     "source": "main.pdf"
   },
   {
     "id": 180,
     "question": "Ligamento intracapsular de la cadera",
-    "correctAnswer": "Ligamento de la cabeza del fémur MÁS REPETIDAS:",
+    "correctAnswer": "Ligamento de la cabeza del fémur",
     "options": [
       "Anular del radio",
-      "Ligamento de la cabeza del fémur MÁS REPETIDAS:",
       "Ligamento de la cabeza del fémur",
       "Transverso del atlas"
     ],
