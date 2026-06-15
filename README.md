@@ -32,9 +32,7 @@ python scripts/build_database.py
 
 Then commit and push — the GitHub Action will redeploy automatically.
 
-Question generation currently includes:
-- extracted pairs from `documents/main.pdf`
-- curated reviewed questions from `data/reviewed_questions.tsv`
+Question generation currently uses the curated question bank in `data/reviewed_questions.tsv`.
 
 ## Run locally
 
