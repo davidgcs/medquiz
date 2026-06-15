@@ -1,7 +1,27 @@
 # medquiz
 A quiz game for medicine.
 
-## Build the database from `documents`
+## Live site (GitHub Pages)
+
+Once enabled (see below), the quiz is available at:
+
+```
+https://davidgcs.github.io/medquiz/
+```
+
+### Enable GitHub Pages (one-time setup)
+1. Go to the repository on GitHub.
+2. Open **Settings → Pages**.
+3. Under *Source*, select **GitHub Actions**.
+4. Save — the next push to `main` will deploy automatically.
+
+The quiz is then accessible from any device (iPad, phone, desktop) with no login required.
+
+---
+
+## Rebuild the question database
+
+Run this locally when you add or update documents:
 
 ```bash
 python -m venv .venv
@@ -10,21 +30,18 @@ pip install -r requirements.txt
 python scripts/build_database.py
 ```
 
-This creates:
-- `/home/runner/work/medquiz/medquiz/davidgcs/medquiz/data/medquiz.db` with all extracted document content and the quiz question bank.
-- `/home/runner/work/medquiz/medquiz/davidgcs/medquiz/data/questions.json` used by the web quiz.
+Then commit and push — the GitHub Action will redeploy automatically.
 
 Question generation is currently restricted to:
 - `documents/main.pdf` only
 
-## Run the quiz UI
+## Run locally
 
 ```bash
 python -m http.server 8000
 ```
 
-Then open:
-- `http://localhost:8000/web/`
+Open `http://localhost:8000/web/` in your browser.
 
 ## Game behavior
 
