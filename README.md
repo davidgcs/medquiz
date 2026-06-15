@@ -3,17 +3,15 @@ A quiz game for medicine.
 
 ## Live site (GitHub Pages)
 
-Once enabled (see below), the quiz is available at:
+Once the first deployment completes, the quiz is available at:
 
 ```
 https://davidgcs.github.io/medquiz/
 ```
 
-### Enable GitHub Pages (one-time setup)
-1. Go to the repository on GitHub.
-2. Open **Settings → Pages**.
-3. Under *Source*, select **GitHub Actions**.
-4. Save — the next push to `main` will deploy automatically.
+### GitHub Pages setup
+
+The deployment workflow configures GitHub Pages automatically on the first successful run and publishes subsequent pushes to `main`.
 
 The quiz is then accessible from any device (iPad, phone, desktop) with no login required.
 
