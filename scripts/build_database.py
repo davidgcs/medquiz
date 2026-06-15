@@ -20,18 +20,19 @@ QUESTIONS_JSON_PATH = DATA_DIR / "questions.json"
 REVIEWED_QUESTIONS_PATH = DATA_DIR / "reviewed_questions.tsv"
 MAIN_QUESTIONS_FILE = "main.pdf"
 REVIEWED_BLOCK_STARTS = {
-    "Cuál es el derivado embrionario de las vértebras?": "Bloque 1. Embriología",
-    "Qué tipo de articulación es la ATM?": "Bloque 2. ATM y masticación",
-    "Cuál es un músculo prevertebral típico?": "Bloque 3. Cuello y columna",
-    "Cuál es la afirmación correcta sobre la carótida común en el cuello?": "Bloque 4. Carótidas",
-    "Qué tipo de articulación son los discos intervertebrales?": "Bloque 5. Diafragma y tronco",
-    "Cuál es el contenido principal del conducto inguinal en el varón?": "Bloque 6. Conducto inguinal y abdomen",
-    "Qué nervio pasa por el cuadrilátero de Velpeau?": "Bloque 7. Hombro, axila y plexo braquial",
-    "Cuál es la función principal del braquiorradial?": "Bloque 8. Codo y antebrazo",
-    "Qué nervio atraviesa el canal de Guyon?": "Bloque 9. Mano",
-    "Cuál es el límite medial de la tabaquera anatómica?": "Bloque 10. Tabaquera anatómica",
-    "Qué ligamento intracapsular pertenece a la articulación de la cadera?": "Bloque 11. Pelvis, cadera y muslo",
-    "Qué músculos forman la pata de ganso superficial?": "Bloque 12. Rodilla, pierna y pie",
+    "Derivado embrionario de las vértebras": "BLOQUE 1. EMBRIOLOGÍA",
+    "Tipo de articulación ATM": "BLOQUE 2. ATM Y MASTICACIÓN",
+    "Músculo prevertebral típico": "BLOQUE 3. CUELLO Y COLUMNA",
+    "Carótida común": "BLOQUE 4. CARÓTIDAS",
+    "Discos intervertebrales": "BLOQUE 5. TRONCO Y DIAFRAGMA",
+    "Contenido del conducto inguinal": "BLOQUE 6. CONDUCTO INGUINAL Y ABDOMEN",
+    "Nervio que pasa por el cuadrilátero de Velpeau": "BLOQUE 7. HOMBRO, AXILA Y PLEXO BRAQUIAL",
+    "Tipo de articulación trapeciometacarpiana": "BLOQUE 8. ARTICULACIONES",
+    "Función principal del braquiorradial": "BLOQUE 9. CODO Y ANTEBRAZO",
+    "Nervio del canal de Guyon": "BLOQUE 10. MANO",
+    "Límite medial de la tabaquera anatómica": "BLOQUE 11. TABAQUERA ANATÓMICA",
+    "Ligamento intracapsular de la cadera": "BLOQUE 12. PELVIS, CADERA Y MUSLO",
+    "Pata de ganso superficial": "BLOQUE 13. RODILLA, PIERNA Y PIE",
 }
 ANSWER_LETTER_RE = re.compile(r"RESPUESTA\s*[:：]?\s*([A-D1-4])", re.IGNORECASE)
 OPTION_RE = re.compile(r"([a-d])\)\s*(.*?)(?=(?:[a-d]\)\s*)|$)", re.IGNORECASE | re.DOTALL)
@@ -433,7 +434,7 @@ def load_reviewed_questions() -> list[QAPair]:
         return []
 
     pairs: list[QAPair] = []
-    current_block = "Bloque 1. Embriología"
+    current_block = "BLOQUE 1. EMBRIOLOGÍA"
     for number, raw_line in enumerate(REVIEWED_QUESTIONS_PATH.read_text(encoding="utf-8").splitlines(), start=1):
         line = raw_line.strip()
         if not line:
@@ -691,11 +692,7 @@ def main() -> None:
         return
 
     documents = load_documents()
-    qa_pairs: list[QAPair] = []
-    for path, text in documents:
-        if path.name == MAIN_QUESTIONS_FILE:
-            qa_pairs.extend(parse_document_pairs(path, text))
-    qa_pairs.extend(load_reviewed_questions())
+    qa_pairs = load_reviewed_questions()
     qa_pairs = dedupe_pairs(qa_pairs)
     if not qa_pairs:
         raise SystemExit("No question-answer pairs were found in the supported documents")
