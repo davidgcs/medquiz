@@ -26,11 +26,6 @@
         </div>
       </section>
 
-      <section id="reviewPanel" class="review-panel" hidden>
-        <h3>All Questions</h3>
-        <div id="reviewList"></div>
-      </section>
-
       <section class="question-card" id="questionCard" hidden>
         <div class="meta">
           <span id="questionNumber"></span>
@@ -40,6 +35,17 @@
         <div id="answers" class="answers"></div>
         <p id="feedback"></p>
       </section>
+
+      <div id="reviewModal" class="review-modal" hidden>
+        <button id="reviewBackdrop" class="review-backdrop" aria-label="Close questions list"></button>
+        <section id="reviewPanel" class="review-panel" role="dialog" aria-modal="true" aria-labelledby="reviewTitle">
+          <div class="review-header">
+            <h3 id="reviewTitle">All Questions</h3>
+            <button id="closeReview" class="review-close-btn" type="button">Close</button>
+          </div>
+          <div id="reviewList"></div>
+        </section>
+      </div>
 
       <p id="status" class="status">Loading questions...</p>
     </main>

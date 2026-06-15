@@ -32,8 +32,11 @@ python scripts/build_database.py
 
 Then commit and push — the GitHub Action will redeploy automatically.
 
-Question generation is currently restricted to:
-- `documents/main.pdf` only
+Question generation currently includes all supported documents with extractable answer keys or answer markers, including:
+- `documents/main.pdf`
+- `documents/Anato 2005.pdf`
+- `documents/Anatomia Junio 2025.pdf`
+- `documents/Preguntes bego.pdf`
 
 ## Run locally
 
