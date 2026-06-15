@@ -1,0 +1,86 @@
+name: Manual Deploy to GitHub Pages
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: Git ref to deploy
+        required: true
+        default: main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout selected ref
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref }}
+
+      - name: Ensure GitHub Pages is configured
+        env:
+          GH_PAGES_TOKEN: ${{ github.token }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+          PAGES_API_URL: https://api.github.com/repos/${{ github.repository }}/pages
+        run: |
+          set -euo pipefail
+
+          payload="$(printf '{"build_type":"workflow","source":{"branch":"%s","path":"/"}}' "$DEFAULT_BRANCH")"
+          auth_header="$(printf 'Authorization: token %s' "$GH_PAGES_TOKEN")"
+          common_headers=(
+            -H "$auth_header"
+            -H "Accept: application/vnd.github+json"
+            -H "X-GitHub-Api-Version: 2022-11-28"
+          )
+
+          status="$(curl -sS -o /tmp/pages-response.json -w '%{http_code}' "${common_headers[@]}" "$PAGES_API_URL")"
+
+          case "$status" in
+            200)
+              curl -fsS -X PUT "${common_headers[@]}" "$PAGES_API_URL" -d "$payload"
+              ;;
+            404)
+              curl -fsS -X POST "${common_headers[@]}" "$PAGES_API_URL" -d "$payload"
+              ;;
+            *)
+              cat /tmp/pages-response.json
+              echo "Unexpected response while checking Pages configuration: HTTP $status" >&2
+              exit 1
+              ;;
+          esac
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Assemble site
+        run: |
+          mkdir -p _site/data
+          cp web/index.html _site/index.html
+          cp web/styles.css _site/styles.css
+          cp web/app.js _site/app.js
+          cp data/questions.json _site/data/questions.json
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
