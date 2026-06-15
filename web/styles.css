@@ -1,0 +1,94 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1b1b1b;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fb;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+.subtitle {
+  margin-top: 6px;
+  color: #4b5563;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  margin: 18px 0;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.scoreboard {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.question-card {
+  margin-top: 16px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+.answers {
+  margin-top: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.answer-btn {
+  text-align: left;
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.answer-btn.correct {
+  background: #16a34a;
+  color: #fff;
+}
+
+.answer-btn.incorrect {
+  background: #dc2626;
+  color: #fff;
+}
+
+.status,
+#feedback {
+  margin-top: 14px;
+  font-weight: 600;
+}

@@ -1,597 +1,2162 @@
 [
   {
     "id": 1,
-    "topic": "Anatomy",
-    "question": "What is the largest organ in the human body?",
-    "correct": "Skin",
-    "wrong": ["Liver", "Brain", "Lung"]
+    "question": "Tipo de articulación trapeciometacarpiana",
+    "correctAnswer": "Selar (silla de montar)",
+    "options": [
+      "Gínglimo",
+      "Trocoide",
+      "Esferoidea (enartrosis)",
+      "Selar (silla de montar)"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 2,
-    "topic": "Anatomy",
-    "question": "Which is the longest bone in the human body?",
-    "correct": "Femur",
-    "wrong": ["Tibia", "Fibula", "Humerus"]
+    "question": "Nervio que pasa por el cuadrilátero de Velpeau",
+    "correctAnswer": "Axilar",
+    "options": [
+      "Frénico",
+      "Cubital",
+      "Axilar",
+      "Mediano"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 3,
-    "topic": "Anatomy",
-    "question": "How many chambers does the human heart have?",
-    "correct": "4",
-    "wrong": ["2", "3", "5"]
+    "question": "Función principal del braquiorradial",
+    "correctAnswer": "Flexión del codo",
+    "options": [
+      "Deltoides",
+      "Extensión glenohumeral",
+      "Iliopsoas",
+      "Flexión del codo"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 4,
-    "topic": "Anatomy",
-    "question": "What is the smallest bone in the human body?",
-    "correct": "Stapes (in the ear)",
-    "wrong": ["Incus", "Malleus", "Hyoid"]
+    "question": "Músculo que NO se origina en el epicóndilo medial",
+    "correctAnswer": "Flexor profundo de los dedos",
+    "options": [
+      "Flexor largo de los dedos",
+      "Flexor cubital del carpo",
+      "Flexor profundo de los dedos",
+      "Supraespinoso"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 5,
-    "topic": "Anatomy",
-    "question": "How many pairs of cranial nerves exist in humans?",
-    "correct": "12",
-    "wrong": ["10", "8", "14"]
+    "question": "Nervio safeno",
+    "correctAnswer": "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
+    "options": [
+      "Rama femoral del genitofemoral",
+      "Rama profunda del radial",
+      "Femoral",
+      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 6,
-    "topic": "Anatomy",
-    "question": "At which vertebral level does the spinal cord typically end in adults?",
-    "correct": "L1–L2",
-    "wrong": ["L3–L4", "T12", "L4–L5"]
+    "question": "Articulación sinovial de un eje",
+    "correctAnswer": "Gínglimo (tróclea)",
+    "options": [
+      "Gínglimo",
+      "Radiocarpiana",
+      "Selar (silla de montar)",
+      "Gínglimo (tróclea)"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 7,
-    "topic": "Anatomy",
-    "question": "Which valve lies between the left atrium and left ventricle?",
-    "correct": "Mitral valve (bicuspid)",
-    "wrong": ["Tricuspid valve", "Aortic valve", "Pulmonary valve"]
+    "question": "Articulación con varios ejes",
+    "correctAnswer": "Radiocarpiana",
+    "options": [
+      "Gínglimo (tróclea)",
+      "Selar (silla de montar)",
+      "Radiocarpiana",
+      "Trocoide"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 8,
-    "topic": "Anatomy",
-    "question": "Where is the appendix normally located?",
-    "correct": "Right iliac fossa",
-    "wrong": ["Left iliac fossa", "Right hypochondriac region", "Epigastric region"]
+    "question": "Inserción del redondo mayor",
+    "correctAnswer": "Cresta del tubérculo menor del húmero",
+    "options": [
+      "Mediano",
+      "Oponente del pulgar",
+      "Cresta del tubérculo menor del húmero",
+      "Flexión del codo"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 9,
-    "topic": "Anatomy",
-    "question": "At which thoracic level does the trachea bifurcate into main bronchi?",
-    "correct": "T4–T5 (sternal angle / carina)",
-    "wrong": ["T2–T3", "T6–T7", "T8"]
+    "question": "Músculo que pasa por el espacio subacromial",
+    "correctAnswer": "Supraespinoso",
+    "options": [
+      "Supraespinoso",
+      "Flexor profundo de los dedos",
+      "Braquiorradial",
+      "Semimembranoso"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 10,
-    "topic": "Anatomy",
-    "question": "Which arteries directly supply blood to the heart muscle?",
-    "correct": "Coronary arteries",
-    "wrong": ["Pulmonary arteries", "Subclavian arteries", "Internal mammary arteries"]
+    "question": "Músculo más profundo de la eminencia tenar",
+    "correctAnswer": "Aductor del pulgar",
+    "options": [
+      "Flexor largo del dedo gordo",
+      "Flexor largo de los dedos",
+      "Aductor del pulgar",
+      "Oponente del meñique"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 11,
-    "topic": "Anatomy",
-    "question": "The kidneys are described as which type of organ with regard to the peritoneum?",
-    "correct": "Retroperitoneal",
-    "wrong": ["Intraperitoneal", "Extraperitoneal", "Subperitoneal"]
+    "question": "Arteria que acompaña al nervio radial",
+    "correctAnswer": "Braquial profunda",
+    "options": [
+      "Colateral cubital superior",
+      "Circunfleja humeral posterior",
+      "Cubital",
+      "Braquial profunda"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 12,
-    "topic": "Anatomy",
-    "question": "How many lobes does the liver have?",
-    "correct": "4 (right, left, caudate, quadrate)",
-    "wrong": ["2", "3", "5"]
+    "question": "Nervio responsable de la pronación",
+    "correctAnswer": "Mediano",
+    "options": [
+      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
+      "Axilar",
+      "Cubital",
+      "Mediano"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 13,
-    "topic": "Anatomy",
-    "question": "What is the total number of vertebrae in the adult human vertebral column?",
-    "correct": "33 (26 movable bones in adults due to fusion)",
-    "wrong": ["24", "31", "36"]
+    "question": "Nervio comprimido en el hiato del pronador redondo",
+    "correctAnswer": "Mediano",
+    "options": [
+      "Déficit de rotación externa",
+      "Cubital",
+      "Mediano",
+      "Axilar"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 14,
-    "topic": "Anatomy",
-    "question": "The Circle of Willis is an arterial circle located at the base of which organ?",
-    "correct": "Brain",
-    "wrong": ["Heart", "Kidney", "Liver"]
+    "question": "Nervio comprimido en el túnel carpiano",
+    "correctAnswer": "Mediano",
+    "options": [
+      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
+      "Braquial profunda",
+      "Axilar",
+      "Mediano"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 15,
-    "topic": "Anatomy",
-    "question": "Which is the largest endocrine gland in the body?",
-    "correct": "Thyroid gland",
-    "wrong": ["Adrenal gland", "Pituitary gland", "Parathyroid gland"]
+    "question": "Nervio responsable de la abducción de los dedos",
+    "correctAnswer": "Cubital",
+    "options": [
+      "Cubital",
+      "Mediano",
+      "Axilar",
+      "Peroneo común"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 16,
-    "topic": "Anatomy",
-    "question": "What type of cartilage covers articular surfaces of bones in synovial joints?",
-    "correct": "Hyaline cartilage",
-    "wrong": ["Fibrocartilage", "Elastic cartilage", "Fibrous cartilage"]
+    "question": "Músculo inervado por el nervio axilar",
+    "correctAnswer": "Deltoides",
+    "options": [
+      "Esternocleidomastoideo",
+      "Deltoides",
+      "Trapecio",
+      "Redondo menor"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 17,
-    "topic": "Anatomy",
-    "question": "Which nerve is responsible for diaphragm contraction?",
-    "correct": "Phrenic nerve (C3–C5)",
-    "wrong": ["Vagus nerve", "Intercostal nerves", "Accessory nerve"]
+    "question": "Músculo inervado por nervio craneal",
+    "correctAnswer": "Trapecio",
+    "options": [
+      "ECM",
+      "Deltoides",
+      "Largo del cuello / esplenio",
+      "Trapecio"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 18,
-    "topic": "Physiology",
-    "question": "What is the normal resting heart rate range in adults?",
-    "correct": "60–100 beats per minute",
-    "wrong": ["40–60 beats per minute", "80–120 beats per minute", "50–80 beats per minute"]
+    "question": "Estructura que atraviesa el hiato esofágico",
+    "correctAnswer": "Esófago y nervios vagos",
+    "options": [
+      "Rama profunda del radial",
+      "Rama profunda radial",
+      "Esófago y nervios vagos",
+      "Nervio femoral"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 19,
-    "topic": "Physiology",
-    "question": "What is the normal resting systolic blood pressure in a healthy adult?",
-    "correct": "Less than 120 mmHg",
-    "wrong": ["Less than 140 mmHg", "Less than 100 mmHg", "Less than 160 mmHg"]
+    "question": "Estructura que atraviesa el hiato aórtico",
+    "correctAnswer": "Aorta y conducto torácico",
+    "options": [
+      "Fascia transversalis y tendón conjunto",
+      "Conducto deferente",
+      "Conducto torácico",
+      "Aorta y conducto torácico"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 20,
-    "topic": "Physiology",
-    "question": "What is the normal core body temperature in humans?",
-    "correct": "37°C (98.6°F)",
-    "wrong": ["36°C", "38°C", "35.5°C"]
+    "question": "Músculo prevertebral típico",
+    "correctAnswer": "Largo del cuello",
+    "options": [
+      "Largo del cuello",
+      "Flexor largo del dedo gordo",
+      "Recto anterior de la cabeza",
+      "Aductor del pulgar"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 21,
-    "topic": "Physiology",
-    "question": "What is the normal arterial blood pH range?",
-    "correct": "7.35–7.45",
-    "wrong": ["7.0–7.2", "7.5–7.6", "7.2–7.35"]
+    "question": "Nervio anterior al escaleno anterior",
+    "correctAnswer": "Frénico",
+    "options": [
+      "Frénico",
+      "Axilar",
+      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
+      "Torácico largo"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 22,
-    "topic": "Physiology",
-    "question": "What is the normal cardiac output at rest in an adult?",
-    "correct": "Approximately 5 L/min",
-    "wrong": ["Approximately 3 L/min", "Approximately 7 L/min", "Approximately 10 L/min"]
+    "question": "Contenido del conducto inguinal",
+    "correctAnswer": "Nervio ilioinguinal, conducto deferente o ligamento redondo",
+    "options": [
+      "Nervio ilioinguinal, conducto deferente o ligamento redondo",
+      "Mediano",
+      "Iliopsoas o nervio femoral",
+      "Nervio femoral"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 23,
-    "topic": "Physiology",
-    "question": "What is the average lifespan of a red blood cell (RBC)?",
-    "correct": "120 days",
-    "wrong": ["60 days", "7–10 days", "180 days"]
+    "question": "Pared posterior del conducto inguinal",
+    "correctAnswer": "Fascia transversalis y tendón conjunto",
+    "options": [
+      "Fascia transversalis",
+      "Ilioinguinal",
+      "Aponeurosis oblicuo externo",
+      "Fascia transversalis y tendón conjunto"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 24,
-    "topic": "Physiology",
-    "question": "What is the approximate normal glomerular filtration rate (GFR) in adults?",
-    "correct": "90–125 mL/min",
-    "wrong": ["40–50 mL/min", "200–250 mL/min", "60–70 mL/min"]
+    "question": "Suelo del conducto inguinal",
+    "correctAnswer": "Ligamento inguinal",
+    "options": [
+      "Anular del radio",
+      "Ligamento de la cabeza del fémur",
+      "Ligamento inguinal",
+      "Ligamento redondo"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 25,
-    "topic": "Physiology",
-    "question": "What is the normal tidal volume (amount of air per breath at rest)?",
-    "correct": "~500 mL",
-    "wrong": ["~250 mL", "~1000 mL", "~200 mL"]
+    "question": "Ligamento intracapsular de la cadera",
+    "correctAnswer": "Ligamento de la cabeza del fémur",
+    "options": [
+      "Anular del radio",
+      "Ligamento de la cabeza del fémur",
+      "Ligamento de la cabeza del fémur MÁS REPETIDAS:",
+      "Transverso del atlas"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 26,
-    "topic": "Physiology",
-    "question": "Which node is the dominant pacemaker of the heart?",
-    "correct": "Sinoatrial (SA) node",
-    "wrong": ["Atrioventricular (AV) node", "Bundle of His", "Purkinje fibers"]
+    "question": "Pata de ganso superficial",
+    "correctAnswer": "Sartorio, grácil y semitendinoso",
+    "options": [
+      "Sartorio + Grácil + Semitendinoso",
+      "Bíceps femoral",
+      "Sartorio, grácil y semitendinoso",
+      "Flexión del codo"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 27,
-    "topic": "Physiology",
-    "question": "What does the first heart sound (S1) correspond to?",
-    "correct": "Closure of the mitral and tricuspid valves",
-    "wrong": ["Closure of the aortic and pulmonic valves", "Opening of the mitral and tricuspid valves", "Atrial contraction"]
+    "question": "Músculo que NO forma la pata de ganso",
+    "correctAnswer": "Semimembranoso",
+    "options": [
+      "Pterigoideo lateral",
+      "Supraespinoso",
+      "Flexor profundo de los dedos",
+      "Semimembranoso"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 28,
-    "topic": "Physiology",
-    "question": "Which organ primarily produces erythropoietin (EPO)?",
-    "correct": "Kidney",
-    "wrong": ["Liver", "Bone marrow", "Spleen"]
+    "question": "Rotador externo de la pierna",
+    "correctAnswer": "Bíceps femoral",
+    "options": [
+      "Flexión del codo",
+      "Extensor largo del pulgar",
+      "Bíceps femoral",
+      "Sartorio, grácil y semitendinoso"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 29,
-    "topic": "Physiology",
-    "question": "Where is antidiuretic hormone (ADH/vasopressin) synthesized?",
-    "correct": "Hypothalamus",
-    "wrong": ["Posterior pituitary", "Anterior pituitary", "Adrenal gland"]
+    "question": "Nervio del canal de Guyon",
+    "correctAnswer": "Cubital",
+    "options": [
+      "Déficit de rotación externa",
+      "Mediano",
+      "Cubital",
+      "Axilar"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 30,
-    "topic": "Physiology",
-    "question": "What is the approximate total blood volume in a 70 kg adult?",
-    "correct": "~5 liters",
-    "wrong": ["~3 liters", "~8 liters", "~10 liters"]
+    "question": "Tipo de articulación atlantoaxoidea media",
+    "correctAnswer": "Trocoide",
+    "options": [
+      "Trocoide",
+      "Selar (silla de montar)",
+      "Gínglimo",
+      "Esferoidea (enartrosis)"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 31,
-    "topic": "Physiology",
-    "question": "The average lifespan of a platelet is approximately how long?",
-    "correct": "7–10 days",
-    "wrong": ["120 days", "24 hours", "30 days"]
+    "question": "Derivado embrionario de las vértebras",
+    "correctAnswer": "Esclerotomo",
+    "options": [
+      "Dermatomo",
+      "Esclerotomo",
+      "Mediano",
+      "Miotomo"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 32,
-    "topic": "Physiology",
-    "question": "Which lung volume represents the maximum amount of air that can be exhaled after a maximal inhalation?",
-    "correct": "Vital capacity (VC)",
-    "wrong": ["Functional residual capacity", "Tidal volume", "Total lung capacity"]
+    "question": "Derivado embrionario de la musculatura esquelética",
+    "correctAnswer": "Miotomo",
+    "options": [
+      "Miotomo",
+      "Selar (silla de montar)",
+      "Dermatomo",
+      "Esclerotomo"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 33,
-    "topic": "Physiology",
-    "question": "What is the normal oxygen saturation (SpO2) in a healthy adult breathing room air?",
-    "correct": "95–100%",
-    "wrong": ["85–95%", "80–90%", "90–94%"]
+    "question": "Límite medial de la tabaquera anatómica",
+    "correctAnswer": "Extensor largo del pulgar",
+    "options": [
+      "Extensor largo del pulgar",
+      "Abductor largo y extensor corto del pulgar",
+      "Extensor radial largo del carpo",
+      "Vasos epigástricos inferiores"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 34,
-    "topic": "Pharmacology",
-    "question": "What is the primary mechanism of action of aspirin?",
-    "correct": "Irreversible inhibition of cyclooxygenase (COX-1 and COX-2)",
-    "wrong": ["ACE inhibition", "Beta-adrenergic receptor blockade", "Calcium channel blockade"]
+    "question": "Músculo profundo del compartimento posterior del antebrazo",
+    "correctAnswer": "Supinador",
+    "options": [
+      "Flexor largo de los dedos",
+      "Aductor del pulgar",
+      "Supinador",
+      "Flexor largo del dedo gordo"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 35,
-    "topic": "Pharmacology",
-    "question": "How do penicillin antibiotics kill bacteria?",
-    "correct": "Inhibiting cell wall synthesis (block transpeptidase/PBPs)",
-    "wrong": ["Inhibiting protein synthesis at the 30S ribosome", "Inhibiting DNA gyrase", "Disrupting the cell membrane"]
+    "question": "Nervio que atraviesa el supinador",
+    "correctAnswer": "Rama profunda del radial",
+    "options": [
+      "Rama profunda radial",
+      "Braquial profunda",
+      "Rama profunda del radial",
+      "Axilar"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 36,
-    "topic": "Pharmacology",
-    "question": "What is the first-line pharmacological treatment for type 2 diabetes mellitus?",
-    "correct": "Metformin",
-    "wrong": ["Insulin glargine", "Glipizide", "Sitagliptin"]
+    "question": "Músculo propulsor de la mandíbula",
+    "correctAnswer": "Pterigoideo lateral",
+    "options": [
+      "Temporal",
+      "Masetero",
+      "Flexor profundo de los dedos",
+      "Pterigoideo lateral"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 37,
-    "topic": "Pharmacology",
-    "question": "What is the mechanism of action of warfarin?",
-    "correct": "Vitamin K antagonist (inhibits clotting factors II, VII, IX, X)",
-    "wrong": ["Direct thrombin inhibitor", "Platelet aggregation inhibitor", "Factor Xa inhibitor"]
+    "question": "Músculo masticador que NO eleva la mandíbula",
+    "correctAnswer": "Pterigoideo lateral",
+    "options": [
+      "Masetero",
+      "Pterigoideo lateral",
+      "Temporal",
+      "Flexor profundo de los dedos"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 38,
-    "topic": "Pharmacology",
-    "question": "What is the target enzyme inhibited by statin drugs (e.g., atorvastatin)?",
-    "correct": "HMG-CoA reductase",
-    "wrong": ["Cyclooxygenase", "Angiotensin-converting enzyme (ACE)", "Beta-1 adrenergic receptor"]
+    "question": "Músculo que aumenta la presión intraoral",
+    "correctAnswer": "Buccinador",
+    "options": [
+      "Buccinador",
+      "Supraespinoso",
+      "Flexor profundo de los dedos",
+      "Semimembranoso"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 39,
-    "topic": "Pharmacology",
-    "question": "What is the pharmacological class of naloxone?",
-    "correct": "Opioid receptor antagonist",
-    "wrong": ["Opioid receptor agonist", "Benzodiazepine receptor antagonist", "Muscarinic receptor antagonist"]
+    "question": "Arteria que NO es rama de la carótida externa",
+    "correctAnswer": "Tiroidea inferior",
+    "options": [
+      "Radial",
+      "Tiroidea inferior",
+      "Subclavia",
+      "Torácica lateral"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 40,
-    "topic": "Pharmacology",
-    "question": "What is the mechanism of action of atropine?",
-    "correct": "Competitive muscarinic (M) receptor antagonist",
-    "wrong": ["Nicotinic receptor antagonist", "Alpha-1 adrenergic agonist", "Beta-2 adrenergic agonist"]
+    "question": "Nervio de la sensibilidad del hombro",
+    "correctAnswer": "Axilar",
+    "options": [
+      "Déficit de rotación externa",
+      "Cubital",
+      "Mediano",
+      "Axilar"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 41,
-    "topic": "Pharmacology",
-    "question": "Which antibiotic class inhibits the 50S ribosomal subunit to block protein synthesis?",
-    "correct": "Macrolides (e.g., azithromycin, erythromycin)",
-    "wrong": ["Aminoglycosides", "Tetracyclines", "Fluoroquinolones"]
+    "question": "Músculo que se inserta en el pisiforme",
+    "correctAnswer": "Flexor cubital del carpo",
+    "options": [
+      "Supraespinoso",
+      "Flexor profundo de los dedos",
+      "Flexor cubital del carpo",
+      "Oponente del pulgar"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 42,
-    "topic": "Pharmacology",
-    "question": "Which drug is used to reverse benzodiazepine overdose?",
-    "correct": "Flumazenil",
-    "wrong": ["Naloxone", "N-acetylcysteine", "Physostigmine"]
+    "question": "Interóseo de la cara radial del cuarto dedo",
+    "correctAnswer": "Segundo palmar",
+    "options": [
+      "Supinación",
+      "Segundo dorsal",
+      "Segundo palmar",
+      "Axilar"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 43,
-    "topic": "Pharmacology",
-    "question": "Which antiepileptic drug is classically associated with gingival hyperplasia?",
-    "correct": "Phenytoin",
-    "wrong": ["Valproate", "Carbamazepine", "Levetiracetam"]
+    "question": "Interóseo de la cara radial del tercer dedo",
+    "correctAnswer": "Segundo dorsal",
+    "options": [
+      "Axilar",
+      "Segundo palmar",
+      "Supinación",
+      "Segundo dorsal"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 44,
-    "topic": "Pharmacology",
-    "question": "What is the antidote for acetaminophen (paracetamol) overdose?",
-    "correct": "N-acetylcysteine (NAC)",
-    "wrong": ["Naloxone", "Flumazenil", "Activated charcoal alone"]
+    "question": "Ligamento que refuerza superiormente la glenohumeral",
+    "correctAnswer": "Coracohumeral",
+    "options": [
+      "Anular del radio",
+      "Coracohumeral",
+      "Ligamento de la cabeza del fémur",
+      "Coracoclavicular o trapezoide"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 45,
-    "topic": "Pathology",
-    "question": "What is the most common cancer in women worldwide?",
-    "correct": "Breast cancer",
-    "wrong": ["Lung cancer", "Cervical cancer", "Ovarian cancer"]
+    "question": "Fibrocartílago de la glenohumeral",
+    "correctAnswer": "Rodete glenoideo (labrum)",
+    "options": [
+      "Rodete glenoideo",
+      "Rodete glenoideo (labrum)",
+      "Flexión del codo",
+      "Coracohumeral"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 46,
-    "topic": "Pathology",
-    "question": "What is the leading cause of cancer-related death in both men and women?",
-    "correct": "Lung cancer",
-    "wrong": ["Breast cancer", "Colorectal cancer", "Pancreatic cancer"]
+    "question": "Lesión del nervio supraescapular",
+    "correctAnswer": "Déficit de rotación externa",
+    "options": [
+      "Mediano",
+      "Déficit de rotación externa",
+      "Cubital",
+      "Peroneo común"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 47,
-    "topic": "Pathology",
-    "question": "Which triad of factors predisposes to venous thrombosis (Virchow's triad)?",
-    "correct": "Stasis, endothelial injury, hypercoagulability",
-    "wrong": ["Pain, pallor, pulselessness", "Fever, rigors, diaphoresis", "Inflammation, infection, infarction"]
+    "question": "Principal flexor de cadera",
+    "correctAnswer": "Iliopsoas",
+    "options": [
+      "Sartorio, grácil y semitendinoso",
+      "Flexión del codo",
+      "Deltoides",
+      "Iliopsoas"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 48,
-    "topic": "Pathology",
-    "question": "What cellular hallmark is characteristic of Hodgkin lymphoma?",
-    "correct": "Reed-Sternberg cells",
-    "wrong": ["Auer rods", "Smudge cells", "Philadelphia chromosome"]
+    "question": "Estructura que NO pasa por el conducto aductor",
+    "correctAnswer": "Nervio femoral",
+    "options": [
+      "Axilar",
+      "Mediano",
+      "Nervio femoral",
+      "Cubital"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 49,
-    "topic": "Pathology",
-    "question": "The Philadelphia chromosome (BCR-ABL translocation t(9;22)) is classically associated with which malignancy?",
-    "correct": "Chronic myeloid leukemia (CML)",
-    "wrong": ["Acute myeloid leukemia (AML)", "Acute lymphoblastic leukemia (ALL)", "Chronic lymphocytic leukemia (CLL)"]
+    "question": "Músculo más medial del compartimento profundo posterior de la pierna",
+    "correctAnswer": "Flexor largo de los dedos",
+    "options": [
+      "Flexor profundo de los dedos",
+      "Flexor largo de los dedos",
+      "Flexor largo del dedo gordo",
+      "Supinador"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 50,
-    "topic": "Pathology",
-    "question": "Psammoma bodies are calcified concentric rings found in which tumor?",
-    "correct": "Papillary thyroid carcinoma",
-    "wrong": ["Invasive ductal carcinoma of the breast", "Small cell lung carcinoma", "Glioblastoma multiforme"]
+    "question": "Músculo más profundo de la región nucal",
+    "correctAnswer": "Recto posterior menor de la cabeza",
+    "options": [
+      "Aductor del pulgar",
+      "Flexor largo de los dedos",
+      "Oponente del meñique",
+      "Recto posterior menor de la cabeza"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 51,
-    "topic": "Pathology",
-    "question": "What is the most common site of myocardial infarction (MI)?",
-    "correct": "Left ventricular wall (anterior wall via LAD artery)",
-    "wrong": ["Right ventricular wall", "Left atrium", "Interventricular septum only"]
+    "question": "Músculo inervado por el nervio accesorio (XI)",
+    "correctAnswer": "Esternocleidomastoideo",
+    "options": [
+      "Redondo menor",
+      "Deltoides",
+      "Trapecio",
+      "Esternocleidomastoideo"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 52,
-    "topic": "Pathology",
-    "question": "Intranuclear Cowdry A inclusion bodies are associated with which virus?",
-    "correct": "Herpes simplex virus (HSV)",
-    "wrong": ["Rabies virus", "Cytomegalovirus (CMV)", "Measles virus"]
+    "question": "Músculo inervado por el nervio axilar",
+    "correctAnswer": "Redondo menor",
+    "options": [
+      "Deltoides",
+      "Esternocleidomastoideo",
+      "Trapecio",
+      "Redondo menor"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 53,
-    "topic": "Pathology",
-    "question": "Which type of necrosis is classically seen in tuberculosis?",
-    "correct": "Caseous necrosis",
-    "wrong": ["Coagulative necrosis", "Liquefactive necrosis", "Fat necrosis"]
+    "question": "Músculo que NO pertenece al manguito rotador",
+    "correctAnswer": "Redondo mayor",
+    "options": [
+      "Redondo mayor",
+      "Semimembranoso",
+      "Supraespinoso",
+      "Flexor profundo de los dedos"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 54,
-    "topic": "Pathology",
-    "question": "What is the most common type of kidney stone?",
-    "correct": "Calcium oxalate stones",
-    "wrong": ["Uric acid stones", "Struvite (magnesium ammonium phosphate) stones", "Cystine stones"]
+    "question": "Músculo que realiza la abducción inicial del brazo",
+    "correctAnswer": "Supraespinoso",
+    "options": [
+      "Supraespinoso",
+      "Flexor profundo de los dedos",
+      "Semimembranoso",
+      "Oponente del pulgar"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 55,
-    "topic": "Pathology",
-    "question": "Which tumor marker is elevated in prostate cancer?",
-    "correct": "PSA (prostate-specific antigen)",
-    "wrong": ["AFP (alpha-fetoprotein)", "CEA (carcinoembryonic antigen)", "CA-125"]
+    "question": "Principal abductor del brazo a partir de 15°",
+    "correctAnswer": "Deltoides",
+    "options": [
+      "Extensión glenohumeral",
+      "Deltoides",
+      "Iliopsoas",
+      "Flexión del codo"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 56,
-    "topic": "Microbiology",
-    "question": "What type of virus is HIV?",
-    "correct": "Retrovirus (positive-sense single-stranded RNA virus with reverse transcriptase)",
-    "wrong": ["Herpesvirus (double-stranded DNA)", "Flavivirus (positive-sense ssRNA)", "Paramyxovirus (negative-sense ssRNA)"]
+    "question": "Nervio lesionado que impide la pronación",
+    "correctAnswer": "Mediano",
+    "options": [
+      "Mediano",
+      "Braquial profunda",
+      "Torácico largo",
+      "Axilar"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 57,
-    "topic": "Microbiology",
-    "question": "Which genus of parasites causes malaria?",
-    "correct": "Plasmodium",
-    "wrong": ["Trypanosoma", "Leishmania", "Toxoplasma"]
+    "question": "Nervio que pasa entre las dos cabezas del pronador redondo",
+    "correctAnswer": "Mediano",
+    "options": [
+      "Mediano",
+      "Frénico",
+      "Axilar",
+      "Cubital"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 58,
-    "topic": "Microbiology",
-    "question": "What is the causative organism of tuberculosis?",
-    "correct": "Mycobacterium tuberculosis",
-    "wrong": ["Streptococcus pneumoniae", "Klebsiella pneumoniae", "Legionella pneumophila"]
+    "question": "Nervio que pasa por el túnel carpiano",
+    "correctAnswer": "Mediano",
+    "options": [
+      "Axilar",
+      "Cubital",
+      "Frénico",
+      "Mediano"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 59,
-    "topic": "Microbiology",
-    "question": "Gram-positive cocci arranged in clusters are characteristic of which genus?",
-    "correct": "Staphylococcus",
-    "wrong": ["Streptococcus", "Enterococcus", "Micrococcus"]
+    "question": "Nervio que pasa por el canal epitrocleo-olecraniano",
+    "correctAnswer": "Cubital",
+    "options": [
+      "Mediano",
+      "Frénico",
+      "Axilar",
+      "Cubital"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 60,
-    "topic": "Microbiology",
-    "question": "Which organism causes cholera, presenting with profuse 'rice-water' diarrhea?",
-    "correct": "Vibrio cholerae",
-    "wrong": ["Salmonella typhi", "Shigella dysenteriae", "Clostridium difficile"]
+    "question": "Nervio que pasa por el canal de Guyon",
+    "correctAnswer": "Cubital",
+    "options": [
+      "Frénico",
+      "Cubital",
+      "Mediano",
+      "Axilar"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 61,
-    "topic": "Microbiology",
-    "question": "What is the first-line treatment for MRSA bacteremia?",
-    "correct": "Vancomycin",
-    "wrong": ["Penicillin G", "Amoxicillin", "Methicillin"]
+    "question": "Nervio que inerva los interóseos",
+    "correctAnswer": "Cubital",
+    "options": [
+      "Musculocutáneo",
+      "Toracodorsal",
+      "Torácico largo",
+      "Cubital"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 62,
-    "topic": "Microbiology",
-    "question": "Which spore-forming anaerobic bacterium causes gas gangrene (clostridial myonecrosis)?",
-    "correct": "Clostridium perfringens",
-    "wrong": ["Bacteroides fragilis", "Peptostreptococcus", "Fusobacterium necrophorum"]
+    "question": "Nervio responsable de la aducción del pulgar",
+    "correctAnswer": "Cubital",
+    "options": [
+      "Déficit de rotación externa",
+      "Axilar",
+      "Cubital",
+      "Mediano"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 63,
-    "topic": "Microbiology",
-    "question": "What is the most common cause of community-acquired pneumonia in adults?",
-    "correct": "Streptococcus pneumoniae",
-    "wrong": ["Haemophilus influenzae", "Mycoplasma pneumoniae", "Klebsiella pneumoniae"]
+    "question": "Músculo que produce oposición del pulgar",
+    "correctAnswer": "Oponente del pulgar",
+    "options": [
+      "Supraespinoso",
+      "Flexor largo del dedo gordo",
+      "Oponente del pulgar",
+      "Flexor cubital del carpo"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 64,
-    "topic": "Microbiology",
-    "question": "Which gram-negative diplococcus is the causative agent of gonorrhea?",
-    "correct": "Neisseria gonorrhoeae",
-    "wrong": ["Neisseria meningitidis", "Haemophilus ducreyi", "Treponema pallidum"]
+    "question": "Músculo más profundo de la eminencia hipotenar",
+    "correctAnswer": "Oponente del meñique",
+    "options": [
+      "Oponente del meñique",
+      "Aductor del pulgar",
+      "Flexor largo de los dedos",
+      "Flexor largo del dedo gordo"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 65,
-    "topic": "Microbiology",
-    "question": "What is the most common nosocomial (hospital-acquired) infection?",
-    "correct": "Urinary tract infection (UTI)",
-    "wrong": ["Pneumonia", "Surgical site infection", "Bloodstream infection"]
+    "question": "Arteria que acompaña al nervio axilar",
+    "correctAnswer": "Circunfleja humeral posterior",
+    "options": [
+      "Cubital",
+      "Circunfleja humeral posterior",
+      "Colateral cubital superior",
+      "Braquial profunda"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 66,
-    "topic": "Microbiology",
-    "question": "Which organism is identified by the Ziehl-Neelsen (acid-fast) stain?",
-    "correct": "Mycobacteria (e.g., M. tuberculosis)",
-    "wrong": ["Staphylococcus aureus", "Candida albicans", "Treponema pallidum"]
+    "question": "Arteria que acompaña al nervio radial",
+    "correctAnswer": "Braquial profunda",
+    "options": [
+      "Colateral cubital superior",
+      "Circunfleja humeral posterior",
+      "Braquial profunda",
+      "Cubital"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 67,
-    "topic": "Biochemistry",
-    "question": "In DNA, which nitrogenous base pairs with adenine?",
-    "correct": "Thymine",
-    "wrong": ["Uracil", "Guanine", "Cytosine"]
+    "question": "Arteria que acompaña al nervio cubital en el brazo",
+    "correctAnswer": "Colateral cubital superior",
+    "options": [
+      "Cubital",
+      "Braquial profunda",
+      "Colateral cubital superior",
+      "Circunfleja humeral posterior"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 68,
-    "topic": "Biochemistry",
-    "question": "Approximately how many ATP molecules are produced from the complete oxidation of one glucose molecule?",
-    "correct": "30–32 ATP (net)",
-    "wrong": ["12 ATP", "24 ATP", "50 ATP"]
+    "question": "Nervio de la sensibilidad de la cara lateral del hombro",
+    "correctAnswer": "Axilar",
+    "options": [
+      "Déficit de rotación externa",
+      "Cubital",
+      "Mediano",
+      "Axilar"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 69,
-    "topic": "Biochemistry",
-    "question": "Where in the cell does the Krebs cycle (TCA cycle) take place?",
-    "correct": "Mitochondrial matrix",
-    "wrong": ["Cytoplasm", "Nucleus", "Endoplasmic reticulum"]
+    "question": "Nervio de la sensibilidad de los 3 dedos y medio laterales",
+    "correctAnswer": "Mediano",
+    "options": [
+      "Mediano",
+      "Axilar",
+      "Cubital",
+      "Peroneo común"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 70,
-    "topic": "Biochemistry",
-    "question": "Where in the cell does glycolysis take place?",
-    "correct": "Cytoplasm (cytosol)",
-    "wrong": ["Mitochondria", "Nucleus", "Peroxisome"]
+    "question": "Nervio de la sensibilidad del dedo meñique",
+    "correctAnswer": "Cubital",
+    "options": [
+      "Axilar",
+      "Cubital",
+      "Mediano",
+      "Déficit de rotación externa"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 71,
-    "topic": "Biochemistry",
-    "question": "What does a hemoglobin A1c (HbA1c) level reflect?",
-    "correct": "Average blood glucose over the preceding 2–3 months",
-    "wrong": ["Daily blood glucose fluctuation", "Fasting blood glucose only", "Peak blood glucose after meals"]
+    "question": "Tipo de articulación radiocubital proximal",
+    "correctAnswer": "Trocoide",
+    "options": [
+      "Gínglimo",
+      "Selar (silla de montar)",
+      "Esferoidea (enartrosis)",
+      "Trocoide"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 72,
-    "topic": "Biochemistry",
-    "question": "Deficiency of which vitamin causes scurvy?",
-    "correct": "Vitamin C (ascorbic acid)",
-    "wrong": ["Vitamin D", "Vitamin B12", "Vitamin K"]
+    "question": "Tipo de articulación radiocubital distal",
+    "correctAnswer": "Trocoide",
+    "options": [
+      "Selar (silla de montar)",
+      "Esferoidea (enartrosis)",
+      "Trocoide",
+      "Gínglimo"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 73,
-    "topic": "Biochemistry",
-    "question": "Deficiency of vitamin D in children leads to which disease?",
-    "correct": "Rickets",
-    "wrong": ["Scurvy", "Night blindness", "Pellagra"]
+    "question": "Tipo de articulación interfalángica",
+    "correctAnswer": "Gínglimo",
+    "options": [
+      "Trocoide",
+      "Esferoidea (enartrosis)",
+      "Gínglimo",
+      "Selar (silla de montar)"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 74,
-    "topic": "Biochemistry",
-    "question": "Deficiency of vitamin B12 most characteristically causes which type of anemia?",
-    "correct": "Megaloblastic (macrocytic) anemia",
-    "wrong": ["Iron-deficiency (microcytic) anemia", "Hemolytic anemia", "Aplastic anemia"]
+    "question": "Tipo de articulación humerocubital",
+    "correctAnswer": "Gínglimo",
+    "options": [
+      "Trocoide",
+      "Gínglimo",
+      "Esferoidea (enartrosis)",
+      "Selar (silla de montar)"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 75,
-    "topic": "Biochemistry",
-    "question": "Which enzyme is responsible for synthesizing DNA from an RNA template (used by HIV)?",
-    "correct": "Reverse transcriptase",
-    "wrong": ["DNA polymerase I", "RNA polymerase II", "Primase"]
+    "question": "Tipo de articulación glenohumeral",
+    "correctAnswer": "Esferoidea (enartrosis)",
+    "options": [
+      "Gínglimo",
+      "Esferoidea (enartrosis)",
+      "Selar (silla de montar)",
+      "Trocoide"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 76,
-    "topic": "Biochemistry",
-    "question": "Where does protein synthesis (translation) occur in the cell?",
-    "correct": "Ribosomes",
-    "wrong": ["Nucleus", "Golgi apparatus", "Smooth endoplasmic reticulum"]
+    "question": "Tipo de articulación coxofemoral",
+    "correctAnswer": "Esferoidea (enartrosis)",
+    "options": [
+      "Trocoide",
+      "Gínglimo",
+      "Selar (silla de montar)",
+      "Esferoidea (enartrosis)"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 77,
-    "topic": "Biochemistry",
-    "question": "Which amino acid is the precursor for both serotonin and melatonin?",
-    "correct": "Tryptophan",
-    "wrong": ["Tyrosine", "Phenylalanine", "Histidine"]
+    "question": "Ligamento considerado superficie articular del codo",
+    "correctAnswer": "Anular del radio",
+    "options": [
+      "Transverso del atlas",
+      "Ligamento de la cabeza del fémur MÁS REPETIDAS:",
+      "Ligamento de la cabeza del fémur",
+      "Anular del radio"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 78,
-    "topic": "Biochemistry",
-    "question": "Deficiency of which vitamin causes night blindness (nyctalopia)?",
-    "correct": "Vitamin A (retinol)",
-    "wrong": ["Vitamin C", "Vitamin E", "Vitamin D"]
+    "question": "Ligamento considerado superficie articular de C1-C2",
+    "correctAnswer": "Transverso del atlas",
+    "options": [
+      "Anular del radio",
+      "Ligamento de la cabeza del fémur",
+      "Ligamento de la cabeza del fémur MÁS REPETIDAS:",
+      "Transverso del atlas"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 79,
-    "topic": "Pathology",
-    "question": "Which autoimmune disease is characterized by antibodies against double-stranded DNA (anti-dsDNA)?",
-    "correct": "Systemic lupus erythematosus (SLE)",
-    "wrong": ["Rheumatoid arthritis", "Sjögren syndrome", "Scleroderma (systemic sclerosis)"]
+    "question": "Refuerzo superior de la glenohumeral",
+    "correctAnswer": "Coracohumeral",
+    "options": [
+      "Coracohumeral",
+      "Rodete glenoideo",
+      "Rodete glenoideo (labrum)",
+      "Flexión del codo"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 80,
-    "topic": "Physiology",
-    "question": "Which hormone is primarily responsible for regulating blood calcium levels by increasing intestinal calcium absorption and renal reabsorption?",
-    "correct": "Parathyroid hormone (PTH)",
-    "wrong": ["Calcitonin", "Aldosterone", "Cortisol"]
+    "question": "Fibrocartílago de la glenohumeral",
+    "correctAnswer": "Rodete glenoideo",
+    "options": [
+      "Coracohumeral",
+      "Rodete glenoideo",
+      "Flexión del codo",
+      "Rodete glenoideo (labrum)"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 81,
-    "topic": "Pharmacology",
-    "question": "Which drug class is first-line for managing hypertension in a patient with chronic kidney disease (CKD) and proteinuria?",
-    "correct": "ACE inhibitors (e.g., lisinopril) or ARBs",
-    "wrong": ["Thiazide diuretics", "Calcium channel blockers", "Beta-blockers"]
+    "question": "Músculo propulsor de la mandíbula",
+    "correctAnswer": "Pterigoideo lateral",
+    "options": [
+      "Masetero",
+      "Pterigoideo lateral",
+      "Flexor profundo de los dedos",
+      "Temporal"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 82,
-    "topic": "Anatomy",
-    "question": "Which structure passes through the carpal tunnel and is compressed in carpal tunnel syndrome?",
-    "correct": "Median nerve",
-    "wrong": ["Ulnar nerve", "Radial nerve", "Musculocutaneous nerve"]
+    "question": "Músculo que retrae la mandíbula",
+    "correctAnswer": "Temporal",
+    "options": [
+      "Temporal",
+      "Masetero",
+      "Pterigoideo lateral",
+      "Flexor profundo de los dedos"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 83,
-    "topic": "Microbiology",
-    "question": "Which fungal pathogen causes Pneumocystis pneumonia (PCP) in immunocompromised patients?",
-    "correct": "Pneumocystis jirovecii",
-    "wrong": ["Aspergillus fumigatus", "Candida albicans", "Cryptococcus neoformans"]
+    "question": "Músculo que eleva la mandíbula",
+    "correctAnswer": "Masetero",
+    "options": [
+      "Masetero",
+      "Flexor profundo de los dedos",
+      "Pterigoideo lateral",
+      "Temporal"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 84,
-    "topic": "Physiology",
-    "question": "Which part of the nephron is primarily responsible for concentrating urine?",
-    "correct": "Collecting duct (under the influence of ADH)",
-    "wrong": ["Proximal convoluted tubule", "Distal convoluted tubule", "Loop of Henle (ascending limb)"]
+    "question": "Músculo que aumenta la presión intraoral",
+    "correctAnswer": "Buccinador",
+    "options": [
+      "Supraespinoso",
+      "Semimembranoso",
+      "Buccinador",
+      "Flexor profundo de los dedos"
+    ],
+    "source": "main.pdf"
   },
   {
     "id": 85,
-    "topic": "Pathology",
-    "question": "A 'strawberry gallbladder' appearance with cholesterol deposits is characteristic of which condition?",
-    "correct": "Cholesterolosis of the gallbladder",
-    "wrong": ["Acute cholecystitis", "Primary biliary cholangitis", "Gallbladder adenocarcinoma"]
+    "question": "Músculo de la mímica inervado por el facial",
+    "correctAnswer": "Cigomático mayor",
+    "options": [
+      "Redondo mayor",
+      "Braquiorradial",
+      "Cigomático mayor",
+      "Supraespinoso"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 86,
+    "question": "Arteria NO rama de la carótida externa",
+    "correctAnswer": "Tiroidea inferior",
+    "options": [
+      "Torácica lateral",
+      "Subclavia",
+      "Tiroidea inferior",
+      "Radial"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 87,
+    "question": "Músculo prevertebral",
+    "correctAnswer": "Largo del cuello",
+    "options": [
+      "Flexor largo del dedo gordo",
+      "Largo del cuello",
+      "Recto anterior de la cabeza",
+      "Aductor del pulgar"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 88,
+    "question": "Nervio que pasa por delante del escaleno anterior",
+    "correctAnswer": "Frénico",
+    "options": [
+      "Axilar",
+      "Cubital",
+      "Mediano",
+      "Frénico"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 89,
+    "question": "Estructura posterior al hiato esofágico",
+    "correctAnswer": "Aorta",
+    "options": [
+      "Esófago y nervios vagos",
+      "Esófago y vagos",
+      "Aorta",
+      "Esófago"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 90,
+    "question": "Contenido del hiato aórtico",
+    "correctAnswer": "Aorta y conducto torácico",
+    "options": [
+      "Ilioinguinal",
+      "Aorta y conducto torácico",
+      "Conducto deferente",
+      "Conducto torácico"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 91,
+    "question": "Contenido del hiato esofágico",
+    "correctAnswer": "Esófago y vagos",
+    "options": [
+      "Esófago y nervios vagos",
+      "Esófago y vagos",
+      "Aorta",
+      "Esófago"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 92,
+    "question": "Estructura más medial bajo el ligamento inguinal",
+    "correctAnswer": "Vena femoral",
+    "options": [
+      "Flexor largo de los dedos",
+      "Iliopsoas o nervio femoral",
+      "Subclavia",
+      "Vena femoral"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 93,
+    "question": "Estructura más lateral bajo el ligamento inguinal",
+    "correctAnswer": "Iliopsoas o nervio femoral",
+    "options": [
+      "Esófago y nervios vagos",
+      "Nervio femoral",
+      "Iliopsoas o nervio femoral",
+      "Nervio ilioinguinal, conducto deferente o ligamento redondo"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 94,
+    "question": "Nervio contenido en la laguna muscular",
+    "correctAnswer": "Femoral",
+    "options": [
+      "Femoral",
+      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
+      "Axilar",
+      "Rama femoral del genitofemoral"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 95,
+    "question": "Nervio contenido en la laguna vascular",
+    "correctAnswer": "Rama femoral del genitofemoral",
+    "options": [
+      "Rama femoral del genitofemoral",
+      "Rama profunda del radial",
+      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
+      "Femoral"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 96,
+    "question": "Ligamento intracapsular de la cadera",
+    "correctAnswer": "Ligamento de la cabeza del fémur",
+    "options": [
+      "Anular del radio",
+      "Ligamento de la cabeza del fémur",
+      "Ligamento de la cabeza del fémur MÁS REPETIDAS:",
+      "Transverso del atlas"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 97,
+    "question": "Músculo que atraviesa el foramen isquiático menor",
+    "correctAnswer": "Obturador interno",
+    "options": [
+      "Supraespinoso",
+      "Semimembranoso",
+      "Flexor profundo de los dedos",
+      "Obturador interno"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 98,
+    "question": "Estructura que NO atraviesa el foramen isquiático menor",
+    "correctAnswer": "Piriforme",
+    "options": [
+      "Obturador interno",
+      "Aorta y conducto torácico",
+      "Esófago y nervios vagos",
+      "Piriforme"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 99,
+    "question": "Músculo rotador interno de la cadera",
+    "correctAnswer": "Glúteo menor",
+    "options": [
+      "Recto posterior menor de la cabeza",
+      "Cuadrado femoral",
+      "Glúteo menor",
+      "Redondo mayor"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 100,
+    "question": "Músculo rotador externo de la cadera",
+    "correctAnswer": "Cuadrado femoral",
+    "options": [
+      "Redondo mayor",
+      "Glúteo menor",
+      "Flexor profundo de los dedos",
+      "Cuadrado femoral"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 101,
+    "question": "Principal flexor de la cadera",
+    "correctAnswer": "Iliopsoas",
+    "options": [
+      "Sartorio, grácil y semitendinoso",
+      "Flexión del codo",
+      "Iliopsoas",
+      "Deltoides"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 102,
+    "question": "Músculo que NO forma la pata de ganso",
+    "correctAnswer": "Semimembranoso",
+    "options": [
+      "Flexor profundo de los dedos",
+      "Semimembranoso",
+      "Pterigoideo lateral",
+      "Supraespinoso"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 103,
+    "question": "Pata de ganso superficial",
+    "correctAnswer": "Sartorio + Grácil + Semitendinoso",
+    "options": [
+      "Sartorio, grácil y semitendinoso",
+      "Sartorio + Grácil + Semitendinoso",
+      "Bíceps femoral",
+      "Flexión del codo"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 104,
+    "question": "Nervio de la extensión de rodilla",
+    "correctAnswer": "Femoral",
+    "options": [
+      "Rama femoral del genitofemoral",
+      "Femoral",
+      "Axilar",
+      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 105,
+    "question": "Nervio de la flexión plantar",
+    "correctAnswer": "Tibial",
+    "options": [
+      "Axilar",
+      "Braquial profunda",
+      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
+      "Tibial"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 106,
+    "question": "Nervio de la dorsiflexión",
+    "correctAnswer": "Peroneo profundo",
+    "options": [
+      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
+      "Peroneo profundo",
+      "Peroneo común",
+      "Axilar"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 107,
+    "question": "Nervio cuya lesión impide extender los dedos del pie",
+    "correctAnswer": "Peroneo común",
+    "options": [
+      "Mediano",
+      "Cubital",
+      "Peroneo común",
+      "Déficit de rotación externa"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 108,
+    "question": "Músculo más medial del plano profundo posterior de la pierna",
+    "correctAnswer": "Flexor largo de los dedos",
+    "options": [
+      "Supinador",
+      "Flexor largo de los dedos",
+      "Flexor largo del dedo gordo",
+      "Flexor profundo de los dedos"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 109,
+    "question": "Músculo más lateral del plano profundo posterior de la pierna",
+    "correctAnswer": "Flexor largo del dedo gordo",
+    "options": [
+      "Aductor del pulgar",
+      "Flexor largo de los dedos",
+      "Supinador",
+      "Flexor largo del dedo gordo"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 110,
+    "question": "Derivado embrionario de las vértebras",
+    "correctAnswer": "Esclerotomo",
+    "options": [
+      "Miotomo",
+      "Mediano",
+      "Esclerotomo",
+      "Dermatomo"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 111,
+    "question": "Músculo que se inserta en el pisiforme",
+    "correctAnswer": "Flexor cubital del carpo",
+    "options": [
+      "Supraespinoso",
+      "Flexor profundo de los dedos",
+      "Flexor cubital del carpo",
+      "Oponente del pulgar"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 112,
+    "question": "Límite medial de la tabaquera anatómica",
+    "correctAnswer": "Extensor largo del pulgar",
+    "options": [
+      "Extensor largo del pulgar",
+      "Vasos epigástricos inferiores",
+      "Extensor radial largo del carpo",
+      "Abductor largo y extensor corto del pulgar"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 113,
+    "question": "Límite lateral de la tabaquera anatómica",
+    "correctAnswer": "Abductor largo y extensor corto del pulgar",
+    "options": [
+      "Extensor largo del pulgar",
+      "Abductor largo y extensor corto del pulgar",
+      "Extensor radial largo del carpo",
+      "Flexión del codo"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 114,
+    "question": "Arteria que pasa por la tabaquera anatómica",
+    "correctAnswer": "Radial",
+    "options": [
+      "Tiroidea inferior",
+      "Subclavia",
+      "Torácica lateral",
+      "Radial"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 115,
+    "question": "Nervio que acompaña la arteria cubital en antebrazo",
+    "correctAnswer": "Cubital",
+    "options": [
+      "Braquial profunda",
+      "Circunfleja humeral posterior",
+      "Colateral cubital superior",
+      "Cubital"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 116,
+    "question": "Nervio y arteria cubital cubiertos por",
+    "correctAnswer": "Flexor superficial de los dedos",
+    "options": [
+      "Colateral cubital superior",
+      "Cubital",
+      "Flexor superficial de los dedos",
+      "Axilar"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 117,
+    "question": "Músculo cubierto por el tríceps braquial",
+    "correctAnswer": "Surco del nervio radial",
+    "options": [
+      "Trapecio",
+      "Surco del nervio radial",
+      "Largo del cuello / esplenio",
+      "Deltoides"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 118,
+    "question": "Nervio posterior al codo",
+    "correctAnswer": "Cubital",
+    "options": [
+      "Colateral cubital superior",
+      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
+      "Cubital",
+      "Axilar"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 119,
+    "question": "Nervio responsable sensibilidad hombro",
+    "correctAnswer": "Axilar",
+    "options": [
+      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
+      "Cubital",
+      "Mediano",
+      "Axilar"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 120,
+    "question": "Músculo NO relacionado con la pared posterior de la axila",
+    "correctAnswer": "Infraespinoso",
+    "options": [
+      "Flexor largo del dedo gordo",
+      "Flexor largo de los dedos",
+      "Infraespinoso",
+      "Supinador"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 121,
+    "question": "Pared posterior de la axila",
+    "correctAnswer": "Subescapular, redondo mayor y dorsal ancho",
+    "options": [
+      "Aorta",
+      "Subescapular, redondo mayor y dorsal ancho",
+      "Flexión del codo",
+      "Raíces"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 122,
+    "question": "Músculo que NO pasa por correderas dorsales",
+    "correctAnswer": "Braquiorradial",
+    "options": [
+      "Braquiorradial",
+      "Semimembranoso",
+      "Flexor profundo de los dedos",
+      "Supraespinoso"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 123,
+    "question": "Tendón más lateral en correderas dorsales",
+    "correctAnswer": "Extensor radial largo del carpo",
+    "options": [
+      "Abductor largo y extensor corto del pulgar",
+      "Extensor radial largo del carpo",
+      "Extensor largo del pulgar",
+      "Esternohioideo"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 124,
+    "question": "Músculo que NO cruza la radiocarpiana",
+    "correctAnswer": "Braquiorradial",
+    "options": [
+      "Flexor profundo de los dedos",
+      "Semimembranoso",
+      "Braquiorradial",
+      "Supraespinoso"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 125,
+    "question": "Ligamento NO refuerzo de la glenohumeral",
+    "correctAnswer": "Coracoclavicular o trapezoide",
+    "options": [
+      "Ligamento de la cabeza del fémur",
+      "Coracohumeral",
+      "Coracoclavicular o trapezoide",
+      "Anular del radio"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 126,
+    "question": "Músculo NO del manguito rotador",
+    "correctAnswer": "Redondo mayor",
+    "options": [
+      "Flexor largo de los dedos",
+      "Supraespinoso",
+      "Redondo mayor",
+      "Supinador"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 127,
+    "question": "Músculo que rota internamente hombro",
+    "correctAnswer": "Subescapular",
+    "options": [
+      "Oblicuo externo",
+      "Subescapular",
+      "Infraespinoso",
+      "ECM"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 128,
+    "question": "Músculo que rota externamente hombro",
+    "correctAnswer": "Infraespinoso",
+    "options": [
+      "Oblicuo externo",
+      "ECM",
+      "Infraespinoso",
+      "Subescapular"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 129,
+    "question": "Músculo que NO rota internamente hombro",
+    "correctAnswer": "Infraespinoso",
+    "options": [
+      "Infraespinoso",
+      "ECM",
+      "Subescapular",
+      "Oblicuo externo"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 130,
+    "question": "Acción NO propia del bíceps braquial",
+    "correctAnswer": "Extensión glenohumeral",
+    "options": [
+      "Raíces",
+      "Deltoides",
+      "Flexión del codo",
+      "Extensión glenohumeral"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 131,
+    "question": "Función característica del bíceps",
+    "correctAnswer": "Supinación",
+    "options": [
+      "Supinación",
+      "Segundo palmar",
+      "Segundo dorsal",
+      "Flexión del codo"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 132,
+    "question": "Nervio que inerva el coracobraquial",
+    "correctAnswer": "Musculocutáneo",
+    "options": [
+      "Toracodorsal",
+      "Cubital",
+      "Torácico largo",
+      "Musculocutáneo"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 133,
+    "question": "Nervio que inerva dorsal ancho",
+    "correctAnswer": "Toracodorsal",
+    "options": [
+      "Toracodorsal",
+      "Torácico largo",
+      "Musculocutáneo",
+      "Cubital"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 134,
+    "question": "Nervio que inerva serrato anterior",
+    "correctAnswer": "Torácico largo",
+    "options": [
+      "Frénico",
+      "Cubital",
+      "Musculocutáneo",
+      "Torácico largo"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 135,
+    "question": "Nervio que inerva romboides",
+    "correctAnswer": "Dorsal de la escápula",
+    "options": [
+      "Dorsal de la escápula",
+      "Cubital",
+      "Toracodorsal",
+      "Musculocutáneo"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 136,
+    "question": "Nervio que nace de C5",
+    "correctAnswer": "Dorsal de la escápula",
+    "options": [
+      "Axilar",
+      "Dorsal de la escápula",
+      "Braquial profunda",
+      "Rama profunda del radial"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 137,
+    "question": "Nervio rama del tronco superior",
+    "correctAnswer": "Supraescapular",
+    "options": [
+      "Mediano",
+      "Supraescapular",
+      "Cubital",
+      "Axilar"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 138,
+    "question": "Nervio lesionado que produce escápula alada",
+    "correctAnswer": "Torácico largo",
+    "options": [
+      "Braquial profunda",
+      "Mediano",
+      "Torácico largo",
+      "Axilar"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 139,
+    "question": "Nervio que atraviesa el supinador",
+    "correctAnswer": "Rama profunda radial",
+    "options": [
+      "Rama profunda del radial",
+      "Axilar",
+      "Braquial profunda",
+      "Rama profunda radial"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 140,
+    "question": "Nervio lesionado en arcada de Frohse",
+    "correctAnswer": "Rama profunda radial",
+    "options": [
+      "Torácico largo",
+      "Rama profunda radial",
+      "Rama profunda del radial",
+      "Mediano"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 141,
+    "question": "Derivado embrionario del músculo",
+    "correctAnswer": "Miotomo",
+    "options": [
+      "Miotomo",
+      "Supinador",
+      "Supraespinoso",
+      "Flexor largo de los dedos"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 142,
+    "question": "Derivado embrionario de dermis",
+    "correctAnswer": "Dermatomo",
+    "options": [
+      "Selar (silla de montar)",
+      "Esclerotomo",
+      "Miotomo",
+      "Dermatomo"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 143,
+    "question": "Derivado embrionario de vértebras",
+    "correctAnswer": "Esclerotomo",
+    "options": [
+      "Esclerotomo",
+      "Miotomo",
+      "Selar (silla de montar)",
+      "Dermatomo"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 144,
+    "question": "Tipo de articulación de la ATM",
+    "correctAnswer": "Sinovial compleja con disco",
+    "options": [
+      "Sinovial compleja con disco",
+      "Trocoide",
+      "Disco articular",
+      "Selar (silla de montar)"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 145,
+    "question": "Articulación ATM presenta",
+    "correctAnswer": "Disco articular",
+    "options": [
+      "Selar (silla de montar)",
+      "Gínglimo (tróclea)",
+      "Disco articular",
+      "Sinovial compleja con disco"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 146,
+    "question": "Cápsula ATM",
+    "correctAnswer": "Laxa",
+    "options": [
+      "Flexión del codo",
+      "Laxa",
+      "Sartorio, grácil y semitendinoso",
+      "Bíceps femoral"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 147,
+    "question": "Ligamento principal ATM",
+    "correctAnswer": "Lateral (temporomandibular)",
+    "options": [
+      "Anular del radio",
+      "Lateral (temporomandibular)",
+      "Ligamento de la cabeza del fémur",
+      "Coracohumeral"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 148,
+    "question": "Músculo propulsor mandibular",
+    "correctAnswer": "Pterigoideo lateral",
+    "options": [
+      "Aductor del pulgar",
+      "Pterigoideo lateral",
+      "Flexor profundo de los dedos",
+      "Supraespinoso"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 149,
+    "question": "Músculo que desplaza lateralmente mandíbula",
+    "correctAnswer": "Pterigoideo lateral",
+    "options": [
+      "Pterigoideo lateral",
+      "Temporal",
+      "Masetero",
+      "Flexor profundo de los dedos"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 150,
+    "question": "Músculo que retrae mandíbula",
+    "correctAnswer": "Temporal",
+    "options": [
+      "Temporal",
+      "Masetero",
+      "Pterigoideo lateral",
+      "Flexor profundo de los dedos"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 151,
+    "question": "Arteria NO rama carótida externa",
+    "correctAnswer": "Tiroidea inferior",
+    "options": [
+      "Tiroidea inferior",
+      "Subclavia",
+      "Radial",
+      "Torácica lateral"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 152,
+    "question": "Músculo que aumenta presión boca",
+    "correctAnswer": "Buccinador",
+    "options": [
+      "Semimembranoso",
+      "Buccinador",
+      "Supraespinoso",
+      "Flexor profundo de los dedos"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 153,
+    "question": "Músculo inervado por nervio craneal",
+    "correctAnswer": "ECM",
+    "options": [
+      "ECM",
+      "Trapecio",
+      "Deltoides",
+      "Largo del cuello / esplenio"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 154,
+    "question": "Músculo inervado por nervio craneal",
+    "correctAnswer": "Trapecio",
+    "options": [
+      "Largo del cuello / esplenio",
+      "ECM",
+      "Deltoides",
+      "Trapecio"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 155,
+    "question": "Músculo NO inervado por nervio craneal",
+    "correctAnswer": "Largo del cuello / esplenio",
+    "options": [
+      "Deltoides",
+      "ECM",
+      "Largo del cuello / esplenio",
+      "Trapecio"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 156,
+    "question": "Nervio anterior al escaleno",
+    "correctAnswer": "Frénico",
+    "options": [
+      "Torácico largo",
+      "Axilar",
+      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
+      "Frénico"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 157,
+    "question": "Vena anterior al escaleno",
+    "correctAnswer": "Subclavia",
+    "options": [
+      "Vena femoral",
+      "Subclavia",
+      "Frénico",
+      "Torácico largo"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 158,
+    "question": "Arteria posterior al escaleno",
+    "correctAnswer": "Subclavia",
+    "options": [
+      "Radial",
+      "Subclavia",
+      "Tiroidea inferior",
+      "Torácica lateral"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 159,
+    "question": "Plexo braquial posterior al escaleno",
+    "correctAnswer": "Raíces",
+    "options": [
+      "Raíces",
+      "Extensión glenohumeral",
+      "Subescapular, redondo mayor y dorsal ancho",
+      "Aorta"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 160,
+    "question": "Estructura más anterior del cuello en corte transversal",
+    "correctAnswer": "Esternohioideo",
+    "options": [
+      "Deltoides",
+      "Flexión del codo",
+      "Esternohioideo",
+      "Aorta"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 161,
+    "question": "Músculo prevertebral",
+    "correctAnswer": "Largo del cuello",
+    "options": [
+      "Recto anterior de la cabeza",
+      "Aductor del pulgar",
+      "Flexor largo del dedo gordo",
+      "Largo del cuello"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 162,
+    "question": "Músculo prevertebral",
+    "correctAnswer": "Recto anterior de la cabeza",
+    "options": [
+      "Recto anterior de la cabeza",
+      "Esplenio de la cabeza",
+      "Recto posterior menor de la cabeza",
+      "Largo del cuello"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 163,
+    "question": "Estructura que cruza hiato esofágico",
+    "correctAnswer": "Esófago",
+    "options": [
+      "Aorta",
+      "Esófago y nervios vagos",
+      "Esófago y vagos",
+      "Esófago"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 164,
+    "question": "Estructura que cruza hiato aórtico",
+    "correctAnswer": "Conducto torácico",
+    "options": [
+      "Conducto deferente",
+      "Fascia transversalis y tendón conjunto",
+      "Aorta y conducto torácico",
+      "Conducto torácico"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 165,
+    "question": "Estructura más posterior del diafragma",
+    "correctAnswer": "Aorta",
+    "options": [
+      "Aorta",
+      "Esternohioideo",
+      "Flexión del codo",
+      "Deltoides"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 166,
+    "question": "Músculo que NO provoca rotación contralateral",
+    "correctAnswer": "Esplenio de la cabeza",
+    "options": [
+      "Esplenio de la cabeza",
+      "Flexor profundo de los dedos",
+      "Supraespinoso",
+      "Semimembranoso"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 167,
+    "question": "Músculo que rota contralateralmente",
+    "correctAnswer": "ECM",
+    "options": [
+      "Subescapular",
+      "Oblicuo externo",
+      "ECM",
+      "Infraespinoso"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 168,
+    "question": "Músculo que rota contralateralmente",
+    "correctAnswer": "Oblicuo externo",
+    "options": [
+      "Subescapular",
+      "Oblicuo externo",
+      "ECM",
+      "Infraespinoso"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 169,
+    "question": "Arteria NO rama subclavia",
+    "correctAnswer": "Torácica lateral",
+    "options": [
+      "Torácica lateral",
+      "Tiroidea inferior",
+      "Subclavia",
+      "Radial"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 170,
+    "question": "Conducto inguinal: pared anterior",
+    "correctAnswer": "Aponeurosis oblicuo externo",
+    "options": [
+      "Aponeurosis oblicuo externo",
+      "Fascia transversalis",
+      "Oblicuo interno y transverso",
+      "Fascia transversalis y tendón conjunto"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 171,
+    "question": "Conducto inguinal: pared posterior",
+    "correctAnswer": "Fascia transversalis",
+    "options": [
+      "Oblicuo interno y transverso",
+      "Fascia transversalis y tendón conjunto",
+      "Aponeurosis oblicuo externo",
+      "Fascia transversalis"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 172,
+    "question": "Conducto inguinal: techo",
+    "correctAnswer": "Oblicuo interno y transverso",
+    "options": [
+      "Oblicuo interno y transverso",
+      "Fascia transversalis y tendón conjunto",
+      "Fascia transversalis",
+      "Aponeurosis oblicuo externo"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 173,
+    "question": "Conducto inguinal: suelo",
+    "correctAnswer": "Ligamento inguinal",
+    "options": [
+      "Ligamento redondo",
+      "Ligamento inguinal",
+      "Ligamento de la cabeza del fémur MÁS REPETIDAS:",
+      "Ligamento de la cabeza del fémur"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 174,
+    "question": "Ligamento umbilical medial",
+    "correctAnswer": "Fosa supravesical delimitada lateralmente por",
+    "options": [
+      "Anular del radio",
+      "Coracohumeral",
+      "Fosa supravesical delimitada lateralmente por",
+      "Ligamento de la cabeza del fémur"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 175,
+    "question": "Fosa inguinal medial delimitada lateralmente por",
+    "correctAnswer": "Vasos epigástricos inferiores",
+    "options": [
+      "Extensor largo del pulgar",
+      "Vasos epigástricos inferiores",
+      "Flexión del codo",
+      "Sartorio, grácil y semitendinoso"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 176,
+    "question": "Estructura ventral al cordón espermático",
+    "correctAnswer": "Aponeurosis oblicuo externo",
+    "options": [
+      "Aorta",
+      "Flexión del codo",
+      "Aponeurosis oblicuo externo",
+      "Esternohioideo"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 177,
+    "question": "Contenido del conducto inguinal",
+    "correctAnswer": "Ilioinguinal",
+    "options": [
+      "Ilioinguinal",
+      "Conducto deferente",
+      "Fascia transversalis y tendón conjunto",
+      "Aorta y conducto torácico"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 178,
+    "question": "Contenido conducto inguinal masculino",
+    "correctAnswer": "Conducto deferente",
+    "options": [
+      "Ilioinguinal",
+      "Fascia transversalis y tendón conjunto",
+      "Conducto deferente",
+      "Aponeurosis oblicuo externo"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 179,
+    "question": "Contenido conducto inguinal femenino",
+    "correctAnswer": "Ligamento redondo",
+    "options": [
+      "Ligamento de la cabeza del fémur",
+      "Ligamento redondo",
+      "Ligamento inguinal",
+      "Ligamento de la cabeza del fémur MÁS REPETIDAS:"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 180,
+    "question": "Ligamento intracapsular de la cadera",
+    "correctAnswer": "Ligamento de la cabeza del fémur MÁS REPETIDAS:",
+    "options": [
+      "Anular del radio",
+      "Ligamento de la cabeza del fémur MÁS REPETIDAS:",
+      "Ligamento de la cabeza del fémur",
+      "Transverso del atlas"
+    ],
+    "source": "main.pdf"
   }
 ]
