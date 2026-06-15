@@ -69,7 +69,7 @@ function updateScore() {
 
 function renderReview() {
   reviewListEl.innerHTML = "";
-  [...history].reverse().forEach((entry, idx) => {
+  [...history].reverse().forEach((entry) => {
     const item = document.createElement("div");
     item.className = `review-item ${entry.isCorrect ? "review-correct" : "review-incorrect"}`;
 
@@ -162,17 +162,36 @@ function handleAnswer(question, selectedAnswer, clickedButton) {
   }, 900);
 }
 
-async function loadQuestions() {
-  try {
-    const response = await fetch("./data/questions.json");
-    if (!response.ok) {
-      throw new Error("Unable to load question database");
-    }
-    questions = await response.json();
-    statusEl.textContent = `Loaded ${questions.length} questions.`;
-  } catch (error) {
-    statusEl.textContent = `Error: ${error.message}`;
+async function fetchQuestionsFrom(path) {
+  const response = await fetch(path);
+  if (!response.ok) {
+    throw new Error(`Unable to load question database from ${path}`);
   }
+
+  const data = await response.json();
+  if (!Array.isArray(data)) {
+    throw new Error(`Question database at ${path} is not a list`);
+  }
+
+  return data;
+}
+
+async function loadQuestions() {
+  const paths = ["./data/questions.json", "../data/questions.json"];
+  const errors = [];
+
+  for (const path of paths) {
+    try {
+      questions = await fetchQuestionsFrom(path);
+      statusEl.textContent = `Loaded ${questions.length} questions.`;
+      return;
+    } catch (error) {
+      errors.push(error.message);
+    }
+  }
+
+  statusEl.textContent = `Error: Unable to load question database. Tried ${paths.join(" and ")}.`;
+  console.error("Question database loading failed:", errors);
 }
 
 function startGame(selectedMode) {
