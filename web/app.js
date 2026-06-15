@@ -10,6 +10,10 @@ const correctCountEl = document.getElementById("correctCount");
 const incorrectCountEl = document.getElementById("incorrectCount");
 const totalCountEl = document.getElementById("totalCount");
 
+const toggleReviewBtn = document.getElementById("toggleReview");
+const reviewPanel = document.getElementById("reviewPanel");
+const reviewListEl = document.getElementById("reviewList");
+
 const modeRandomBtn = document.getElementById("modeRandom");
 const modeOrderedBtn = document.getElementById("modeOrdered");
 
@@ -17,6 +21,7 @@ let questions = [];
 let mode = "random";
 let queue = [];
 let pointer = 0;
+let history = [];
 
 const score = {
   correct: 0,
@@ -55,6 +60,42 @@ function updateScore() {
   correctCountEl.textContent = String(score.correct);
   incorrectCountEl.textContent = String(score.incorrect);
   totalCountEl.textContent = String(score.total);
+
+  if (score.total > 0) {
+    toggleReviewBtn.hidden = false;
+    toggleReviewBtn.textContent = `Review answers (${score.total})`;
+  }
+}
+
+function renderReview() {
+  reviewListEl.innerHTML = "";
+  [...history].reverse().forEach((entry, idx) => {
+    const item = document.createElement("div");
+    item.className = `review-item ${entry.isCorrect ? "review-correct" : "review-incorrect"}`;
+
+    const num = document.createElement("p");
+    num.className = "review-meta";
+    num.textContent = `Question #${entry.id} — ${entry.source}`;
+
+    const q = document.createElement("p");
+    q.className = "review-question";
+    q.textContent = entry.question;
+
+    const your = document.createElement("p");
+    your.className = "review-answer";
+    your.textContent = `Your answer: ${entry.selected}`;
+
+    const correct = document.createElement("p");
+    correct.className = "review-answer";
+    correct.textContent = `Correct answer: ${entry.correctAnswer}`;
+
+    item.appendChild(num);
+    item.appendChild(q);
+    item.appendChild(your);
+    if (!entry.isCorrect) item.appendChild(correct);
+
+    reviewListEl.appendChild(item);
+  });
 }
 
 function renderQuestion(question) {
@@ -102,7 +143,17 @@ function handleAnswer(question, selectedAnswer, clickedButton) {
     });
   }
 
+  history.push({
+    id: question.id,
+    source: question.source,
+    question: question.question,
+    selected: selectedAnswer,
+    correctAnswer: question.correctAnswer,
+    isCorrect,
+  });
+
   updateScore();
+  if (!reviewPanel.hidden) renderReview();
 
   setTimeout(() => {
     const following = nextQuestion();
@@ -137,6 +188,15 @@ function startGame(selectedMode) {
 
 modeRandomBtn.addEventListener("click", () => startGame("random"));
 modeOrderedBtn.addEventListener("click", () => startGame("ordered"));
+
+toggleReviewBtn.addEventListener("click", () => {
+  const isHidden = reviewPanel.hidden;
+  reviewPanel.hidden = !isHidden;
+  toggleReviewBtn.textContent = isHidden
+    ? `Hide answers (${score.total})`
+    : `Review answers (${score.total})`;
+  if (isHidden) renderReview();
+});
 
 loadQuestions();
 updateScore();
