@@ -10,6 +10,7 @@ const correctCountEl = document.getElementById("correctCount");
 const incorrectCountEl = document.getElementById("incorrectCount");
 const totalCountEl = document.getElementById("totalCount");
 
+const revealAnswersBtn = document.getElementById("revealAnswers");
 const toggleReviewBtn = document.getElementById("toggleReview");
 const reviewPanel = document.getElementById("reviewPanel");
 const reviewListEl = document.getElementById("reviewList");
@@ -24,6 +25,7 @@ let pointer = 0;
 let history = [];
 let pendingQuestion = null;
 let nextQuestionTimeout = null;
+let revealAllCorrectAnswers = false;
 
 const score = {
   correct: 0,
@@ -78,6 +80,13 @@ function updateToggleReviewBtn() {
   }
 }
 
+function updateRevealAnswersBtn() {
+  revealAnswersBtn.disabled = revealAllCorrectAnswers;
+  revealAnswersBtn.textContent = revealAllCorrectAnswers
+    ? "Correct answers revealed"
+    : "Reveal correct answers";
+}
+
 function getLastAnswerForQuestion(questionId) {
   for (let i = history.length - 1; i >= 0; i -= 1) {
     if (history[i].id === questionId) return history[i];
@@ -119,8 +128,9 @@ function renderReview() {
       const li = document.createElement("li");
       li.textContent = optionText;
       li.className = "review-option";
+      const shouldRevealCorrectAnswer = revealAllCorrectAnswers || Boolean(entry);
 
-      if (optionText === question.correctAnswer) {
+      if (shouldRevealCorrectAnswer && optionText === question.correctAnswer) {
         li.classList.add("review-option-correct");
       }
       if (entry && optionText === entry.selected && !entry.isCorrect) {
@@ -233,7 +243,9 @@ async function loadQuestions() {
     try {
       questions = await fetchQuestionsFrom(path);
       statusEl.textContent = `Loaded ${questions.length} questions.`;
+      revealAnswersBtn.hidden = false;
       toggleReviewBtn.hidden = false;
+      updateRevealAnswersBtn();
       updateToggleReviewBtn();
       return;
     } catch (error) {
@@ -258,6 +270,13 @@ function startGame(selectedMode) {
 
 modeRandomBtn.addEventListener("click", () => startGame("random"));
 modeOrderedBtn.addEventListener("click", () => startGame("ordered"));
+
+revealAnswersBtn.addEventListener("click", () => {
+  if (revealAllCorrectAnswers) return;
+  revealAllCorrectAnswers = true;
+  updateRevealAnswersBtn();
+  if (!reviewPanel.hidden) renderReview();
+});
 
 toggleReviewBtn.addEventListener("click", () => {
   reviewPanel.hidden = !reviewPanel.hidden;

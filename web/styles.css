@@ -51,6 +51,13 @@ button:hover {
   border-radius: 10px;
 }
 
+.scoreboard-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
 .question-card {
   margin-top: 16px;
   background: #fff;
@@ -88,7 +95,6 @@ button:hover {
 }
 
 .review-toggle-btn {
-  margin-left: auto;
   background: #4b5563;
   font-size: 0.85rem;
   padding: 6px 12px;
@@ -96,6 +102,11 @@ button:hover {
 
 .review-toggle-btn:hover {
   background: #374151;
+}
+
+.review-toggle-btn:disabled {
+  background: #9ca3af;
+  cursor: default;
 }
 
 .review-panel {
