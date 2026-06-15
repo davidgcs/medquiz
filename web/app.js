@@ -12,8 +12,11 @@ const totalCountEl = document.getElementById("totalCount");
 
 const revealAnswersBtn = document.getElementById("revealAnswers");
 const toggleReviewBtn = document.getElementById("toggleReview");
+const reviewModal = document.getElementById("reviewModal");
+const reviewBackdrop = document.getElementById("reviewBackdrop");
 const reviewPanel = document.getElementById("reviewPanel");
 const reviewListEl = document.getElementById("reviewList");
+const closeReviewBtn = document.getElementById("closeReview");
 
 const modeRandomBtn = document.getElementById("modeRandom");
 const modeOrderedBtn = document.getElementById("modeOrdered");
@@ -21,9 +24,8 @@ const modeOrderedBtn = document.getElementById("modeOrdered");
 let questions = [];
 let mode = "random";
 let queue = [];
-let pointer = 0;
+let currentQuestion = null;
 let history = [];
-let pendingQuestion = null;
 let nextQuestionTimeout = null;
 let revealAllCorrectAnswers = false;
 
@@ -43,27 +45,20 @@ function shuffle(arr) {
 }
 
 function startCycle() {
-  const ids = questions.map((_, index) => index);
-  queue = mode === "random" ? shuffle(ids) : ids;
-  pointer = 0;
+  queue = questions.map((_, index) => index);
+  if (mode === "random") {
+    queue = shuffle(queue);
+  }
 }
 
 function nextQuestion() {
   if (!questions.length) return null;
-
-  if (pendingQuestion) {
-    const q = pendingQuestion;
-    pendingQuestion = null;
-    return q;
-  }
-
-  if (pointer >= queue.length) {
+  if (!queue.length) {
     startCycle();
   }
-
-  const index = queue[pointer];
-  pointer += 1;
-  return questions[index];
+  const index = queue.shift();
+  currentQuestion = questions[index] ?? null;
+  return currentQuestion;
 }
 
 function updateScore() {
@@ -73,7 +68,7 @@ function updateScore() {
 }
 
 function updateToggleReviewBtn() {
-  if (reviewPanel.hidden) {
+  if (reviewModal.hidden) {
     toggleReviewBtn.textContent = `All questions (${questions.length})`;
   } else {
     toggleReviewBtn.textContent = `Hide questions (${questions.length})`;
@@ -94,6 +89,50 @@ function getLastAnswerForQuestion(questionId) {
   return null;
 }
 
+function getQuestionNumber(question) {
+  return question.number ?? question.id;
+}
+
+function getQuestionIndex(questionId) {
+  return questions.findIndex((question) => question.id === questionId);
+}
+
+function closeReview() {
+  reviewModal.hidden = true;
+  document.body.classList.remove("modal-open");
+  updateToggleReviewBtn();
+}
+
+function openReview() {
+  renderReview();
+  reviewModal.hidden = false;
+  document.body.classList.add("modal-open");
+  updateToggleReviewBtn();
+}
+
+function reorderQueueFromQuestion(question) {
+  const currentIndex = getQuestionIndex(question.id);
+  if (currentIndex < 0) return;
+
+  queue = queue.filter((index) => index !== currentIndex);
+
+  if (mode === "random") {
+    queue = shuffle(queue);
+    return;
+  }
+
+  const remainingLater = [];
+  const remainingEarlier = [];
+  queue.forEach((index) => {
+    if (index > currentIndex) {
+      remainingLater.push(index);
+    } else {
+      remainingEarlier.push(index);
+    }
+  });
+  queue = [...remainingLater, ...remainingEarlier];
+}
+
 function renderReview() {
   reviewListEl.innerHTML = "";
 
@@ -105,14 +144,20 @@ function renderReview() {
     if (entry) {
       statusClass = entry.isCorrect ? "review-correct" : "review-incorrect";
     }
+    const isUnanswered = !entry;
     item.className = `review-item ${statusClass}`;
-    item.title = "Go to this question";
-    item.style.cursor = "pointer";
-    item.addEventListener("click", () => jumpToQuestion(question));
+    if (currentQuestion && currentQuestion.id === question.id) {
+      item.classList.add("review-current");
+    }
+    if (isUnanswered) {
+      item.classList.add("review-clickable");
+      item.title = "Go to this question";
+      item.addEventListener("click", () => jumpToQuestion(question));
+    }
 
     const num = document.createElement("p");
     num.className = "review-meta";
-    num.textContent = `Question #${question.id} — ${question.source}`;
+    num.textContent = `Question #${getQuestionNumber(question)} — ${question.source}`;
 
     const q = document.createElement("p");
     q.className = "review-question";
@@ -151,14 +196,15 @@ function jumpToQuestion(question) {
     clearTimeout(nextQuestionTimeout);
     nextQuestionTimeout = null;
   }
-  pendingQuestion = question;
-  const q = nextQuestion();
-  if (q) renderQuestion(q);
+  reorderQueueFromQuestion(question);
+  closeReview();
+  renderQuestion(question);
 }
 
 function renderQuestion(question) {
+  currentQuestion = question;
   questionCard.hidden = false;
-  questionNumberEl.textContent = `Question #${question.id}`;
+  questionNumberEl.textContent = `Question #${getQuestionNumber(question)}`;
   sourceInfoEl.textContent = `Source: ${question.source}`;
   questionText.textContent = question.question;
   feedbackEl.textContent = "";
@@ -203,6 +249,7 @@ function handleAnswer(question, selectedAnswer, clickedButton) {
 
   history.push({
     id: question.id,
+    number: getQuestionNumber(question),
     source: question.source,
     question: question.question,
     selected: selectedAnswer,
@@ -211,7 +258,7 @@ function handleAnswer(question, selectedAnswer, clickedButton) {
   });
 
   updateScore();
-  if (!reviewPanel.hidden) renderReview();
+  if (!reviewModal.hidden) renderReview();
 
   nextQuestionTimeout = setTimeout(() => {
     nextQuestionTimeout = null;
@@ -236,7 +283,7 @@ async function fetchQuestionsFrom(path) {
 }
 
 async function loadQuestions() {
-  const paths = ["./data/questions.json", "../data/questions.json"];
+  const paths = ["../data/questions.json", "./data/questions.json"];
   const errors = [];
 
   for (const path of paths) {
@@ -262,6 +309,11 @@ function startGame(selectedMode) {
     statusEl.textContent = "No questions available.";
     return;
   }
+  if (nextQuestionTimeout !== null) {
+    clearTimeout(nextQuestionTimeout);
+    nextQuestionTimeout = null;
+  }
+  closeReview();
   mode = selectedMode;
   startCycle();
   renderQuestion(nextQuestion());
@@ -275,13 +327,23 @@ revealAnswersBtn.addEventListener("click", () => {
   if (revealAllCorrectAnswers) return;
   revealAllCorrectAnswers = true;
   updateRevealAnswersBtn();
-  if (!reviewPanel.hidden) renderReview();
+  if (!reviewModal.hidden) renderReview();
 });
 
 toggleReviewBtn.addEventListener("click", () => {
-  reviewPanel.hidden = !reviewPanel.hidden;
-  updateToggleReviewBtn();
-  if (!reviewPanel.hidden) renderReview();
+  if (reviewModal.hidden) {
+    openReview();
+  } else {
+    closeReview();
+  }
+});
+
+reviewBackdrop.addEventListener("click", closeReview);
+closeReviewBtn.addEventListener("click", closeReview);
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && !reviewModal.hidden) {
+    closeReview();
+  }
 });
 
 loadQuestions();

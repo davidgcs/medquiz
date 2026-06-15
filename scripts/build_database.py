@@ -18,6 +18,8 @@ DATA_DIR = ROOT / "data"
 DB_PATH = DATA_DIR / "medquiz.db"
 QUESTIONS_JSON_PATH = DATA_DIR / "questions.json"
 MAIN_QUESTIONS_FILE = "main.pdf"
+ANSWER_LETTER_RE = re.compile(r"RESPUESTA\s*[:：]?\s*([A-D1-4])", re.IGNORECASE)
+OPTION_RE = re.compile(r"([a-d])\)\s*(.*?)(?=(?:[a-d]\)\s*)|$)", re.IGNORECASE | re.DOTALL)
 
 ARROW_SEPARATORS = ("→", "->", "=>", "⇒")
 
@@ -147,9 +149,42 @@ def sanitize_answer(answer: str) -> str:
     return clean
 
 
+def sanitize_question(question: str) -> str:
+    clean = normalize_space(question)
+    clean = re.sub(r"^\W+", "", clean)
+    return clean.strip(".;, ")
+
+
+def split_numbered_blocks(text: str) -> list[tuple[int, str]]:
+    entry_pattern = re.compile(r"(?is)(?<![A-Za-zÁÉÍÓÚÑáéíóúñ])(\d+)[\.\)]\s*(.+?)(?=(?<![A-Za-zÁÉÍÓÚÑáéíóúñ])\d+[\.\)]\s*|$)")
+    return [(int(m.group(1)), normalize_space(m.group(2))) for m in entry_pattern.finditer(text)]
+
+
+def split_mcq_block(block: str) -> tuple[str, dict[str, str]] | None:
+    matches = list(OPTION_RE.finditer(block))
+    if len(matches) < 2:
+        return None
+
+    question = sanitize_question(block[: matches[0].start()])
+    if len(question) < 5:
+        return None
+
+    options: dict[str, str] = {}
+    for match in matches:
+        label = match.group(1).lower()
+        option_text = sanitize_answer(re.sub(r"\s*[—-]+>\s*.*$", "", match.group(2), flags=re.DOTALL))
+        option_text = normalize_space(option_text.replace("THIS", ""))
+        if option_text:
+            options[label] = option_text
+
+    if len(options) < 2:
+        return None
+
+    return question, options
+
+
 def parse_main_pdf_pairs(text: str, source: str) -> list[QAPair]:
-    entry_pattern = re.compile(r"(?ms)^\s*(\d+)\.\s*(.+?)(?=^\s*\d+\.\s|\Z)")
-    entries = [(int(m.group(1)), normalize_space(m.group(2))) for m in entry_pattern.finditer(text)]
+    entries = split_numbered_blocks(text)
     if not entries:
         return []
 
@@ -187,6 +222,97 @@ def parse_main_pdf_pairs(text: str, source: str) -> list[QAPair]:
         pairs.append(QAPair(number=number, question=question, answer=answer, source=source))
 
     return pairs
+
+
+def parse_explicit_answer_pairs(text: str, source: str) -> list[QAPair]:
+    pairs: list[QAPair] = []
+
+    for number, block in split_numbered_blocks(text):
+        answer_match = ANSWER_LETTER_RE.search(block)
+        if not answer_match:
+            continue
+
+        parsed = split_mcq_block(block[: answer_match.start()])
+        if not parsed:
+            continue
+
+        question, options = parsed
+        answer_label = answer_match.group(1).lower()
+        answer_label = {"1": "a", "2": "b", "3": "c", "4": "d"}.get(answer_label, answer_label)
+        correct_answer = options.get(answer_label)
+        if not correct_answer:
+            continue
+
+        pairs.append(QAPair(number=number, question=question, answer=correct_answer, source=source))
+
+    return pairs
+
+
+def parse_this_marker_pairs(text: str, source: str) -> list[QAPair]:
+    pairs: list[QAPair] = []
+    number = 0
+    current_question: str | None = None
+    options: list[tuple[str, bool]] = []
+
+    def flush() -> None:
+        nonlocal number, current_question, options
+        if not current_question or not options:
+            current_question = None
+            options = []
+            return
+
+        correct = next((option for option, is_correct in options if is_correct), None)
+        if correct:
+            number += 1
+            pairs.append(
+                QAPair(
+                    number=number,
+                    question=sanitize_question(current_question),
+                    answer=sanitize_answer(correct),
+                    source=source,
+                )
+            )
+        current_question = None
+        options = []
+
+    for raw_line in text.splitlines():
+        line = normalize_space(raw_line.replace("\x00", " "))
+        if not line or line.startswith("08/04/17") or re.fullmatch(r"\d+", line):
+            continue
+        if line.startswith("-"):
+            flush()
+            current_question = line.lstrip("-").strip()
+            continue
+        if line.startswith("•"):
+            option = line.lstrip("•").strip()
+            options.append((option.replace("THIS", "").strip(), "THIS" in option))
+
+    flush()
+    return pairs
+
+
+def dedupe_pairs(qa_pairs: list[QAPair]) -> list[QAPair]:
+    seen: set[tuple[str, int, str, str]] = set()
+    deduped: list[QAPair] = []
+
+    for pair in qa_pairs:
+        key = (pair.source, pair.number, normalize_key(pair.question), normalize_key(pair.answer))
+        if key in seen:
+            continue
+        seen.add(key)
+        deduped.append(pair)
+
+    return deduped
+
+
+def parse_document_pairs(path: Path, text: str) -> list[QAPair]:
+    pairs: list[QAPair] = []
+    if path.name == MAIN_QUESTIONS_FILE:
+        pairs.extend(parse_main_pdf_pairs(text, path.name))
+    pairs.extend(parse_explicit_answer_pairs(text, path.name))
+    if "THIS" in text:
+        pairs.extend(parse_this_marker_pairs(text, path.name))
+    return dedupe_pairs(pairs)
 
 
 def load_documents() -> list[tuple[Path, str]]:
@@ -240,10 +366,10 @@ def build_options(current: QAPair, qa_pairs: list[QAPair], pool_by_topic: dict[s
             if len(distractors) == 3:
                 return
 
-    choose_from_pool([p for p in pool_by_topic.get(current_topic, []) if p.number != current.number])
+    choose_from_pool([p for p in pool_by_topic.get(current_topic, []) if p is not current])
 
     if len(distractors) < 3:
-        choose_from_pool([p for p in qa_pairs if p.number != current.number])
+        choose_from_pool([p for p in qa_pairs if p is not current])
 
     while len(distractors) < 3:
         filler = f"Opción anatómica alternativa {len(distractors) + 1}"
@@ -324,11 +450,12 @@ def create_quiz_json(qa_pairs: list[QAPair]) -> None:
         pool_by_topic.setdefault(topic, []).append(pair)
 
     output = []
-    for pair in qa_pairs:
+    for index, pair in enumerate(qa_pairs, start=1):
         options = build_options(pair, qa_pairs, pool_by_topic, rng)
         output.append(
             {
-                "id": pair.number,
+                "id": index,
+                "number": pair.number,
                 "question": pair.question,
                 "correctAnswer": pair.answer,
                 "options": options,
@@ -424,20 +551,19 @@ def main() -> None:
         return
 
     documents = load_documents()
-    main_doc = next((doc for doc in documents if doc[0].name == MAIN_QUESTIONS_FILE), None)
-    if not main_doc:
-        raise SystemExit(f"Missing {MAIN_QUESTIONS_FILE} in documents directory")
-
-    qa_pairs = parse_main_pdf_pairs(main_doc[1], MAIN_QUESTIONS_FILE)
+    qa_pairs: list[QAPair] = []
+    for path, text in documents:
+        qa_pairs.extend(parse_document_pairs(path, text))
+    qa_pairs = dedupe_pairs(qa_pairs)
     if not qa_pairs:
-        raise SystemExit("No question-answer pairs were found in main.pdf")
+        raise SystemExit("No question-answer pairs were found in the supported documents")
 
     create_database(documents, qa_pairs)
     create_quiz_json(qa_pairs)
     repair_quiz_json()  # Final cleanup pass on the freshly generated JSON
 
     print(f"Loaded {len(documents)} documents")
-    print(f"Stored {len(qa_pairs)} question-answer pairs from {MAIN_QUESTIONS_FILE}")
+    print(f"Stored {len(qa_pairs)} question-answer pairs")
     print(f"Database: {DB_PATH}")
     print(f"Quiz data: {QUESTIONS_JSON_PATH}")
 

@@ -1,355 +1,2140 @@
 [
   {
     "id": 1,
-    "question": "Tipo de articulación trapeciometacarpiana",
-    "correctAnswer": "Selar (silla de montar)",
+    "number": 1,
+    "question": "Plano sagita' por la línea media del individuo separa",
+    "correctAnswer": "Derecha/Izquierda",
     "options": [
-      "Gínglimo",
-      "Trocoide",
-      "Esferoidea (enartrosis)",
-      "Selar (silla de montar)"
+      "Perpendicular a l'eix llarg del segment anatômic en qüestió Perpendicular al eje largo del segmento anatómico en cuestión",
+      "Apófisis xifoides",
+      "Vasos epigastric inferiors Vasos epigástricos inferiores",
+      "Derecha/Izquierda"
     ],
-    "source": "main.pdf"
+    "source": "Anato 2005.pdf"
   },
   {
     "id": 2,
-    "question": "Nervio que pasa por el cuadrilátero de Velpeau",
-    "correctAnswer": "Axilar",
+    "number": 2,
+    "question": "La distribución de las aponeurosis de los músculos que forman la vaina del músculo recto del abdomen en su tercio inferior se dispone del siguiente modo:",
+    "correctAnswer": "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
     "options": [
-      "Frénico",
-      "Cubital",
-      "Axilar",
-      "Mediano"
+      "Peroneo largo",
+      "los músculos glúteos",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
+      "Artèria circumflexa ilíaca profunda. Arteria circunfleja ilíaca profunda"
     ],
-    "source": "main.pdf"
+    "source": "Anato 2005.pdf"
   },
   {
     "id": 3,
-    "question": "Función principal del braquiorradial",
-    "correctAnswer": "Flexión del codo",
+    "number": 3,
+    "question": "La acción de los músculos aductores del miembro inferior se compensa mediante la acción de:",
+    "correctAnswer": "los músculos glúteos",
     "options": [
-      "Deltoides",
-      "Extensión glenohumeral",
-      "Iliopsoas",
-      "Flexión del codo"
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
+      "Flexor curt dels dits Flexor corto de los dedos",
+      "flexión de las falanges proximales y extensión de las falanges medias y distales",
+      "los músculos glúteos"
     ],
-    "source": "main.pdf"
+    "source": "Anato 2005.pdf"
   },
   {
     "id": 4,
-    "question": "Músculo que NO se origina en el epicóndilo medial",
-    "correctAnswer": "Flexor profundo de los dedos",
+    "number": 4,
+    "question": "Una de las siguientes acciones no pertenece al músculo dorsal ancho",
+    "correctAnswer": "Rotador lateral del brazo",
     "options": [
-      "Flexor largo de los dedos",
-      "Flexor cubital del carpo",
-      "Flexor profundo de los dedos",
-      "Supraespinoso"
+      "Potent aductor del braç, rotador intern del brac i extensor del braç Potente Aductor Del brazo, rotador interno del brazo y extensor del brazo",
+      "Se encuentra envuelto por la lámina pretraqueal",
+      "Rotador lateral del brazo",
+      "Rotador medial del brazo"
     ],
-    "source": "main.pdf"
+    "source": "Anato 2005.pdf"
   },
   {
     "id": 5,
-    "question": "Nervio safeno",
-    "correctAnswer": "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
+    "number": 5,
+    "question": "La principal acción de los músculos interóseos dorsales de la mano es:",
+    "correctAnswer": "flexión de las falanges proximales y extensión de las falanges medias y distales",
     "options": [
-      "Rama femoral del genitofemoral",
-      "Rama profunda del radial",
-      "Femoral",
-      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor"
+      "los músculos glúteos",
+      "Flexió lateral del tronc cap a la dreta. Flexión lateral del tronco hacia la derecha",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
+      "flexión de las falanges proximales y extensión de las falanges medias y distales"
     ],
-    "source": "main.pdf"
+    "source": "Anato 2005.pdf"
   },
   {
     "id": 6,
-    "question": "Articulación sinovial de un eje",
-    "correctAnswer": "Gínglimo (tróclea)",
+    "number": 6,
+    "question": "Uno de estos músculos es infrahioideo",
+    "correctAnswer": "omohioideo",
     "options": [
-      "Radiocarpiana",
-      "Selar (silla de montar)",
-      "Gínglimo (tróclea)",
-      "Esferoidea (enartrosis)"
+      "Semimembranoso",
+      "los músculos glúteos",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
+      "omohioideo"
     ],
-    "source": "main.pdf"
+    "source": "Anato 2005.pdf"
   },
   {
     "id": 7,
-    "question": "Articulación con varios ejes",
-    "correctAnswer": "Radiocarpiana",
+    "number": 7,
+    "question": "El plexo sacro",
+    "correctAnswer": "Ramos anteriores de L5-S3",
+    "options": [
+      "Derecha/Izquierda",
+      "Raíces",
+      "Ramos anteriores de L5-S3",
+      "Apófisis xifoides"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 8,
+    "number": 8,
+    "question": "Cual de las siguientes afirmaciones es cierta",
+    "correctAnswer": "Por el centro frénico (tendinoso) del diafragma pasa la vena cava inferior",
+    "options": [
+      "Vena femoral",
+      "Los ligamentos alares se extienden desde el diente del axis hasta el foramen magno",
+      "Por el centro frénico (tendinoso) del diafragma pasa la vena cava inferior",
+      "Subclavia"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 9,
+    "number": 10,
+    "question": "Uno de los músculos NO pertenece a la pata de ganso superficial",
+    "correctAnswer": "Semimembranoso",
+    "options": [
+      "Semimembranoso",
+      "Peroneo largo",
+      "Semimembranós",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 10,
+    "number": 12,
+    "question": "Las suturas de los huesos de la cabeza:",
+    "correctAnswer": "Son un ejemplo de articulación de tipo fibroso",
+    "options": [
+      "Els principals elements estabilitzadors de l'articulació glenohumeral es localitzen en la regió posterior de la câpsula articular Los principales elementos estabilizadores de la articulación glenohumeral se localizan en la región posterior de la cápsula articular",
+      "Trocoide",
+      "Son un ejemplo de articulación de tipo fibroso",
+      "Se articula la cabeza del fémur con la carilla semilunar"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 11,
+    "number": 13,
+    "question": "Los huesos cortos se caracterizan por",
+    "correctAnswer": "Tener un importante papel hematopoíético",
+    "options": [
+      "Son un ejemplo de articulación de tipo fibroso",
+      "El teixit ossi esponjos o trabecular és molt abundant en la diafisi dels ossos llargs El tejido ósco esponjoso o trabecular es muy abundante en la diáfisis de los huesos largos",
+      "M . Esternotiroidal M. Esternotiroideo",
+      "Tener un importante papel hematopoíético"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 12,
+    "number": 14,
+    "question": "Para anestesiar a un paciente a nivel de la médula espinal, atravesamos con la aguja por la parte dorsal de la espalda. Qué ligamento atravesaremos?",
+    "correctAnswer": "El ligamento amarillo",
+    "options": [
+      "Bifurcat",
+      "Ligamento de la cabeza del fémur",
+      "Ligamento cruzado posterior",
+      "El ligamento amarillo"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 13,
+    "number": 15,
+    "question": "Cual de las siguientes afirmaciones es cierta",
+    "correctAnswer": "Los ligamentos alares se extienden desde el diente del axis hasta el foramen magno",
+    "options": [
+      "El ligament metacarpià transvers profund uneix les bases dels quatre últims metacarpians El ligamento metacarpiano transverso profundo une las bases de los cuatro últimos metacarpianos",
+      "Membrana tectòria Membrana tectoria",
+      "Los ligamentos alares se extienden desde el diente del axis hasta el foramen magno",
+      "El lligament quadrat s'inserta en l'epicòndil lateral de l'húmer El ligamento cuadrado se inserta en el epicóndilo lateral del húmero"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 14,
+    "number": 16,
+    "question": "La articulación radiocubital proximal es del tipo",
+    "correctAnswer": "Trocoide",
+    "options": [
+      "Gínglimo",
+      "Esferoidea (enartrosis)",
+      "Selar (silla de montar)",
+      "Trocoide"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 15,
+    "number": 17,
+    "question": "El nervio obturador recoge la sensibilidad de:",
+    "correctAnswer": "Solo de la cara medial del muslo",
+    "options": [
+      "Solo de la cara medial del muslo",
+      "Axilar",
+      "Cubital",
+      "Mediano"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 16,
+    "number": 18,
+    "question": "Qué ligamento se une a la cara interna del cóndilo medial del fémur?",
+    "correctAnswer": "Ligamento cruzado posterior",
+    "options": [
+      "Fosa supravesical delimitada lateralmente por",
+      "Ligamento cruzado posterior",
+      "Anular del radio",
+      "El ligamento amarillo"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 17,
+    "number": 19,
+    "question": "En relación al menisco media! de la rodilla, cual de las siguientes afirmaciones no es cierta?",
+    "correctAnswer": "Está en relación con el músculo poplíteo",
+    "options": [
+      "Se encuentra envuelto por la lámina pretraqueal",
+      "Se sitúa entre TOS MÚSCULOS superficiales y los profundos de la pierna",
+      "Rotador lateral del brazo",
+      "Está en relación con el músculo poplíteo"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 18,
+    "number": 20,
+    "question": "La parálisis del nervio femoral a nivel inguinal que movimiento impedirá?",
+    "correctAnswer": "Extensión de la rodilla",
+    "options": [
+      "Vena femoral, arteria femoral, nervio femoral",
+      "Mediano",
+      "Extensión de la rodilla",
+      "Radial"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 19,
+    "number": 23,
+    "question": "Que afirmación es cierta en relación con la arteria tibia! posterior?",
+    "correctAnswer": "Se sitúa entre TOS MÚSCULOS superficiales y los profundos de la pierna",
+    "options": [
+      "En el canal del pols l'artêria radial es localitza entre els tendons dels músculs braquioradial i extensor radial llarg del carp En el canal del pulso la arteria radial se localiza entre los tendones de los músculos braquiorradial y extensor radial largo del carpo",
+      "Infraespinoso",
+      "Está en relación con el músculo poplíteo",
+      "Se sitúa entre TOS MÚSCULOS superficiales y los profundos de la pierna"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 20,
+    "number": 24,
+    "question": "Cual de las siguientes afirmaciones es falsa en relación al músculo esternocleidomastoideo",
+    "correctAnswer": "Se encuentra envuelto por la lámina pretraqueal",
+    "options": [
+      "Se encuentra envuelto por la lámina pretraqueal",
+      "Está en relación con el músculo poplíteo",
+      "Rotador lateral del brazo",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 21,
+    "number": 25,
+    "question": "La vaina carotidia contiene:",
+    "correctAnswer": "Arteria carótida común, vena yugular interna, nervio vago",
+    "options": [
+      "Arteria carótida común, vena yugular interna, nervio vago",
+      "El nervio cutaneo femoral lateral sale por la escotadura ciática menor",
+      "Està subdividit en dos subcompartiments i inclou al nervi media, tendons flexors superficials i profunds i tendo del flexor llarg del polze en un subcompartiment i el tendó del flexor radial del carp en un altre subcompartiment Está subdividido en dos subcompartimentos e incluye al nervio mediano, tendones flexores superficiales y profundos y el tendón del flexor largo del pulgar en un subcompartimento y el tendón del flexor radial del carpo en otro subcompartimento",
+      "Vena femoral, arteria femoral, nervio femoral"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 22,
+    "number": 26,
+    "question": "El denominado triángulo lumbar (de Petit) se caracteriza por la:",
+    "correctAnswer": "Ausencia del músculo oblicuo externo del abdomen",
+    "options": [
+      "Ausencia del músculo oblicuo externo del abdomen",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
+      "La seva relació amb la vora inferior del múscul pectoral major Surelación con el borde inferior del músculo pectoral mayor",
+      "Músculo oblicuo externo"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 23,
+    "number": 27,
+    "question": "Cual de las siguientes ordenaciones de elementos que pasan por debajo del ligamento inguinal, es correcta en sentido mediolaterla?",
+    "correctAnswer": "Vena femoral, arteria femoral, nervio femoral",
+    "options": [
+      "Extensión de la rodilla",
+      "Mediano",
+      "Nervio femoral",
+      "Vena femoral, arteria femoral, nervio femoral"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 24,
+    "number": 27,
+    "question": "Respecto a la articulación de la cadera, cual de las siguientes aseveraciones es cierta?",
+    "correctAnswer": "Se articula la cabeza del fémur con la carilla semilunar",
+    "options": [
+      "Son un ejemplo de articulación de tipo fibroso",
+      "Trocoide",
+      "Se articula la cabeza del fémur con la carilla semilunar",
+      "Sinovial compleja con disco"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 25,
+    "number": 28,
+    "question": "Qué músculo atraviesa el muslo de superior y lateral a inferior y media!?",
+    "correctAnswer": "Sartorio",
+    "options": [
+      "A .torácica lateral",
+      "Sartorio",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
+      "Pterigoïdal lateral Pterigoideo lateral"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 26,
+    "number": 29,
+    "question": "La arteria dorsal del pie es una continuación de:",
+    "correctAnswer": "Arteria tibi",
+    "options": [
+      "A. Tiroidal inferior",
+      "Radial",
+      "Arteria tibi",
+      "Tiroidea inferior"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 27,
+    "number": 32,
+    "question": "El comportamiento mecánico del músculo redondo mayor es:",
+    "correctAnswer": "Rotador medial del brazo",
+    "options": [
+      "Oponente del pulgar",
+      "Rotador lateral del brazo",
+      "Potent aductor del braç, rotador intern del brac i extensor del braç Potente Aductor Del brazo, rotador interno del brazo y extensor del brazo",
+      "Rotador medial del brazo"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 28,
+    "number": 36,
+    "question": "Paciente acude a consulto tras recibir un golpe en el antebrazo y no puede realizar el movimiento de extensión de la muñeca. Que nervio tendrá afectado?",
+    "correctAnswer": "Radial",
+    "options": [
+      "Extensión de la rodilla",
+      "Rama profunda del radial",
+      "Radial",
+      "Cubital"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 29,
+    "number": 38,
+    "question": "Por el conducto inguinal NO pasa:",
+    "correctAnswer": "Arteria epigástrica inferior",
+    "options": [
+      "A. Tiroidal inferior",
+      "Radial",
+      "Arteria epigástrica inferior",
+      "Arteria tibi"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 30,
+    "number": 39,
+    "question": "La parte más inferior del esternón se llama",
+    "correctAnswer": "Apófisis xifoides",
+    "options": [
+      "Apófisis xifoides",
+      "Esternohioideo",
+      "Aorta",
+      "Derecha/Izquierda"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 31,
+    "number": 40,
+    "question": "El ligamento inguinal está formado por:",
+    "correctAnswer": "Músculo oblicuo externo",
+    "options": [
+      "M . Esternotiroidal M. Esternotiroideo",
+      "Músculo oblicuo externo",
+      "Flexor curt dels dits Flexor corto de los dedos",
+      "Ausencia del músculo oblicuo externo del abdomen"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 32,
+    "number": 41,
+    "question": "Que afirmación no es cierta?",
+    "correctAnswer": "El nervio cutaneo femoral lateral sale por la escotadura ciática menor",
+    "options": [
+      "El nervio cutaneo femoral lateral sale por la escotadura ciática menor",
+      "Extensión de la rodilla",
+      "Nervio femoral",
+      "Vena femoral, arteria femoral, nervio femoral"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 33,
+    "number": 43,
+    "question": "Que músculo no pertenece al compartimiento anterior de los músculos de la pierna?",
+    "correctAnswer": "Peroneo largo",
+    "options": [
+      "Peroneo largo",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
+      "Frènic Frénico",
+      "Semimembranoso"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 34,
+    "number": 44,
+    "question": "Que músculo constituye la pared medial de la cavidad de la axila?",
+    "correctAnswer": "Serrato anterior",
+    "options": [
+      "Flexor profundo de los dedos",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
+      "Serrato anterior",
+      "Infraespinoso"
+    ],
+    "source": "Anato 2005.pdf"
+  },
+  {
+    "id": 35,
+    "number": 2,
+    "question": "Els límits del canal bicipital intern son Los Límites del canal bicipital interno son",
+    "correctAnswer": "Tendó del biceps, pronador rodó i al fons el múscul braquial Tendón Del Bíceps, pronador redondo y en el fondo el músculo braquial",
+    "options": [
+      "Flexió lateral del tronc cap a la dreta. Flexión lateral del tronco hacia la derecha",
+      "Pectoral major Pectoral mayor",
+      "Tendó del biceps, pronador rodó i al fons el múscul braquial Tendón Del Bíceps, pronador redondo y en el fondo el músculo braquial",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 36,
+    "number": 3,
+    "question": "El limit entre l'artèria axilar i braquial ve determinat per El límite entre la arteria axilar y braquial viene determinado por",
+    "correctAnswer": "La seva relació amb la vora inferior del múscul pectoral major Surelación con el borde inferior del músculo pectoral mayor",
+    "options": [
+      "A .torácica lateral",
+      "Ausencia del músculo oblicuo externo del abdomen",
+      "Músculo oblicuo externo",
+      "La seva relació amb la vora inferior del múscul pectoral major Surelación con el borde inferior del músculo pectoral mayor"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 37,
+    "number": 4,
+    "question": "Quin dels seguënts nervis porta fibres d’L2, L3 i L4? ¿Cúal de los siguientes nervios lleva fibras de L2, L3 y L4?",
+    "correctAnswer": "Obturador",
+    "options": [
+      "Peroneal superficial Peroneo superficial",
+      "Obturador",
+      "M. elevador de les costelles M. elevador de las costillas",
+      "Dorsal ample Dorsal ancho"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 38,
+    "number": 5,
+    "question": "Quina artéria NO és branca de l’A.Caròtida externa? ¿Qué arteria no es rama de la A.Carótida externa?",
+    "correctAnswer": "A. Tiroidal inferior",
+    "options": [
+      "A. Tiroidal inferior",
+      "Circumflexa ilíaca profunda",
+      "Tiroidea inferior",
+      "Torácica lateral"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 39,
+    "number": 6,
+    "question": "El nervi radial innerva tots els següents músculs excepte El nervio radial inerva a todos los siguientes músculos excepto",
+    "correctAnswer": "Dorsal ample Dorsal ancho",
+    "options": [
+      "M. elevador de les costelles M. elevador de las costillas",
+      "Dorsal ample Dorsal ancho",
+      "Gluti superior",
+      "Peroneal superficial Peroneo superficial"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 40,
+    "number": 7,
+    "question": "L'acció del múscul dorsal ample és La acción del músculo dorsal ancho es",
+    "correctAnswer": "Potent aductor del braç, rotador intern del brac i extensor del braç Potente Aductor Del brazo, rotador interno del brazo y extensor del brazo",
+    "options": [
+      "Tubercle supraglenoidal de l'escàpula Tubérculo supraglenoideo de la escápula",
+      "Rotador lateral del brazo",
+      "Rotador medial del brazo",
+      "Potent aductor del braç, rotador intern del brac i extensor del braç Potente Aductor Del brazo, rotador interno del brazo y extensor del brazo"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 41,
+    "number": 8,
+    "question": "Quin dels músculs següents presenta una posició més profunda a l'avantbraç? ¿Cuál de los músculos siguientes presenta una posición más profunda en el antebrazo?",
+    "correctAnswer": "Pronador quadrat Pronador cuadrado",
+    "options": [
+      "Pectoral major Pectoral mayor",
+      "M . Esternotiroidal M. Esternotiroideo",
+      "Pronador quadrat Pronador cuadrado",
+      "Semimembranós"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 42,
+    "number": 9,
+    "question": "On s’origina el cap Ilarg del múscul bíceps braquial? ¿Dónde se origina la cabeza larga del músculo bíceps braquial?",
+    "correctAnswer": "Tubercle supraglenoidal de l'escàpula Tubérculo supraglenoideo de la escápula",
+    "options": [
+      "A .torácica lateral",
+      "Potent aductor del braç, rotador intern del brac i extensor del braç Potente Aductor Del brazo, rotador interno del brazo y extensor del brazo",
+      "Tubercle supraglenoidal de l'escàpula Tubérculo supraglenoideo de la escápula",
+      "Artèria circumflexa ilíaca profunda. Arteria circunfleja ilíaca profunda"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 43,
+    "number": 10,
+    "question": "Un tall axial es refereix a una secció en el pla Un corte axial se refiere a una sección en el plano",
+    "correctAnswer": "Perpendicular a l'eix llarg del segment anatômic en qüestió Perpendicular al eje largo del segmento anatómico en cuestión",
+    "options": [
+      "Trapeci",
+      "Sagital",
+      "Derecha/Izquierda",
+      "Perpendicular a l'eix llarg del segment anatômic en qüestió Perpendicular al eje largo del segmento anatómico en cuestión"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 44,
+    "number": 11,
+    "question": "Quin dels següents músculs està innervat pel plexe cervical? ¿Cuál de los siguientes músculos está inervado por el plexo cervical?",
+    "correctAnswer": "M . Esternotiroidal M. Esternotiroideo",
+    "options": [
+      "Semimembranós",
+      "M . Esternotiroidal M. Esternotiroideo",
+      "Pronador quadrat Pronador cuadrado",
+      "Flexor curt dels dits Flexor corto de los dedos"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 45,
+    "number": 12,
+    "question": "Quina De les següents regions està innervada pel N.safé? ¿Cuál de las siguientes regiones está inervada por el N.safeno?",
+    "correctAnswer": "Cara Posteromedial de la cama Cara posteromedial de lapierna",
+    "options": [
+      "Els tendons escaracteritzen per la seva elevada elasticitat Los Tendones Se Caracterizan por su elevada elasticidad",
+      "Cara Posteromedial de la cama Cara posteromedial de lapierna",
+      "Segundo dorsal",
+      "Segundo palmar"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 46,
+    "number": 13,
+    "question": "Quina Branca L'artèria axillar neix per darrere del múscul pectoral menor? ¿Qué rama de arteria axilar nace por detrás del músculo pectoral menor?",
+    "correctAnswer": "A .torácica lateral",
+    "options": [
+      "Segon dorsal Segundo dorsal",
+      "A .torácica lateral",
+      "Pterigoïdal lateral Pterigoideo lateral",
+      "La seva relació amb la vora inferior del múscul pectoral major Surelación con el borde inferior del músculo pectoral mayor"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 47,
+    "number": 14,
+    "question": "Quin dels següents músculs NO participa en la constitució de la pota d'oca superficial? ¿Cuál De Los siguientes músculos NO participa en la constitución de la pata de ganso superficial?",
+    "correctAnswer": "Semimembranós",
+    "options": [
+      "Pectoral major Pectoral mayor",
+      "Pronador quadrat Pronador cuadrado",
+      "M . Esternotiroidal M. Esternotiroideo",
+      "Semimembranós"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 48,
+    "number": 15,
+    "question": "Quan ens referim a la corba supinadora, de quin element ossi estem parlant? Cuando nos referimos a la curva supinadora, ¿de qué elemento óseo estamos hablando?",
+    "correctAnswer": "Diafisi del radi Diáfisisdel radio",
+    "options": [
+      "Sagital",
+      "Solc del nervi radial",
+      "Diafisi del radi Diáfisisdel radio",
+      "Somatopleura"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 49,
+    "number": 17,
+    "question": "De quina estructura embrionária deriva l'esquelet de l'extremitat superior? De qué estructura embrionaria deriva esqueleto de la extremidad superior?",
+    "correctAnswer": "Somatopleura",
+    "options": [
+      "N. Vague N. Vago",
+      "Somatopleura",
+      "Diafisi del radi Diáfisisdel radio",
+      "Vasos epigastric inferiors Vasos epigástricos inferiores"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 50,
+    "number": 18,
+    "question": "Quin tipus d'articulació sinovial presenta un sol eix de moviment? ¿Qué tipo de articulación sinovial presenta un solo eje de movimiento?",
+    "correctAnswer": "Trocoide",
     "options": [
       "Gínglimo (tróclea)",
       "Selar (silla de montar)",
-      "Radiocarpiana",
+      "Esferoidea (enartrosis)",
+      "Trocoide"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 51,
+    "number": 19,
+    "question": "Senyalar la resposta incorrecta Señalar la respuesta incorrecta",
+    "correctAnswer": "Els tendons escaracteritzen per la seva elevada elasticitat Los Tendones Se Caracterizan por su elevada elasticidad",
+    "options": [
+      "Segundo dorsal",
+      "Cara Posteromedial de la cama Cara posteromedial de lapierna",
+      "Segundo palmar",
+      "Els tendons escaracteritzen per la seva elevada elasticitat Los Tendones Se Caracterizan por su elevada elasticidad"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 52,
+    "number": 20,
+    "question": "Senyala l'estructura que NO es troba dins la beina del múscul recte de abdomen. Señala la estructura que NO se encuentra dentro de la vaina del músculo recto del abdomen",
+    "correctAnswer": "Artèria circumflexa ilíaca profunda. Arteria circunfleja ilíaca profunda",
+    "options": [
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
+      "Tubercle supraglenoidal de l'escàpula Tubérculo supraglenoideo de la escápula",
+      "Potent aductor del braç, rotador intern del brac i extensor del braç Potente Aductor Del brazo, rotador interno del brazo y extensor del brazo",
+      "Artèria circumflexa ilíaca profunda. Arteria circunfleja ilíaca profunda"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 53,
+    "number": 21,
+    "question": "Quin dels següents nervis innerva al cara dorsal medial del 3erdit del peu? ¿Cuál de los siguientes nervios inervan la cara dorsal medial del 3er dedo del pie?",
+    "correctAnswer": "Peroneal superficial Peroneo superficial",
+    "options": [
+      "Peroneal superficial Peroneo superficial",
+      "Dorsal ample Dorsal ancho",
+      "Obturador",
+      "M. elevador de les costelles M. elevador de las costillas"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 54,
+    "number": 22,
+    "question": "Senyalar la resposta incorrecta Señalar la respuesta incorrecta",
+    "correctAnswer": "Els principals elements estabilitzadors de l'articulació glenohumeral es localitzen en la regió posterior de la câpsula articular Los principales elementos estabilizadores de la articulación glenohumeral se localizan en la región posterior de la cápsula articular",
+    "options": [
+      "Els principals elements estabilitzadors de l'articulació glenohumeral es localitzen en la regió posterior de la câpsula articular Los principales elementos estabilizadores de la articulación glenohumeral se localizan en la región posterior de la cápsula articular",
+      "Disco articular",
+      "Trocoide",
+      "Son un ejemplo de articulación de tipo fibroso"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 55,
+    "number": 23,
+    "question": "Quina de les següents estructures és la responsable de la formació del plec umbilical lateral? ¿Cuál de las siguientes estructuras es la responsable de la formación del pliegue umbilical lateral?",
+    "correctAnswer": "Vasos epigastric inferiors Vasos epigástricos inferiores",
+    "options": [
+      "Artèria braquial profunda",
+      "Vasos epigastric inferiors Vasos epigástricos inferiores",
+      "M. Oblic extern de l'abdomen M. Oblicuo externo del abdomen",
+      "N. Vague N. Vago"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 56,
+    "number": 24,
+    "question": "El foramen oval de la cápsula anterior de l'espatlla es troba entre El foramen oval de la cápsula anterior del hombro se localiza entre",
+    "correctAnswer": "Entre el ligament glenohumeral superior i mitjà Entre el ligamento glenohumeral superior y medio",
+    "options": [
+      "Entre el ligament glenohumeral superior i mitjà Entre el ligamento glenohumeral superior y medio",
+      "El lligament quadrat s'inserta en l'epicòndil lateral de l'húmer El ligamento cuadrado se inserta en el epicóndilo lateral del húmero",
+      "Membrana tectòria Membrana tectoria",
+      "Ligamento cruzado posterior"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 57,
+    "number": 25,
+    "question": "Senyalar la resposta incorrecta respecte a l'articulació del colze Señalar la respuesta incorrecta respecto a la articulación del codo",
+    "correctAnswer": "El lligament quadrat s'inserta en l'epicòndil lateral de l'húmer El ligamento cuadrado se inserta en el epicóndilo lateral del húmero",
+    "options": [
+      "El lligament quadrat s'inserta en l'epicòndil lateral de l'húmer El ligamento cuadrado se inserta en el epicóndilo lateral del húmero",
+      "El ligament metacarpià transvers profund uneix les bases dels quatre últims metacarpians El ligamento metacarpiano transverso profundo une las bases de los cuatro últimos metacarpianos",
+      "El lligament reflex es troba en l’anell inguinal profund El ligamento reflejo se encuentra en el anillo inguinal profundo",
+      "Anular del radio"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 58,
+    "number": 26,
+    "question": "El túnel del carp El túnel del carpo",
+    "correctAnswer": "Està subdividit en dos subcompartiments i inclou al nervi media, tendons flexors superficials i profunds i tendo del flexor llarg del polze en un subcompartiment i el tendó del flexor radial del carp en un altre subcompartiment Está subdividido en dos subcompartimentos e incluye al nervio mediano, tendones flexores superficiales y profundos y el tendón del flexor largo del pulgar en un subcompartimento y el tendón del flexor radial del carpo en otro subcompartimento",
+    "options": [
+      "Vena femoral, arteria femoral, nervio femoral",
+      "El nervi supraescapular neix del tronc inferior El nervio supraescapular nace del tronco inferior",
+      "Mediano",
+      "Està subdividit en dos subcompartiments i inclou al nervi media, tendons flexors superficials i profunds i tendo del flexor llarg del polze en un subcompartiment i el tendó del flexor radial del carp en un altre subcompartiment Está subdividido en dos subcompartimentos e incluye al nervio mediano, tendones flexores superficiales y profundos y el tendón del flexor largo del pulgar en un subcompartimento y el tendón del flexor radial del carpo en otro subcompartimento"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 59,
+    "number": 27,
+    "question": "Quina de les següents estructures travessa el diafragma per un orifici muscular contràctil? ¿Cuál de las siguientes estructuras atraviesa el diafragma por un orificio muscular contáctil?",
+    "correctAnswer": "N. Vague N. Vago",
+    "options": [
+      "M. Oblic extern de l'abdomen M. Oblicuo externo del abdomen",
+      "N.gluti superior",
+      "Vasos epigastric inferiors Vasos epigástricos inferiores",
+      "N. Vague N. Vago"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 60,
+    "number": 28,
+    "question": "De les segiens estructures, quina és un del limts del tiangle lumbar? De las siguientes estructuras, ¿euales uno de los imites del tiángulo lumbar?",
+    "correctAnswer": "M. Oblic extern de l'abdomen M. Oblicuo externo del abdomen",
+    "options": [
+      "Artèria braquial profunda",
+      "M. Oblic extern de l'abdomen M. Oblicuo externo del abdomen",
+      "N. Vague N. Vago",
+      "Vasos epigastric inferiors Vasos epigástricos inferiores"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 61,
+    "number": 29,
+    "question": "Quin dels següents elements NO surt pel forat infrapiriforme? ¿Cuál de los siguientes elementos NO sale por el agujero infrapiriforme?",
+    "correctAnswer": "N.gluti superior",
+    "options": [
+      "N. Vague N. Vago",
+      "Deltoides",
+      "Solc del nervi radial",
+      "N.gluti superior"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 62,
+    "number": 30,
+    "question": "Senyalar la resposta incorrecta Señalar la respuesta incorrecta",
+    "correctAnswer": "El ligament metacarpià transvers profund uneix les bases dels quatre últims metacarpians El ligamento metacarpiano transverso profundo une las bases de los cuatro últimos metacarpianos",
+    "options": [
+      "Entre el ligament glenohumeral superior i mitjà Entre el ligamento glenohumeral superior y medio",
+      "El lligament reflex es troba en l’anell inguinal profund El ligamento reflejo se encuentra en el anillo inguinal profundo",
+      "El ligament metacarpià transvers profund uneix les bases dels quatre últims metacarpians El ligamento metacarpiano transverso profundo une las bases de los cuatro últimos metacarpianos",
+      "El lligament quadrat s'inserta en l'epicòndil lateral de l'húmer El ligamento cuadrado se inserta en el epicóndilo lateral del húmero"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 63,
+    "number": 31,
+    "question": "Quin múscul mastegador s'insereix en el coll de la mandíbula? ¿Qué músculo masticador se inserta en el cuello de la mandíbula?",
+    "correctAnswer": "Pterigoïdal lateral Pterigoideo lateral",
+    "options": [
+      "Segon dorsal Segundo dorsal",
+      "A .torácica lateral",
+      "Pterigoïdal lateral Pterigoideo lateral",
+      "Pterigoideo lateral"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 64,
+    "number": 32,
+    "question": "Quin múscul no es troba afectat en una compressió del nervi medià en el hiat del pronador rodó? ¿Qué músculo no se encuentra afectado en una compresión del nervio mediano en el hiato del pronador redondo?",
+    "correctAnswer": "Braquioradial Braquiorradial",
+    "options": [
+      "Braquioradial Braquiorradial",
+      "Segon lumbrical Segundo lumbrical",
+      "Mediano",
+      "Gluti superior"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 65,
+    "number": 33,
+    "question": "Quin múscul interossi s'insereix en el costat radial de la base de la falange proximal del tercer dit? ¿Qué músculo interóseo se inserta en el lado radial de la base de la falange proximal del tercer dedo?",
+    "correctAnswer": "Segon dorsal Segundo dorsal",
+    "options": [
+      "Potent aductor del braç, rotador intern del brac i extensor del braç Potente Aductor Del brazo, rotador interno del brazo y extensor del brazo",
+      "Segon dorsal Segundo dorsal",
+      "A .torácica lateral",
+      "Pterigoïdal lateral Pterigoideo lateral"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 66,
+    "number": 34,
+    "question": "Senyalar la resposta incorrecta Señalar la respuesta incorrecta",
+    "correctAnswer": "El teixit ossi esponjos o trabecular és molt abundant en la diafisi dels ossos llargs El tejido ósco esponjoso o trabecular es muy abundante en la diáfisis de los huesos largos",
+    "options": [
+      "El ligament metacarpià transvers profund uneix les bases dels quatre últims metacarpians El ligamento metacarpiano transverso profundo une las bases de los cuatro últimos metacarpianos",
+      "Tener un importante papel hematopoíético",
+      "El teixit ossi esponjos o trabecular és molt abundant en la diafisi dels ossos llargs El tejido ósco esponjoso o trabecular es muy abundante en la diáfisis de los huesos largos",
+      "En el canal del pols l'artêria radial es localitza entre els tendons dels músculs braquioradial i extensor radial llarg del carp En el canal del pulso la arteria radial se localiza entre los tendones de los músculos braquiorradial y extensor radial largo del carpo"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 67,
+    "number": 35,
+    "question": "Quina de les següents artèries NO és branca de lA ilíaca interna? ¿Cuál de las siguientes arterias NO es rama de la A.iliaca interna?",
+    "correctAnswer": "Circumflexa ilíaca profunda",
+    "options": [
+      "Descendent del genoll",
+      "A. Tiroidal inferior",
+      "Circumflexa ilíaca profunda",
+      "Tiroidea inferior"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 68,
+    "number": 36,
+    "question": "Quin dels músculs següents és rotador medial o intern de l'articulació glemoli ¿Cuál de los músculos siguientes es rotador medial o interno de la articulación",
+    "correctAnswer": "Pectoral major Pectoral mayor",
+    "options": [
+      "Semimembranós",
+      "Pronador quadrat Pronador cuadrado",
+      "M . Esternotiroidal M. Esternotiroideo",
+      "Pectoral major Pectoral mayor"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 69,
+    "number": 37,
+    "question": "Senvala la resposta incorrecta. Señala la respuesta incorrecta",
+    "correctAnswer": "Les artèries intercostals posteriors deriven de l'aorta ascendent i l'artèria intercostal suprema. Las arterias intercostales posteriores derivan de la aorta ascendente y la arteria intercostal suprema",
+    "options": [
+      "Les artèries intercostals posteriors deriven de l'aorta ascendent i l'artèria intercostal suprema. Las arterias intercostales posteriores derivan de la aorta ascendente y la arteria intercostal suprema",
+      "A. Tiroidal inferior",
+      "Arteria tibi",
+      "Arteria epigástrica inferior"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 70,
+    "number": 38,
+    "question": "Quin múscul NO està innervat pel nervi cubital? ¿Qué músculo NO está inervado por el nervio cubital?",
+    "correctAnswer": "Segon lumbrical Segundo lumbrical",
+    "options": [
+      "Braquioradial Braquiorradial",
+      "Segon lumbrical Segundo lumbrical",
+      "M. elevador de les costelles M. elevador de las costillas",
+      "Gluti superior"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 71,
+    "number": 39,
+    "question": "Senyalar la resposta incorrecta Señalar la respuesta incorrecta",
+    "correctAnswer": "En el canal del pols l'artêria radial es localitza entre els tendons dels músculs braquioradial i extensor radial llarg del carp En el canal del pulso la arteria radial se localiza entre los tendones de los músculos braquiorradial y extensor radial largo del carpo",
+    "options": [
+      "Artèria circumflexa ilíaca profunda. Arteria circunfleja ilíaca profunda",
+      "Se sitúa entre TOS MÚSCULOS superficiales y los profundos de la pierna",
+      "los músculos glúteos",
+      "En el canal del pols l'artêria radial es localitza entre els tendons dels músculs braquioradial i extensor radial llarg del carp En el canal del pulso la arteria radial se localiza entre los tendones de los músculos braquiorradial y extensor radial largo del carpo"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 72,
+    "number": 40,
+    "question": "Quin moviment és consequència de la contracció simultânia dels músculs oblic intern i extern drets? ¿Qué movimento es consecuencia de la contracción simultánea de los músculos oblicuo interno y externo derechos?",
+    "correctAnswer": "Flexió lateral del tronc cap a la dreta. Flexión lateral del tronco hacia la derecha",
+    "options": [
+      "Pectoral major Pectoral mayor",
+      "M . Esternotiroidal M. Esternotiroideo",
+      "Flexió lateral del tronc cap a la dreta. Flexión lateral del tronco hacia la derecha",
+      "Pronador quadrat Pronador cuadrado"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 73,
+    "number": 41,
+    "question": "Senyalar la resposta incorrecta respecte el plexe braquial: Señalar l arespuesta incorrecta respeto al plexo braquial:",
+    "correctAnswer": "El nervi supraescapular neix del tronc inferior El nervio supraescapular nace del tronco inferior",
+    "options": [
+      "Està subdividit en dos subcompartiments i inclou al nervi media, tendons flexors superficials i profunds i tendo del flexor llarg del polze en un subcompartiment i el tendó del flexor radial del carp en un altre subcompartiment Está subdividido en dos subcompartimentos e incluye al nervio mediano, tendones flexores superficiales y profundos y el tendón del flexor largo del pulgar en un subcompartimento y el tendón del flexor radial del carpo en otro subcompartimento",
+      "Solo de la cara medial del muslo",
+      "El nervi supraescapular neix del tronc inferior El nervio supraescapular nace del tronco inferior",
+      "Surco del nervio radial"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 74,
+    "number": 42,
+    "question": "Quin dels següents lligaments NO forma part dels lligaments de reforç del turmell? ¿Cuál de los ligamentos NO forma parte de los ligamentos de refuerzo del tobillo?",
+    "correctAnswer": "Bifurcat",
+    "options": [
+      "El ligamento amarillo",
+      "Bifurcat",
+      "Ligamento cruzado posterior",
+      "Membrana tectòria Membrana tectoria"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 75,
+    "number": 43,
+    "question": "Dels següents lligaments, quin es troba més a prop del canal vertebral? De los siguientes ligamentos, cuál se encuentra más cerca del canal vertebral?",
+    "correctAnswer": "Membrana tectòria Membrana tectoria",
+    "options": [
+      "Los ligamentos alares se extienden desde el diente del axis hasta el foramen magno",
+      "Membrana tectòria Membrana tectoria",
+      "Bifurcat",
+      "Entre el ligament glenohumeral superior i mitjà Entre el ligamento glenohumeral superior y medio"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 76,
+    "number": 44,
+    "question": "Quin nervi acompanya la V.safena menor en el seu trajecte? ¿Qué nervio acompaña a la V.safena menor en su trayecto",
+    "correctAnswer": "Sural",
+    "options": [
+      "Braquioradial Braquiorradial",
+      "Segon lumbrical Segundo lumbrical",
+      "Gluti superior",
+      "Sural"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 77,
+    "number": 45,
+    "question": "Quin dels següents músculs NO està innervat pels nervis intercostals? ¿Cuál de los siguientes músculos NO está inervado por los nervios intercostales?",
+    "correctAnswer": "M. elevador de les costelles M. elevador de las costillas",
+    "options": [
+      "Peroneal superficial Peroneo superficial",
+      "Dorsal ample Dorsal ancho",
+      "Obturador",
+      "M. elevador de les costelles M. elevador de las costillas"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 78,
+    "number": 46,
+    "question": "Senyala la resposta incorrecta sobre el conducte inguinal: Señala la respuesta incorrecta sobre el conducto inguinal:",
+    "correctAnswer": "El lligament reflex es troba en l’anell inguinal profund El ligamento reflejo se encuentra en el anillo inguinal profundo",
+    "options": [
+      "El ligament metacarpià transvers profund uneix les bases dels quatre últims metacarpians El ligamento metacarpiano transverso profundo une las bases de los cuatro últimos metacarpianos",
+      "El lligament quadrat s'inserta en l'epicòndil lateral de l'húmer El ligamento cuadrado se inserta en el epicóndilo lateral del húmero",
+      "Ligamento inguinal",
+      "El lligament reflex es troba en l’anell inguinal profund El ligamento reflejo se encuentra en el anillo inguinal profundo"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 79,
+    "number": 47,
+    "question": "Quina de les següents arteries travesa la membrana vastoadductora? ¿Cuál de las siguientes arterias atraviesa la membrana vastoadductora?",
+    "correctAnswer": "Descendent del genoll",
+    "options": [
+      "Descendent del genoll",
+      "A. Tiroidal inferior",
+      "Circumflexa ilíaca profunda",
+      "Arteria tibi"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 80,
+    "number": 48,
+    "question": "Quin nervi innerva el múscul gluti menor? ¿Qué nervio inerva el músculo glúteo menor?",
+    "correctAnswer": "Gluti superior",
+    "options": [
+      "Segon lumbrical Segundo lumbrical",
+      "Gluti superior",
+      "Sural",
+      "Braquioradial Braquiorradial"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 81,
+    "number": 49,
+    "question": "Quin dels següents músculs no està innervat pel N. plantar lateral? ¿Cuál de los siguientes músculos no está inervado por el N. plantar lateral?",
+    "correctAnswer": "Flexor curt dels dits Flexor corto de los dedos",
+    "options": [
+      "Pronador quadrat Pronador cuadrado",
+      "Flexor curt dels dits Flexor corto de los dedos",
+      "Semimembranós",
+      "M . Esternotiroidal M. Esternotiroideo"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 82,
+    "number": 50,
+    "question": "Quin dels següents nervis discorre anterior al múscul escalè anterior? ¿Cuál de los siguientes músculos discurre anterior al músculo escaleno anterior?",
+    "correctAnswer": "Frènic Frénico",
+    "options": [
+      "Frènic Frénico",
+      "M . Esternotiroidal M. Esternotiroideo",
+      "Pronador quadrat Pronador cuadrado",
+      "Semimembranós"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 83,
+    "number": 51,
+    "question": "Quin pla divideix l’avantbraç en una porció radial i una porció cubital? ¿Qué plano divide el antebrazo en una porción radial y una cubital?",
+    "correctAnswer": "Sagital",
+    "options": [
+      "Sagital",
+      "Trapeci",
+      "Perpendicular a l'eix llarg del segment anatômic en qüestió Perpendicular al eje largo del segmento anatómico en cuestión",
+      "Diafisi del radi Diáfisisdel radio"
+    ],
+    "source": "Anatomia Junio 2025.pdf"
+  },
+  {
+    "id": 84,
+    "number": 1,
+    "question": "Quin dels següents músculs està innervat per un nervi cranial o una de les seves",
+    "correctAnswer": "Trapeci",
+    "options": [
+      "Túnel o conducte carpià",
+      "N. Vague N. Vago",
+      "Trapeci",
+      "Deltoides"
+    ],
+    "source": "Preguntes bego.pdf"
+  },
+  {
+    "id": 85,
+    "number": 2,
+    "question": "Quin dels següents nervis és posterior a l'alçada del colze?",
+    "correctAnswer": "Nervi cubital",
+    "options": [
+      "Trapeci",
+      "N.gluti superior",
+      "Nervi cubital",
+      "Solc del nervi radial"
+    ],
+    "source": "Preguntes bego.pdf"
+  },
+  {
+    "id": 86,
+    "number": 3,
+    "question": "Quin dels següents nervis és responsable del moviment d'abducció dels dits",
+    "correctAnswer": "Nervi cubital",
+    "options": [
+      "Solc del nervi radial",
+      "N.gluti superior",
+      "Nervi cubital",
+      "Vasos epigastric inferiors Vasos epigástricos inferiores"
+    ],
+    "source": "Preguntes bego.pdf"
+  },
+  {
+    "id": 87,
+    "number": 4,
+    "question": "Per quin dels següents espais no discorre cap artèria?",
+    "correctAnswer": "Túnel o conducte carpià",
+    "options": [
+      "Trapeci",
+      "Túnel o conducte carpià",
+      "N.gluti superior",
+      "Nervi cubital"
+    ],
+    "source": "Preguntes bego.pdf"
+  },
+  {
+    "id": 88,
+    "number": 5,
+    "question": "Quin d'aquests no és reforç de articulació de l'espatlla?",
+    "correctAnswer": "Lligament trapezoïde",
+    "options": [
+      "Diafisi del radi Diáfisisdel radio",
+      "Sagital",
+      "N.gluti superior",
+      "Lligament trapezoïde"
+    ],
+    "source": "Preguntes bego.pdf"
+  },
+  {
+    "id": 89,
+    "number": 6,
+    "question": "Quin dels següents músculs està innervat pel nervi axilar?",
+    "correctAnswer": "Deltoides",
+    "options": [
+      "Solc del nervi radial",
+      "N.gluti superior",
+      "Deltoides",
+      "Trapeci"
+    ],
+    "source": "Preguntes bego.pdf"
+  },
+  {
+    "id": 90,
+    "number": 7,
+    "question": "Quin moviment no es veu afectat per una lesió del nervi cubital a nivell del canal de",
+    "correctAnswer": "Abducció polze",
+    "options": [
+      "Aorta y conducto torácico",
+      "Abducció polze",
+      "Ilioinguinal",
+      "Fascia transversalis y tendón conjunto"
+    ],
+    "source": "Preguntes bego.pdf"
+  },
+  {
+    "id": 91,
+    "number": 8,
+    "question": "El nervi medià i l'artèria cubital discorren junts a l'avantbraç coberts pel múscul:",
+    "correctAnswer": "Flexor superﬁcial dels dits",
+    "options": [
+      "Deltoides",
+      "Flexor superﬁcial dels dits",
+      "Túnel o conducte carpià",
+      "Sagital"
+    ],
+    "source": "Preguntes bego.pdf"
+  },
+  {
+    "id": 92,
+    "number": 9,
+    "question": "Quin dels següents detalls ossis es troba cobert pel múscul triceps braquial?",
+    "correctAnswer": "Solc del nervi radial",
+    "options": [
+      "Nervi cubital",
+      "Deltoides",
+      "N.gluti superior",
+      "Solc del nervi radial"
+    ],
+    "source": "Preguntes bego.pdf"
+  },
+  {
+    "id": 93,
+    "number": 10,
+    "question": "Quina de les següents artèries acompanya el nervi radial en el terç mig del braç?",
+    "correctAnswer": "Artèria braquial profunda",
+    "options": [
+      "Trapeci",
+      "Vasos epigastric inferiors Vasos epigástricos inferiores",
+      "Artèria braquial profunda",
+      "N. Vague N. Vago"
+    ],
+    "source": "Preguntes bego.pdf"
+  },
+  {
+    "id": 94,
+    "number": 1,
+    "question": "Tipo de articulación trapeciometacarpiana",
+    "correctAnswer": "Selar (silla de montar)",
+    "options": [
+      "Selar (silla de montar)",
+      "Gínglimo",
+      "Esferoidea (enartrosis)",
       "Trocoide"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 8,
+    "id": 95,
+    "number": 2,
+    "question": "Nervio que pasa por el cuadrilátero de Velpeau",
+    "correctAnswer": "Axilar",
+    "options": [
+      "Axilar",
+      "Frénico",
+      "Cubital",
+      "Mediano"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 96,
+    "number": 3,
+    "question": "Función principal del braquiorradial",
+    "correctAnswer": "Flexión del codo",
+    "options": [
+      "M. Oblic extern de l'abdomen M. Oblicuo externo del abdomen",
+      "Flexión del codo",
+      "Deltoides",
+      "Derecha/Izquierda"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 97,
+    "number": 4,
+    "question": "Músculo que NO se origina en el epicóndilo medial",
+    "correctAnswer": "Flexor profundo de los dedos",
+    "options": [
+      "Serrato anterior",
+      "Flexor cubital del carpo",
+      "Flexor largo de los dedos",
+      "Flexor profundo de los dedos"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 98,
+    "number": 5,
+    "question": "Nervio safeno",
+    "correctAnswer": "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
+    "options": [
+      "Rama femoral del genitofemoral",
+      "Solo de la cara medial del muslo",
+      "Rama profunda del radial",
+      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 99,
+    "number": 6,
+    "question": "Articulación sinovial de un eje",
+    "correctAnswer": "Gínglimo (tróclea)",
+    "options": [
+      "Selar (silla de montar)",
+      "Trocoide",
+      "Gínglimo (tróclea)",
+      "Se articula la cabeza del fémur con la carilla semilunar"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 100,
+    "number": 7,
+    "question": "Articulación con varios ejes",
+    "correctAnswer": "Radiocarpiana",
+    "options": [
+      "Se articula la cabeza del fémur con la carilla semilunar",
+      "Trocoide",
+      "Selar (silla de montar)",
+      "Radiocarpiana"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 101,
+    "number": 8,
     "question": "Inserción del redondo mayor",
     "correctAnswer": "Cresta del tubérculo menor del húmero",
     "options": [
-      "Mediano",
-      "Oponente del pulgar",
+      "Braquioradial Braquiorradial",
+      "Rotador medial del brazo",
       "Cresta del tubérculo menor del húmero",
-      "Flexión del codo"
+      "El lligament quadrat s'inserta en l'epicòndil lateral de l'húmer El ligamento cuadrado se inserta en el epicóndilo lateral del húmero"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 9,
+    "id": 102,
+    "number": 9,
     "question": "Músculo que pasa por el espacio subacromial",
     "correctAnswer": "Supraespinoso",
     "options": [
-      "Supraespinoso",
-      "Flexor profundo de los dedos",
       "Braquiorradial",
-      "Semimembranoso"
+      "Supraespinoso",
+      "Peroneo largo",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 10,
+    "id": 103,
+    "number": 10,
     "question": "Músculo más profundo de la eminencia tenar",
     "correctAnswer": "Aductor del pulgar",
     "options": [
-      "Flexor largo del dedo gordo",
-      "Flexor largo de los dedos",
+      "Oponente del meñique",
       "Aductor del pulgar",
-      "Oponente del meñique"
+      "Flexor largo de los dedos",
+      "Flexor largo del dedo gordo"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 11,
+    "id": 104,
+    "number": 11,
     "question": "Arteria que acompaña al nervio radial",
     "correctAnswer": "Braquial profunda",
     "options": [
       "Colateral cubital superior",
-      "Circunfleja humeral posterior",
+      "Braquial profunda",
       "Cubital",
-      "Braquial profunda"
+      "Circunfleja humeral posterior"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 12,
+    "id": 105,
+    "number": 12,
     "question": "Nervio responsable de la pronación",
     "correctAnswer": "Mediano",
     "options": [
-      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
-      "Axilar",
       "Cubital",
+      "Solo de la cara medial del muslo",
+      "Axilar",
       "Mediano"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 13,
+    "id": 106,
+    "number": 13,
     "question": "Nervio comprimido en el hiato del pronador redondo",
     "correctAnswer": "Mediano",
     "options": [
-      "Déficit de rotación externa",
       "Cubital",
       "Mediano",
-      "Axilar"
+      "Braquioradial Braquiorradial",
+      "Extensión de la rodilla"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 14,
+    "id": 107,
+    "number": 14,
     "question": "Nervio comprimido en el túnel carpiano",
     "correctAnswer": "Mediano",
     "options": [
-      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
-      "Braquial profunda",
-      "Axilar",
-      "Mediano"
+      "Extensión de la rodilla",
+      "Està subdividit en dos subcompartiments i inclou al nervi media, tendons flexors superficials i profunds i tendo del flexor llarg del polze en un subcompartiment i el tendó del flexor radial del carp en un altre subcompartiment Está subdividido en dos subcompartimentos e incluye al nervio mediano, tendones flexores superficiales y profundos y el tendón del flexor largo del pulgar en un subcompartimento y el tendón del flexor radial del carpo en otro subcompartimento",
+      "Mediano",
+      "Solo de la cara medial del muslo"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 15,
+    "id": 108,
+    "number": 15,
     "question": "Nervio responsable de la abducción de los dedos",
     "correctAnswer": "Cubital",
     "options": [
+      "Peroneo común",
       "Cubital",
       "Mediano",
-      "Axilar",
-      "Peroneo común"
+      "Dorsal ample Dorsal ancho"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 16,
+    "id": 109,
+    "number": 16,
     "question": "Músculo inervado por el nervio axilar",
     "correctAnswer": "Deltoides",
     "options": [
-      "Esternocleidomastoideo",
-      "Deltoides",
       "Trapecio",
-      "Redondo menor"
+      "Redondo menor",
+      "Segon lumbrical Segundo lumbrical",
+      "Deltoides"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 17,
+    "id": 110,
+    "number": 17,
     "question": "Músculo inervado por nervio craneal",
     "correctAnswer": "Trapecio",
     "options": [
       "ECM",
-      "Deltoides",
-      "Largo del cuello / esplenio",
-      "Trapecio"
+      "Segon lumbrical Segundo lumbrical",
+      "Trapecio",
+      "Largo del cuello / esplenio"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 18,
+    "id": 111,
+    "number": 18,
     "question": "Estructura que atraviesa el hiato esofágico",
     "correctAnswer": "Esófago y nervios vagos",
     "options": [
-      "Rama profunda del radial",
       "Rama profunda radial",
+      "Rama profunda del radial",
       "Esófago y nervios vagos",
       "Nervio femoral"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 19,
+    "id": 112,
+    "number": 19,
     "question": "Estructura que atraviesa el hiato aórtico",
     "correctAnswer": "Aorta y conducto torácico",
     "options": [
-      "Fascia transversalis y tendón conjunto",
+      "Aorta y conducto torácico",
+      "Abducció polze",
       "Conducto deferente",
-      "Conducto torácico",
-      "Aorta y conducto torácico"
+      "Conducto torácico"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 20,
+    "id": 113,
+    "number": 20,
     "question": "Músculo prevertebral típico",
     "correctAnswer": "Largo del cuello",
     "options": [
-      "Largo del cuello",
       "Flexor largo del dedo gordo",
+      "Largo del cuello",
       "Recto anterior de la cabeza",
-      "Aductor del pulgar"
+      "Rotador lateral del brazo"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 21,
+    "id": 114,
+    "number": 21,
     "question": "Nervio anterior al escaleno anterior",
     "correctAnswer": "Frénico",
     "options": [
-      "Frénico",
-      "Axilar",
-      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
-      "Torácico largo"
+      "Torácico largo",
+      "Solo de la cara medial del muslo",
+      "Extensión de la rodilla",
+      "Frénico"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 22,
+    "id": 115,
+    "number": 22,
     "question": "Contenido del conducto inguinal",
     "correctAnswer": "Nervio ilioinguinal, conducto deferente o ligamento redondo",
     "options": [
-      "Nervio ilioinguinal, conducto deferente o ligamento redondo",
-      "Mediano",
-      "Iliopsoas o nervio femoral",
-      "Nervio femoral"
+      "Extensión de la rodilla",
+      "Està subdividit en dos subcompartiments i inclou al nervi media, tendons flexors superficials i profunds i tendo del flexor llarg del polze en un subcompartiment i el tendó del flexor radial del carp en un altre subcompartiment Está subdividido en dos subcompartimentos e incluye al nervio mediano, tendones flexores superficiales y profundos y el tendón del flexor largo del pulgar en un subcompartimento y el tendón del flexor radial del carpo en otro subcompartimento",
+      "Vena femoral, arteria femoral, nervio femoral",
+      "Nervio ilioinguinal, conducto deferente o ligamento redondo"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 23,
+    "id": 116,
+    "number": 23,
     "question": "Pared posterior del conducto inguinal",
     "correctAnswer": "Fascia transversalis y tendón conjunto",
     "options": [
       "Fascia transversalis",
-      "Ilioinguinal",
       "Aponeurosis oblicuo externo",
-      "Fascia transversalis y tendón conjunto"
+      "Fascia transversalis y tendón conjunto",
+      "Ilioinguinal"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 24,
+    "id": 117,
+    "number": 24,
     "question": "Suelo del conducto inguinal",
     "correctAnswer": "Ligamento inguinal",
     "options": [
-      "Anular del radio",
-      "Ligamento de la cabeza del fémur",
+      "Ligamento cruzado posterior",
       "Ligamento inguinal",
+      "El lligament reflex es troba en l’anell inguinal profund El ligamento reflejo se encuentra en el anillo inguinal profundo",
       "Ligamento redondo"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 25,
+    "id": 118,
+    "number": 25,
     "question": "Ligamento intracapsular de la cadera",
     "correctAnswer": "Ligamento de la cabeza del fémur",
     "options": [
+      "El ligamento amarillo",
       "Anular del radio",
       "Ligamento de la cabeza del fémur",
-      "Transverso del atlas",
-      "Ligamento colateral cubital"
+      "Ligamento cruzado posterior"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 26,
+    "id": 119,
+    "number": 26,
     "question": "Pata de ganso superficial",
     "correctAnswer": "Sartorio, grácil y semitendinoso",
     "options": [
-      "Bíceps femoral",
-      "Sartorio, grácil y semitendinoso",
-      "Flexión del codo",
-      "Semimembranoso"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 27,
-    "question": "Músculo que NO forma la pata de ganso",
-    "correctAnswer": "Semimembranoso",
-    "options": [
-      "Pterigoideo lateral",
-      "Supraespinoso",
-      "Flexor profundo de los dedos",
-      "Semimembranoso"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 28,
-    "question": "Rotador externo de la pierna",
-    "correctAnswer": "Bíceps femoral",
-    "options": [
-      "Flexión del codo",
-      "Extensor largo del pulgar",
-      "Bíceps femoral",
+      "Apófisis xifoides",
+      "Ramos anteriores de L5-S3",
+      "Derecha/Izquierda",
       "Sartorio, grácil y semitendinoso"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 29,
+    "id": 120,
+    "number": 27,
+    "question": "Músculo que NO forma la pata de ganso",
+    "correctAnswer": "Semimembranoso",
+    "options": [
+      "Serrato anterior",
+      "Peroneo largo",
+      "Semimembranoso",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 121,
+    "number": 28,
+    "question": "Rotador externo de la pierna",
+    "correctAnswer": "Bíceps femoral",
+    "options": [
+      "Ramos anteriores de L5-S3",
+      "Bíceps femoral",
+      "Apófisis xifoides",
+      "Derecha/Izquierda"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 122,
+    "number": 29,
     "question": "Nervio del canal de Guyon",
     "correctAnswer": "Cubital",
     "options": [
-      "Déficit de rotación externa",
+      "Cubital",
       "Mediano",
+      "Braquioradial Braquiorradial",
+      "Extensión de la rodilla"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 123,
+    "number": 30,
+    "question": "Tipo de articulación atlantoaxoidea media",
+    "correctAnswer": "Trocoide",
+    "options": [
+      "Selar (silla de montar)",
+      "Trocoide",
+      "Gínglimo",
+      "Esferoidea (enartrosis)"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 124,
+    "number": 31,
+    "question": "Derivado embrionario de las vértebras",
+    "correctAnswer": "Esclerotomo",
+    "options": [
+      "Miotomo",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
+      "Esclerotomo",
+      "Dermatomo"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 125,
+    "number": 32,
+    "question": "Derivado embrionario de la musculatura esquelética",
+    "correctAnswer": "Miotomo",
+    "options": [
+      "Dermatomo",
+      "Esclerotomo",
+      "Miotomo",
+      "Derecha/Izquierda"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 126,
+    "number": 33,
+    "question": "Límite medial de la tabaquera anatómica",
+    "correctAnswer": "Extensor largo del pulgar",
+    "options": [
+      "Extensor radial largo del carpo",
+      "Perpendicular a l'eix llarg del segment anatômic en qüestió Perpendicular al eje largo del segmento anatómico en cuestión",
+      "Extensor largo del pulgar",
+      "Abductor largo y extensor corto del pulgar"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 127,
+    "number": 34,
+    "question": "Músculo profundo del compartimento posterior del antebrazo",
+    "correctAnswer": "Supinador",
+    "options": [
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
+      "Supinador",
+      "Flexor largo de los dedos",
+      "Flexor largo del dedo gordo"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 128,
+    "number": 35,
+    "question": "Nervio que atraviesa el supinador",
+    "correctAnswer": "Rama profunda del radial",
+    "options": [
+      "Braquial profunda",
+      "Radial",
+      "Rama profunda del radial",
+      "Rama profunda radial"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 129,
+    "number": 36,
+    "question": "Músculo propulsor de la mandíbula",
+    "correctAnswer": "Pterigoideo lateral",
+    "options": [
+      "Pterigoideo lateral",
+      "Temporal",
+      "Pterigoïdal lateral Pterigoideo lateral",
+      "Masetero"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 130,
+    "number": 37,
+    "question": "Músculo masticador que NO eleva la mandíbula",
+    "correctAnswer": "Pterigoideo lateral",
+    "options": [
+      "Temporal",
+      "Masetero",
+      "Pterigoïdal lateral Pterigoideo lateral",
+      "Pterigoideo lateral"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 131,
+    "number": 38,
+    "question": "Músculo que aumenta la presión intraoral",
+    "correctAnswer": "Buccinador",
+    "options": [
+      "Buccinador",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
+      "Peroneo largo",
+      "Serrato anterior"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 132,
+    "number": 39,
+    "question": "Arteria que NO es rama de la carótida externa",
+    "correctAnswer": "Tiroidea inferior",
+    "options": [
+      "Radial",
+      "A. Tiroidal inferior",
+      "Torácica lateral",
+      "Tiroidea inferior"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 133,
+    "number": 40,
+    "question": "Nervio de la sensibilidad del hombro",
+    "correctAnswer": "Axilar",
+    "options": [
+      "Axilar",
+      "Extensión de la rodilla",
+      "Solo de la cara medial del muslo",
+      "Cubital"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 134,
+    "number": 41,
+    "question": "Músculo que se inserta en el pisiforme",
+    "correctAnswer": "Flexor cubital del carpo",
+    "options": [
+      "Oponente del pulgar",
+      "Flexor profundo de los dedos",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
+      "Flexor cubital del carpo"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 135,
+    "number": 42,
+    "question": "Interóseo de la cara radial del cuarto dedo",
+    "correctAnswer": "Segundo palmar",
+    "options": [
+      "Segundo palmar",
+      "Segundo dorsal",
+      "Cara Posteromedial de la cama Cara posteromedial de lapierna",
+      "Supinación"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 136,
+    "number": 43,
+    "question": "Interóseo de la cara radial del tercer dedo",
+    "correctAnswer": "Segundo dorsal",
+    "options": [
+      "Segundo palmar",
+      "Segundo dorsal",
+      "Supinación",
+      "Cara Posteromedial de la cama Cara posteromedial de lapierna"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 137,
+    "number": 44,
+    "question": "Ligamento que refuerza superiormente la glenohumeral",
+    "correctAnswer": "Coracohumeral",
+    "options": [
+      "Coracoclavicular o trapezoide",
+      "Coracohumeral",
+      "El ligamento amarillo",
+      "Ligamento cruzado posterior"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 138,
+    "number": 45,
+    "question": "Fibrocartílago de la glenohumeral",
+    "correctAnswer": "Rodete glenoideo (labrum)",
+    "options": [
+      "Ramos anteriores de L5-S3",
+      "Coracohumeral",
+      "Rodete glenoideo (labrum)",
+      "Derecha/Izquierda"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 139,
+    "number": 46,
+    "question": "Lesión del nervio supraescapular",
+    "correctAnswer": "Déficit de rotación externa",
+    "options": [
+      "Peroneo común",
+      "Braquioradial Braquiorradial",
+      "Extensión de la rodilla",
+      "Déficit de rotación externa"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 140,
+    "number": 47,
+    "question": "Principal flexor de cadera",
+    "correctAnswer": "Iliopsoas",
+    "options": [
+      "Derecha/Izquierda",
+      "Iliopsoas",
+      "Flexión del codo",
+      "Deltoides"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 141,
+    "number": 48,
+    "question": "Estructura que NO pasa por el conducto aductor",
+    "correctAnswer": "Nervio femoral",
+    "options": [
+      "Nervio femoral",
+      "Vena femoral, arteria femoral, nervio femoral",
+      "Mediano",
+      "Axilar"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 142,
+    "number": 49,
+    "question": "Músculo más medial del compartimento profundo posterior de la pierna",
+    "correctAnswer": "Flexor largo de los dedos",
+    "options": [
+      "Flexor profundo de los dedos",
+      "Flexor largo del dedo gordo",
+      "Supinador",
+      "Flexor largo de los dedos"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 143,
+    "number": 50,
+    "question": "Músculo más profundo de la región nucal",
+    "correctAnswer": "Recto posterior menor de la cabeza",
+    "options": [
+      "Recto posterior menor de la cabeza",
+      "Aductor del pulgar",
+      "Oponente del meñique",
+      "Flexor largo de los dedos"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 144,
+    "number": 51,
+    "question": "Músculo inervado por el nervio accesorio (XI)",
+    "correctAnswer": "Esternocleidomastoideo",
+    "options": [
+      "Esternocleidomastoideo",
+      "Trapecio",
+      "Segon lumbrical Segundo lumbrical",
+      "Deltoides"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 145,
+    "number": 52,
+    "question": "Músculo inervado por el nervio axilar",
+    "correctAnswer": "Redondo menor",
+    "options": [
+      "Segon lumbrical Segundo lumbrical",
+      "Trapecio",
+      "Redondo menor",
+      "Deltoides"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 146,
+    "number": 53,
+    "question": "Músculo que NO pertenece al manguito rotador",
+    "correctAnswer": "Redondo mayor",
+    "options": [
+      "Peroneo largo",
+      "Redondo mayor",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
+      "Rotador lateral del brazo"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 147,
+    "number": 54,
+    "question": "Músculo que realiza la abducción inicial del brazo",
+    "correctAnswer": "Supraespinoso",
+    "options": [
+      "Oponente del pulgar",
+      "Supraespinoso",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
+      "Artèria circumflexa ilíaca profunda. Arteria circunfleja ilíaca profunda"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 148,
+    "number": 55,
+    "question": "Principal abductor del brazo a partir de 15°",
+    "correctAnswer": "Deltoides",
+    "options": [
+      "Apófisis xifoides",
+      "Deltoides",
+      "Flexión del codo",
+      "Derecha/Izquierda"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 149,
+    "number": 56,
+    "question": "Nervio lesionado que impide la pronación",
+    "correctAnswer": "Mediano",
+    "options": [
+      "Mediano",
+      "Torácico largo",
+      "Extensión de la rodilla",
+      "Radial"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 150,
+    "number": 57,
+    "question": "Nervio que pasa entre las dos cabezas del pronador redondo",
+    "correctAnswer": "Mediano",
+    "options": [
+      "Mediano",
+      "Frénico",
+      "Braquioradial Braquiorradial",
+      "Extensión de la rodilla"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 151,
+    "number": 58,
+    "question": "Nervio que pasa por el túnel carpiano",
+    "correctAnswer": "Mediano",
+    "options": [
+      "Mediano",
+      "Frénico",
       "Cubital",
       "Axilar"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 30,
-    "question": "Tipo de articulación atlantoaxoidea media",
+    "id": 152,
+    "number": 59,
+    "question": "Nervio que pasa por el canal epitrocleo-olecraniano",
+    "correctAnswer": "Cubital",
+    "options": [
+      "Frénico",
+      "Cubital",
+      "Mediano",
+      "Axilar"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 153,
+    "number": 60,
+    "question": "Nervio que pasa por el canal de Guyon",
+    "correctAnswer": "Cubital",
+    "options": [
+      "Cubital",
+      "Axilar",
+      "Frénico",
+      "Mediano"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 154,
+    "number": 61,
+    "question": "Nervio que inerva los interóseos",
+    "correctAnswer": "Cubital",
+    "options": [
+      "Musculocutáneo",
+      "Dorsal ample Dorsal ancho",
+      "Toracodorsal",
+      "Cubital"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 155,
+    "number": 62,
+    "question": "Nervio responsable de la aducción del pulgar",
+    "correctAnswer": "Cubital",
+    "options": [
+      "Mediano",
+      "Braquioradial Braquiorradial",
+      "Cubital",
+      "Extensión de la rodilla"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 156,
+    "number": 63,
+    "question": "Músculo que produce oposición del pulgar",
+    "correctAnswer": "Oponente del pulgar",
+    "options": [
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
+      "Artèria circumflexa ilíaca profunda. Arteria circunfleja ilíaca profunda",
+      "Supraespinoso",
+      "Oponente del pulgar"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 157,
+    "number": 64,
+    "question": "Músculo más profundo de la eminencia hipotenar",
+    "correctAnswer": "Oponente del meñique",
+    "options": [
+      "Aductor del pulgar",
+      "Oponente del meñique",
+      "Flexor largo del dedo gordo",
+      "Flexor largo de los dedos"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 158,
+    "number": 65,
+    "question": "Arteria que acompaña al nervio axilar",
+    "correctAnswer": "Circunfleja humeral posterior",
+    "options": [
+      "Colateral cubital superior",
+      "Circunfleja humeral posterior",
+      "Braquial profunda",
+      "Cubital"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 159,
+    "number": 66,
+    "question": "Arteria que acompaña al nervio radial",
+    "correctAnswer": "Braquial profunda",
+    "options": [
+      "Braquial profunda",
+      "Colateral cubital superior",
+      "Circunfleja humeral posterior",
+      "Cubital"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 160,
+    "number": 67,
+    "question": "Arteria que acompaña al nervio cubital en el brazo",
+    "correctAnswer": "Colateral cubital superior",
+    "options": [
+      "Circunfleja humeral posterior",
+      "Braquial profunda",
+      "Colateral cubital superior",
+      "Cubital"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 161,
+    "number": 68,
+    "question": "Nervio de la sensibilidad de la cara lateral del hombro",
+    "correctAnswer": "Axilar",
+    "options": [
+      "Solo de la cara medial del muslo",
+      "Extensión de la rodilla",
+      "Cubital",
+      "Axilar"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 162,
+    "number": 69,
+    "question": "Nervio de la sensibilidad de los 3 dedos y medio laterales",
+    "correctAnswer": "Mediano",
+    "options": [
+      "Mediano",
+      "Solo de la cara medial del muslo",
+      "Peroneo común",
+      "Cubital"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 163,
+    "number": 70,
+    "question": "Nervio de la sensibilidad del dedo meñique",
+    "correctAnswer": "Cubital",
+    "options": [
+      "Axilar",
+      "Extensión de la rodilla",
+      "Solo de la cara medial del muslo",
+      "Cubital"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 164,
+    "number": 71,
+    "question": "Tipo de articulación radiocubital proximal",
+    "correctAnswer": "Trocoide",
+    "options": [
+      "Gínglimo",
+      "Esferoidea (enartrosis)",
+      "Selar (silla de montar)",
+      "Trocoide"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 165,
+    "number": 72,
+    "question": "Tipo de articulación radiocubital distal",
     "correctAnswer": "Trocoide",
     "options": [
       "Trocoide",
@@ -360,501 +2145,36 @@
     "source": "main.pdf"
   },
   {
-    "id": 31,
-    "question": "Derivado embrionario de las vértebras",
-    "correctAnswer": "Esclerotomo",
-    "options": [
-      "Dermatomo",
-      "Esclerotomo",
-      "Mediano",
-      "Miotomo"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 32,
-    "question": "Derivado embrionario de la musculatura esquelética",
-    "correctAnswer": "Miotomo",
-    "options": [
-      "Miotomo",
-      "Selar (silla de montar)",
-      "Dermatomo",
-      "Esclerotomo"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 33,
-    "question": "Límite medial de la tabaquera anatómica",
-    "correctAnswer": "Extensor largo del pulgar",
-    "options": [
-      "Extensor largo del pulgar",
-      "Abductor largo y extensor corto del pulgar",
-      "Extensor radial largo del carpo",
-      "Vasos epigástricos inferiores"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 34,
-    "question": "Músculo profundo del compartimento posterior del antebrazo",
-    "correctAnswer": "Supinador",
-    "options": [
-      "Flexor largo de los dedos",
-      "Aductor del pulgar",
-      "Supinador",
-      "Flexor largo del dedo gordo"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 35,
-    "question": "Nervio que atraviesa el supinador",
-    "correctAnswer": "Rama profunda del radial",
-    "options": [
-      "Rama profunda radial",
-      "Braquial profunda",
-      "Rama profunda del radial",
-      "Axilar"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 36,
-    "question": "Músculo propulsor de la mandíbula",
-    "correctAnswer": "Pterigoideo lateral",
-    "options": [
-      "Temporal",
-      "Masetero",
-      "Flexor profundo de los dedos",
-      "Pterigoideo lateral"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 37,
-    "question": "Músculo masticador que NO eleva la mandíbula",
-    "correctAnswer": "Pterigoideo lateral",
-    "options": [
-      "Masetero",
-      "Pterigoideo lateral",
-      "Temporal",
-      "Flexor profundo de los dedos"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 38,
-    "question": "Músculo que aumenta la presión intraoral",
-    "correctAnswer": "Buccinador",
-    "options": [
-      "Buccinador",
-      "Supraespinoso",
-      "Flexor profundo de los dedos",
-      "Semimembranoso"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 39,
-    "question": "Arteria que NO es rama de la carótida externa",
-    "correctAnswer": "Tiroidea inferior",
-    "options": [
-      "Radial",
-      "Tiroidea inferior",
-      "Subclavia",
-      "Torácica lateral"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 40,
-    "question": "Nervio de la sensibilidad del hombro",
-    "correctAnswer": "Axilar",
-    "options": [
-      "Déficit de rotación externa",
-      "Cubital",
-      "Mediano",
-      "Axilar"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 41,
-    "question": "Músculo que se inserta en el pisiforme",
-    "correctAnswer": "Flexor cubital del carpo",
-    "options": [
-      "Supraespinoso",
-      "Flexor profundo de los dedos",
-      "Flexor cubital del carpo",
-      "Oponente del pulgar"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 42,
-    "question": "Interóseo de la cara radial del cuarto dedo",
-    "correctAnswer": "Segundo palmar",
-    "options": [
-      "Supinación",
-      "Segundo dorsal",
-      "Segundo palmar",
-      "Axilar"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 43,
-    "question": "Interóseo de la cara radial del tercer dedo",
-    "correctAnswer": "Segundo dorsal",
-    "options": [
-      "Axilar",
-      "Segundo palmar",
-      "Supinación",
-      "Segundo dorsal"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 44,
-    "question": "Ligamento que refuerza superiormente la glenohumeral",
-    "correctAnswer": "Coracohumeral",
-    "options": [
-      "Anular del radio",
-      "Coracohumeral",
-      "Ligamento de la cabeza del fémur",
-      "Coracoclavicular o trapezoide"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 45,
-    "question": "Fibrocartílago de la glenohumeral",
-    "correctAnswer": "Rodete glenoideo (labrum)",
-    "options": [
-      "Rodete glenoideo (labrum)",
-      "Flexión del codo",
-      "Coracohumeral",
-      "Menisco medial"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 46,
-    "question": "Lesión del nervio supraescapular",
-    "correctAnswer": "Déficit de rotación externa",
-    "options": [
-      "Mediano",
-      "Déficit de rotación externa",
-      "Cubital",
-      "Peroneo común"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 47,
-    "question": "Principal flexor de cadera",
-    "correctAnswer": "Iliopsoas",
-    "options": [
-      "Sartorio, grácil y semitendinoso",
-      "Flexión del codo",
-      "Deltoides",
-      "Iliopsoas"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 48,
-    "question": "Estructura que NO pasa por el conducto aductor",
-    "correctAnswer": "Nervio femoral",
-    "options": [
-      "Axilar",
-      "Mediano",
-      "Nervio femoral",
-      "Cubital"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 49,
-    "question": "Músculo más medial del compartimento profundo posterior de la pierna",
-    "correctAnswer": "Flexor largo de los dedos",
-    "options": [
-      "Flexor profundo de los dedos",
-      "Flexor largo de los dedos",
-      "Flexor largo del dedo gordo",
-      "Supinador"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 50,
-    "question": "Músculo más profundo de la región nucal",
-    "correctAnswer": "Recto posterior menor de la cabeza",
-    "options": [
-      "Aductor del pulgar",
-      "Flexor largo de los dedos",
-      "Oponente del meñique",
-      "Recto posterior menor de la cabeza"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 51,
-    "question": "Músculo inervado por el nervio accesorio (XI)",
-    "correctAnswer": "Esternocleidomastoideo",
-    "options": [
-      "Redondo menor",
-      "Deltoides",
-      "Trapecio",
-      "Esternocleidomastoideo"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 52,
-    "question": "Músculo inervado por el nervio axilar",
-    "correctAnswer": "Redondo menor",
-    "options": [
-      "Deltoides",
-      "Esternocleidomastoideo",
-      "Trapecio",
-      "Redondo menor"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 53,
-    "question": "Músculo que NO pertenece al manguito rotador",
-    "correctAnswer": "Redondo mayor",
-    "options": [
-      "Redondo mayor",
-      "Supraespinoso",
-      "Infraespinoso",
-      "Subescapular"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 54,
-    "question": "Músculo que realiza la abducción inicial del brazo",
-    "correctAnswer": "Supraespinoso",
-    "options": [
-      "Supraespinoso",
-      "Flexor profundo de los dedos",
-      "Semimembranoso",
-      "Oponente del pulgar"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 55,
-    "question": "Principal abductor del brazo a partir de 15°",
-    "correctAnswer": "Deltoides",
-    "options": [
-      "Extensión glenohumeral",
-      "Deltoides",
-      "Iliopsoas",
-      "Flexión del codo"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 56,
-    "question": "Nervio lesionado que impide la pronación",
-    "correctAnswer": "Mediano",
-    "options": [
-      "Mediano",
-      "Braquial profunda",
-      "Torácico largo",
-      "Axilar"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 57,
-    "question": "Nervio que pasa entre las dos cabezas del pronador redondo",
-    "correctAnswer": "Mediano",
-    "options": [
-      "Mediano",
-      "Frénico",
-      "Axilar",
-      "Cubital"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 58,
-    "question": "Nervio que pasa por el túnel carpiano",
-    "correctAnswer": "Mediano",
-    "options": [
-      "Axilar",
-      "Cubital",
-      "Frénico",
-      "Mediano"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 59,
-    "question": "Nervio que pasa por el canal epitrocleo-olecraniano",
-    "correctAnswer": "Cubital",
-    "options": [
-      "Mediano",
-      "Frénico",
-      "Axilar",
-      "Cubital"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 60,
-    "question": "Nervio que pasa por el canal de Guyon",
-    "correctAnswer": "Cubital",
-    "options": [
-      "Frénico",
-      "Cubital",
-      "Mediano",
-      "Axilar"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 61,
-    "question": "Nervio que inerva los interóseos",
-    "correctAnswer": "Cubital",
-    "options": [
-      "Musculocutáneo",
-      "Toracodorsal",
-      "Torácico largo",
-      "Cubital"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 62,
-    "question": "Nervio responsable de la aducción del pulgar",
-    "correctAnswer": "Cubital",
-    "options": [
-      "Déficit de rotación externa",
-      "Axilar",
-      "Cubital",
-      "Mediano"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 63,
-    "question": "Músculo que produce oposición del pulgar",
-    "correctAnswer": "Oponente del pulgar",
-    "options": [
-      "Supraespinoso",
-      "Flexor largo del dedo gordo",
-      "Oponente del pulgar",
-      "Flexor cubital del carpo"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 64,
-    "question": "Músculo más profundo de la eminencia hipotenar",
-    "correctAnswer": "Oponente del meñique",
-    "options": [
-      "Oponente del meñique",
-      "Aductor del pulgar",
-      "Flexor largo de los dedos",
-      "Flexor largo del dedo gordo"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 65,
-    "question": "Arteria que acompaña al nervio axilar",
-    "correctAnswer": "Circunfleja humeral posterior",
-    "options": [
-      "Cubital",
-      "Circunfleja humeral posterior",
-      "Colateral cubital superior",
-      "Braquial profunda"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 66,
-    "question": "Arteria que acompaña al nervio radial",
-    "correctAnswer": "Braquial profunda",
-    "options": [
-      "Colateral cubital superior",
-      "Circunfleja humeral posterior",
-      "Braquial profunda",
-      "Cubital"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 67,
-    "question": "Arteria que acompaña al nervio cubital en el brazo",
-    "correctAnswer": "Colateral cubital superior",
-    "options": [
-      "Cubital",
-      "Braquial profunda",
-      "Colateral cubital superior",
-      "Circunfleja humeral posterior"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 68,
-    "question": "Nervio de la sensibilidad de la cara lateral del hombro",
-    "correctAnswer": "Axilar",
-    "options": [
-      "Déficit de rotación externa",
-      "Cubital",
-      "Mediano",
-      "Axilar"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 69,
-    "question": "Nervio de la sensibilidad de los 3 dedos y medio laterales",
-    "correctAnswer": "Mediano",
-    "options": [
-      "Mediano",
-      "Axilar",
-      "Cubital",
-      "Peroneo común"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 70,
-    "question": "Nervio de la sensibilidad del dedo meñique",
-    "correctAnswer": "Cubital",
-    "options": [
-      "Axilar",
-      "Cubital",
-      "Mediano",
-      "Déficit de rotación externa"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 71,
-    "question": "Tipo de articulación radiocubital proximal",
-    "correctAnswer": "Trocoide",
+    "id": 166,
+    "number": 73,
+    "question": "Tipo de articulación interfalángica",
+    "correctAnswer": "Gínglimo",
     "options": [
       "Gínglimo",
+      "Trocoide",
       "Selar (silla de montar)",
-      "Esferoidea (enartrosis)",
-      "Trocoide"
+      "Esferoidea (enartrosis)"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 72,
-    "question": "Tipo de articulación radiocubital distal",
-    "correctAnswer": "Trocoide",
+    "id": 167,
+    "number": 74,
+    "question": "Tipo de articulación humerocubital",
+    "correctAnswer": "Gínglimo",
+    "options": [
+      "Selar (silla de montar)",
+      "Trocoide",
+      "Gínglimo",
+      "Esferoidea (enartrosis)"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 168,
+    "number": 75,
+    "question": "Tipo de articulación glenohumeral",
+    "correctAnswer": "Esferoidea (enartrosis)",
     "options": [
       "Selar (silla de montar)",
       "Esferoidea (enartrosis)",
@@ -864,743 +2184,753 @@
     "source": "main.pdf"
   },
   {
-    "id": 73,
-    "question": "Tipo de articulación interfalángica",
-    "correctAnswer": "Gínglimo",
-    "options": [
-      "Trocoide",
-      "Esferoidea (enartrosis)",
-      "Gínglimo",
-      "Selar (silla de montar)"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 74,
-    "question": "Tipo de articulación humerocubital",
-    "correctAnswer": "Gínglimo",
-    "options": [
-      "Trocoide",
-      "Gínglimo",
-      "Esferoidea (enartrosis)",
-      "Selar (silla de montar)"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 75,
-    "question": "Tipo de articulación glenohumeral",
-    "correctAnswer": "Esferoidea (enartrosis)",
-    "options": [
-      "Gínglimo",
-      "Esferoidea (enartrosis)",
-      "Selar (silla de montar)",
-      "Trocoide"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 76,
+    "id": 169,
+    "number": 76,
     "question": "Tipo de articulación coxofemoral",
     "correctAnswer": "Esferoidea (enartrosis)",
     "options": [
+      "Esferoidea (enartrosis)",
       "Trocoide",
       "Gínglimo",
-      "Selar (silla de montar)",
-      "Esferoidea (enartrosis)"
+      "Selar (silla de montar)"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 77,
+    "id": 170,
+    "number": 77,
     "question": "Ligamento considerado superficie articular del codo",
     "correctAnswer": "Anular del radio",
     "options": [
-      "Transverso del atlas",
-      "Ligamento de la cabeza del fémur",
       "Anular del radio",
-      "Ligamento coracoclavicular"
+      "El lligament quadrat s'inserta en l'epicòndil lateral de l'húmer El ligamento cuadrado se inserta en el epicóndilo lateral del húmero",
+      "Ligamento cruzado posterior",
+      "Transverso del atlas"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 78,
+    "id": 171,
+    "number": 78,
     "question": "Ligamento considerado superficie articular de C1-C2",
     "correctAnswer": "Transverso del atlas",
     "options": [
+      "El ligamento amarillo",
       "Anular del radio",
       "Ligamento de la cabeza del fémur",
-      "Transverso del atlas",
-      "Ligamento alar"
+      "Transverso del atlas"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 79,
+    "id": 172,
+    "number": 79,
     "question": "Refuerzo superior de la glenohumeral",
     "correctAnswer": "Coracohumeral",
     "options": [
       "Coracohumeral",
-      "Rodete glenoideo",
-      "Flexión del codo",
-      "Ligamento glenohumeral inferior"
+      "Rodete glenoideo (labrum)",
+      "Derecha/Izquierda",
+      "Somatopleura"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 80,
+    "id": 173,
+    "number": 80,
     "question": "Fibrocartílago de la glenohumeral",
     "correctAnswer": "Rodete glenoideo",
     "options": [
       "Coracohumeral",
       "Rodete glenoideo",
-      "Flexión del codo",
-      "Menisco medial"
+      "Ramos anteriores de L5-S3",
+      "Derecha/Izquierda"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 81,
+    "id": 174,
+    "number": 81,
     "question": "Músculo propulsor de la mandíbula",
     "correctAnswer": "Pterigoideo lateral",
     "options": [
       "Masetero",
+      "Temporal",
       "Pterigoideo lateral",
-      "Flexor profundo de los dedos",
-      "Temporal"
+      "Pterigoïdal lateral Pterigoideo lateral"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 82,
+    "id": 175,
+    "number": 82,
     "question": "Músculo que retrae la mandíbula",
     "correctAnswer": "Temporal",
     "options": [
+      "Pterigoideo lateral",
       "Temporal",
       "Masetero",
-      "Pterigoideo lateral",
-      "Flexor profundo de los dedos"
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 83,
+    "id": 176,
+    "number": 83,
     "question": "Músculo que eleva la mandíbula",
     "correctAnswer": "Masetero",
     "options": [
+      "Temporal",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
       "Masetero",
-      "Flexor profundo de los dedos",
-      "Pterigoideo lateral",
-      "Temporal"
+      "Pterigoideo lateral"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 84,
+    "id": 177,
+    "number": 84,
     "question": "Músculo que aumenta la presión intraoral",
     "correctAnswer": "Buccinador",
     "options": [
-      "Supraespinoso",
-      "Semimembranoso",
       "Buccinador",
-      "Flexor profundo de los dedos"
+      "Peroneo largo",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
+      "Serrato anterior"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 85,
+    "id": 178,
+    "number": 85,
     "question": "Músculo de la mímica inervado por el facial",
     "correctAnswer": "Cigomático mayor",
     "options": [
-      "Redondo mayor",
-      "Braquiorradial",
+      "M . Esternotiroidal M. Esternotiroideo",
+      "A .torácica lateral",
       "Cigomático mayor",
-      "Supraespinoso"
+      "Flexor curt dels dits Flexor corto de los dedos"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 86,
+    "id": 179,
+    "number": 86,
     "question": "Arteria NO rama de la carótida externa",
     "correctAnswer": "Tiroidea inferior",
     "options": [
       "Torácica lateral",
-      "Subclavia",
       "Tiroidea inferior",
-      "Radial"
+      "A. Tiroidal inferior",
+      "Arteria tibi"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 87,
+    "id": 180,
+    "number": 87,
     "question": "Músculo prevertebral",
     "correctAnswer": "Largo del cuello",
     "options": [
-      "Flexor largo del dedo gordo",
-      "Largo del cuello",
       "Recto anterior de la cabeza",
-      "Aductor del pulgar"
+      "Largo del cuello",
+      "Flexor largo del dedo gordo",
+      "Rotador lateral del brazo"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 88,
+    "id": 181,
+    "number": 88,
     "question": "Nervio que pasa por delante del escaleno anterior",
     "correctAnswer": "Frénico",
     "options": [
-      "Axilar",
+      "Frénico",
       "Cubital",
-      "Mediano",
-      "Frénico"
+      "Axilar",
+      "Mediano"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 89,
+    "id": 182,
+    "number": 89,
     "question": "Estructura posterior al hiato esofágico",
     "correctAnswer": "Aorta",
     "options": [
-      "Esófago y nervios vagos",
-      "Esófago y vagos",
+      "Esófago",
       "Aorta",
-      "Esófago"
+      "Esófago y vagos",
+      "Esófago y nervios vagos"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 90,
+    "id": 183,
+    "number": 90,
     "question": "Contenido del hiato aórtico",
     "correctAnswer": "Aorta y conducto torácico",
     "options": [
       "Ilioinguinal",
+      "Conducto torácico",
       "Aorta y conducto torácico",
-      "Conducto deferente",
-      "Conducto torácico"
+      "Conducto deferente"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 91,
+    "id": 184,
+    "number": 91,
     "question": "Contenido del hiato esofágico",
     "correctAnswer": "Esófago y vagos",
     "options": [
-      "Esófago y nervios vagos",
-      "Esófago y vagos",
       "Aorta",
-      "Esófago"
+      "Esófago y vagos",
+      "Esófago",
+      "Esófago y nervios vagos"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 92,
+    "id": 185,
+    "number": 92,
     "question": "Estructura más medial bajo el ligamento inguinal",
     "correctAnswer": "Vena femoral",
     "options": [
-      "Flexor largo de los dedos",
-      "Iliopsoas o nervio femoral",
+      "Vena femoral",
       "Subclavia",
-      "Vena femoral"
+      "Por el centro frénico (tendinoso) del diafragma pasa la vena cava inferior",
+      "Iliopsoas o nervio femoral"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 93,
+    "id": 186,
+    "number": 93,
     "question": "Estructura más lateral bajo el ligamento inguinal",
     "correctAnswer": "Iliopsoas o nervio femoral",
     "options": [
-      "Esófago y nervios vagos",
       "Nervio femoral",
       "Iliopsoas o nervio femoral",
-      "Nervio ilioinguinal, conducto deferente o ligamento redondo"
+      "Nervio ilioinguinal, conducto deferente o ligamento redondo",
+      "Vena femoral, arteria femoral, nervio femoral"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 94,
+    "id": 187,
+    "number": 94,
     "question": "Nervio contenido en la laguna muscular",
     "correctAnswer": "Femoral",
     "options": [
-      "Femoral",
       "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
-      "Axilar",
-      "Rama femoral del genitofemoral"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 95,
-    "question": "Nervio contenido en la laguna vascular",
-    "correctAnswer": "Rama femoral del genitofemoral",
-    "options": [
+      "Solo de la cara medial del muslo",
       "Rama femoral del genitofemoral",
-      "Rama profunda del radial",
-      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
       "Femoral"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 96,
-    "question": "Ligamento intracapsular de la cadera",
-    "correctAnswer": "Ligamento de la cabeza del fémur",
+    "id": 188,
+    "number": 95,
+    "question": "Nervio contenido en la laguna vascular",
+    "correctAnswer": "Rama femoral del genitofemoral",
     "options": [
-      "Anular del radio",
-      "Ligamento de la cabeza del fémur",
-      "Transverso del atlas",
-      "Ligamento colateral cubital"
+      "Rama profunda del radial",
+      "Femoral",
+      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
+      "Rama femoral del genitofemoral"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 97,
+    "id": 189,
+    "number": 96,
+    "question": "Ligamento intracapsular de la cadera",
+    "correctAnswer": "Ligamento de la cabeza del fémur",
+    "options": [
+      "Ligamento cruzado posterior",
+      "Ligamento de la cabeza del fémur",
+      "Anular del radio",
+      "El ligamento amarillo"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 190,
+    "number": 97,
     "question": "Músculo que atraviesa el foramen isquiático menor",
     "correctAnswer": "Obturador interno",
     "options": [
-      "Supraespinoso",
-      "Semimembranoso",
-      "Flexor profundo de los dedos",
+      "Peroneo largo",
+      "Sartorio",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
       "Obturador interno"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 98,
+    "id": 191,
+    "number": 98,
     "question": "Estructura que NO atraviesa el foramen isquiático menor",
     "correctAnswer": "Piriforme",
     "options": [
-      "Obturador interno",
       "Aorta y conducto torácico",
-      "Esófago y nervios vagos",
-      "Piriforme"
+      "Obturador interno",
+      "Piriforme",
+      "Esófago y nervios vagos"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 99,
+    "id": 192,
+    "number": 99,
     "question": "Músculo rotador interno de la cadera",
     "correctAnswer": "Glúteo menor",
     "options": [
-      "Recto posterior menor de la cabeza",
+      "Glúteo menor",
+      "Redondo mayor",
       "Cuadrado femoral",
+      "Pectoral major Pectoral mayor"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 193,
+    "number": 100,
+    "question": "Músculo rotador externo de la cadera",
+    "correctAnswer": "Cuadrado femoral",
+    "options": [
+      "Cuadrado femoral",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
       "Glúteo menor",
       "Redondo mayor"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 100,
-    "question": "Músculo rotador externo de la cadera",
-    "correctAnswer": "Cuadrado femoral",
-    "options": [
-      "Redondo mayor",
-      "Glúteo menor",
-      "Flexor profundo de los dedos",
-      "Cuadrado femoral"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 101,
+    "id": 194,
+    "number": 101,
     "question": "Principal flexor de la cadera",
     "correctAnswer": "Iliopsoas",
     "options": [
-      "Sartorio, grácil y semitendinoso",
+      "Deltoides",
+      "Derecha/Izquierda",
       "Flexión del codo",
-      "Iliopsoas",
-      "Deltoides"
+      "Iliopsoas"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 102,
+    "id": 195,
+    "number": 102,
     "question": "Músculo que NO forma la pata de ganso",
     "correctAnswer": "Semimembranoso",
     "options": [
-      "Flexor profundo de los dedos",
-      "Semimembranoso",
-      "Pterigoideo lateral",
-      "Supraespinoso"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 103,
-    "question": "Pata de ganso superficial",
-    "correctAnswer": "Sartorio + Grácil + Semitendinoso",
-    "options": [
-      "Sartorio + Grácil + Semitendinoso",
-      "Bíceps femoral",
-      "Flexión del codo",
+      "Peroneo largo",
+      "Serrato anterior",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
       "Semimembranoso"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 104,
-    "question": "Nervio de la extensión de rodilla",
-    "correctAnswer": "Femoral",
+    "id": 196,
+    "number": 103,
+    "question": "Pata de ganso superficial",
+    "correctAnswer": "Sartorio + Grácil + Semitendinoso",
     "options": [
-      "Rama femoral del genitofemoral",
-      "Femoral",
-      "Axilar",
-      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor"
+      "Derecha/Izquierda",
+      "Apófisis xifoides",
+      "Ramos anteriores de L5-S3",
+      "Sartorio + Grácil + Semitendinoso"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 105,
+    "id": 197,
+    "number": 104,
+    "question": "Nervio de la extensión de rodilla",
+    "correctAnswer": "Femoral",
+    "options": [
+      "Radial",
+      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
+      "Rama femoral del genitofemoral",
+      "Femoral"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 198,
+    "number": 105,
     "question": "Nervio de la flexión plantar",
     "correctAnswer": "Tibial",
     "options": [
-      "Axilar",
-      "Braquial profunda",
-      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
+      "Solo de la cara medial del muslo",
+      "Radial",
+      "Extensión de la rodilla",
       "Tibial"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 106,
+    "id": 199,
+    "number": 106,
     "question": "Nervio de la dorsiflexión",
     "correctAnswer": "Peroneo profundo",
     "options": [
-      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
+      "Solo de la cara medial del muslo",
+      "Extensión de la rodilla",
       "Peroneo profundo",
-      "Peroneo común",
-      "Axilar"
+      "Peroneo común"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 107,
+    "id": 200,
+    "number": 107,
     "question": "Nervio cuya lesión impide extender los dedos del pie",
     "correctAnswer": "Peroneo común",
     "options": [
-      "Mediano",
+      "Peroneal superficial Peroneo superficial",
+      "Déficit de rotación externa",
       "Cubital",
-      "Peroneo común",
-      "Déficit de rotación externa"
+      "Peroneo común"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 108,
+    "id": 201,
+    "number": 108,
     "question": "Músculo más medial del plano profundo posterior de la pierna",
     "correctAnswer": "Flexor largo de los dedos",
     "options": [
-      "Supinador",
       "Flexor largo de los dedos",
       "Flexor largo del dedo gordo",
+      "Supinador",
       "Flexor profundo de los dedos"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 109,
+    "id": 202,
+    "number": 109,
     "question": "Músculo más lateral del plano profundo posterior de la pierna",
     "correctAnswer": "Flexor largo del dedo gordo",
     "options": [
-      "Aductor del pulgar",
       "Flexor largo de los dedos",
-      "Supinador",
-      "Flexor largo del dedo gordo"
+      "Aductor del pulgar",
+      "Flexor largo del dedo gordo",
+      "Supinador"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 110,
+    "id": 203,
+    "number": 110,
     "question": "Derivado embrionario de las vértebras",
     "correctAnswer": "Esclerotomo",
     "options": [
-      "Miotomo",
-      "Mediano",
+      "Dermatomo",
       "Esclerotomo",
-      "Dermatomo"
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
+      "Miotomo"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 111,
+    "id": 204,
+    "number": 111,
     "question": "Músculo que se inserta en el pisiforme",
     "correctAnswer": "Flexor cubital del carpo",
     "options": [
-      "Supraespinoso",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
+      "Oponente del pulgar",
       "Flexor profundo de los dedos",
-      "Flexor cubital del carpo",
-      "Oponente del pulgar"
+      "Flexor cubital del carpo"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 112,
+    "id": 205,
+    "number": 112,
     "question": "Límite medial de la tabaquera anatómica",
     "correctAnswer": "Extensor largo del pulgar",
     "options": [
+      "Abductor largo y extensor corto del pulgar",
       "Extensor largo del pulgar",
-      "Vasos epigástricos inferiores",
+      "Extensor radial largo del carpo",
+      "Perpendicular a l'eix llarg del segment anatômic en qüestió Perpendicular al eje largo del segmento anatómico en cuestión"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 206,
+    "number": 113,
+    "question": "Límite lateral de la tabaquera anatómica",
+    "correctAnswer": "Abductor largo y extensor corto del pulgar",
+    "options": [
+      "Extensor largo del pulgar",
+      "Perpendicular a l'eix llarg del segment anatômic en qüestió Perpendicular al eje largo del segmento anatómico en cuestión",
       "Extensor radial largo del carpo",
       "Abductor largo y extensor corto del pulgar"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 113,
-    "question": "Límite lateral de la tabaquera anatómica",
-    "correctAnswer": "Abductor largo y extensor corto del pulgar",
-    "options": [
-      "Extensor largo del pulgar",
-      "Abductor largo y extensor corto del pulgar",
-      "Extensor radial largo del carpo",
-      "Flexión del codo"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 114,
+    "id": 207,
+    "number": 114,
     "question": "Arteria que pasa por la tabaquera anatómica",
     "correctAnswer": "Radial",
     "options": [
+      "Arteria tibi",
+      "Arteria epigástrica inferior",
       "Tiroidea inferior",
-      "Subclavia",
-      "Torácica lateral",
       "Radial"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 115,
+    "id": 208,
+    "number": 115,
     "question": "Nervio que acompaña la arteria cubital en antebrazo",
     "correctAnswer": "Cubital",
     "options": [
-      "Braquial profunda",
+      "Colateral cubital superior",
       "Circunfleja humeral posterior",
+      "Braquial profunda",
+      "Cubital"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 209,
+    "number": 116,
+    "question": "Nervio y arteria cubital cubiertos por",
+    "correctAnswer": "Flexor superficial de los dedos",
+    "options": [
+      "Flexor superficial de los dedos",
+      "Segon lumbrical Segundo lumbrical",
+      "Cubital",
+      "Colateral cubital superior"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 210,
+    "number": 117,
+    "question": "Músculo cubierto por el tríceps braquial",
+    "correctAnswer": "Surco del nervio radial",
+    "options": [
+      "El nervi supraescapular neix del tronc inferior El nervio supraescapular nace del tronco inferior",
+      "Largo del cuello / esplenio",
+      "Surco del nervio radial",
+      "Segon lumbrical Segundo lumbrical"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 211,
+    "number": 118,
+    "question": "Nervio posterior al codo",
+    "correctAnswer": "Cubital",
+    "options": [
+      "Extensión de la rodilla",
+      "Solo de la cara medial del muslo",
       "Colateral cubital superior",
       "Cubital"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 116,
-    "question": "Nervio y arteria cubital cubiertos por",
-    "correctAnswer": "Flexor superficial de los dedos",
-    "options": [
-      "Colateral cubital superior",
-      "Cubital",
-      "Flexor superficial de los dedos",
-      "Axilar"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 117,
-    "question": "Músculo cubierto por el tríceps braquial",
-    "correctAnswer": "Surco del nervio radial",
-    "options": [
-      "Trapecio",
-      "Surco del nervio radial",
-      "Largo del cuello / esplenio",
-      "Deltoides"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 118,
-    "question": "Nervio posterior al codo",
-    "correctAnswer": "Cubital",
-    "options": [
-      "Colateral cubital superior",
-      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
-      "Cubital",
-      "Axilar"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 119,
+    "id": 212,
+    "number": 119,
     "question": "Nervio responsable sensibilidad hombro",
     "correctAnswer": "Axilar",
     "options": [
-      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
       "Cubital",
       "Mediano",
+      "Solo de la cara medial del muslo",
       "Axilar"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 120,
+    "id": 213,
+    "number": 120,
     "question": "Músculo NO relacionado con la pared posterior de la axila",
     "correctAnswer": "Infraespinoso",
     "options": [
-      "Flexor largo del dedo gordo",
-      "Flexor largo de los dedos",
+      "Serrato anterior",
       "Infraespinoso",
+      "Se sitúa entre TOS MÚSCULOS superficiales y los profundos de la pierna",
       "Supinador"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 121,
+    "id": 214,
+    "number": 121,
     "question": "Pared posterior de la axila",
     "correctAnswer": "Subescapular, redondo mayor y dorsal ancho",
     "options": [
-      "Aorta",
+      "Raíces",
+      "Nervi cubital",
       "Subescapular, redondo mayor y dorsal ancho",
-      "Flexión del codo",
-      "Raíces"
+      "Aorta"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 122,
+    "id": 215,
+    "number": 122,
     "question": "Músculo que NO pasa por correderas dorsales",
     "correctAnswer": "Braquiorradial",
     "options": [
       "Braquiorradial",
-      "Semimembranoso",
-      "Flexor profundo de los dedos",
-      "Supraespinoso"
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
+      "Supraespinoso",
+      "Peroneo largo"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 123,
+    "id": 216,
+    "number": 123,
     "question": "Tendón más lateral en correderas dorsales",
     "correctAnswer": "Extensor radial largo del carpo",
     "options": [
-      "Abductor largo y extensor corto del pulgar",
+      "Apófisis xifoides",
       "Extensor radial largo del carpo",
-      "Extensor largo del pulgar",
-      "Esternohioideo"
+      "Abductor largo y extensor corto del pulgar",
+      "Extensor largo del pulgar"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 124,
+    "id": 217,
+    "number": 124,
     "question": "Músculo que NO cruza la radiocarpiana",
     "correctAnswer": "Braquiorradial",
     "options": [
-      "Flexor profundo de los dedos",
-      "Semimembranoso",
-      "Braquiorradial",
-      "Supraespinoso"
+      "Serrato anterior",
+      "Peroneo largo",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
+      "Braquiorradial"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 125,
+    "id": 218,
+    "number": 125,
     "question": "Ligamento NO refuerzo de la glenohumeral",
     "correctAnswer": "Coracoclavicular o trapezoide",
     "options": [
-      "Ligamento de la cabeza del fémur",
-      "Coracohumeral",
       "Coracoclavicular o trapezoide",
-      "Anular del radio"
+      "El ligamento amarillo",
+      "Ligamento cruzado posterior",
+      "Coracohumeral"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 126,
+    "id": 219,
+    "number": 126,
     "question": "Músculo NO del manguito rotador",
     "correctAnswer": "Redondo mayor",
     "options": [
-      "Flexor largo de los dedos",
-      "Supraespinoso",
+      "Potent aductor del braç, rotador intern del brac i extensor del braç Potente Aductor Del brazo, rotador interno del brazo y extensor del brazo",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
       "Redondo mayor",
-      "Supinador"
+      "Rotador medial del brazo"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 127,
+    "id": 220,
+    "number": 127,
     "question": "Músculo que rota internamente hombro",
     "correctAnswer": "Subescapular",
     "options": [
       "Oblicuo externo",
-      "Subescapular",
       "Infraespinoso",
+      "Subescapular",
       "ECM"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 128,
+    "id": 221,
+    "number": 128,
     "question": "Músculo que rota externamente hombro",
     "correctAnswer": "Infraespinoso",
     "options": [
-      "Oblicuo externo",
-      "ECM",
       "Infraespinoso",
+      "ECM",
+      "Oblicuo externo",
       "Subescapular"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 129,
+    "id": 222,
+    "number": 129,
     "question": "Músculo que NO rota internamente hombro",
     "correctAnswer": "Infraespinoso",
     "options": [
       "Infraespinoso",
-      "ECM",
+      "Oblicuo externo",
       "Subescapular",
-      "Oblicuo externo"
+      "ECM"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 130,
+    "id": 223,
+    "number": 130,
     "question": "Acción NO propia del bíceps braquial",
     "correctAnswer": "Extensión glenohumeral",
     "options": [
-      "Raíces",
-      "Deltoides",
-      "Flexión del codo",
+      "Derecha/Izquierda",
+      "Vasos epigastric inferiors Vasos epigástricos inferiores",
+      "Apófisis xifoides",
       "Extensión glenohumeral"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 131,
+    "id": 224,
+    "number": 131,
     "question": "Función característica del bíceps",
     "correctAnswer": "Supinación",
     "options": [
-      "Supinación",
-      "Segundo palmar",
       "Segundo dorsal",
-      "Flexión del codo"
+      "Segundo palmar",
+      "Cara Posteromedial de la cama Cara posteromedial de lapierna",
+      "Supinación"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 132,
+    "id": 225,
+    "number": 132,
     "question": "Nervio que inerva el coracobraquial",
     "correctAnswer": "Musculocutáneo",
     "options": [
-      "Toracodorsal",
       "Cubital",
-      "Torácico largo",
-      "Musculocutáneo"
+      "Musculocutáneo",
+      "Toracodorsal",
+      "Torácico largo"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 133,
+    "id": 226,
+    "number": 133,
     "question": "Nervio que inerva dorsal ancho",
     "correctAnswer": "Toracodorsal",
     "options": [
       "Toracodorsal",
-      "Torácico largo",
-      "Musculocutáneo",
-      "Cubital"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 134,
-    "question": "Nervio que inerva serrato anterior",
-    "correctAnswer": "Torácico largo",
-    "options": [
-      "Frénico",
       "Cubital",
       "Musculocutáneo",
       "Torácico largo"
@@ -1608,523 +2938,580 @@
     "source": "main.pdf"
   },
   {
-    "id": 135,
-    "question": "Nervio que inerva romboides",
-    "correctAnswer": "Dorsal de la escápula",
+    "id": 227,
+    "number": 134,
+    "question": "Nervio que inerva serrato anterior",
+    "correctAnswer": "Torácico largo",
     "options": [
-      "Dorsal de la escápula",
       "Cubital",
-      "Toracodorsal",
+      "Frénico",
+      "Torácico largo",
       "Musculocutáneo"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 136,
+    "id": 228,
+    "number": 135,
+    "question": "Nervio que inerva romboides",
+    "correctAnswer": "Dorsal de la escápula",
+    "options": [
+      "Toracodorsal",
+      "Cubital",
+      "Dorsal de la escápula",
+      "Musculocutáneo"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 229,
+    "number": 136,
     "question": "Nervio que nace de C5",
     "correctAnswer": "Dorsal de la escápula",
     "options": [
-      "Axilar",
       "Dorsal de la escápula",
-      "Braquial profunda",
-      "Rama profunda del radial"
+      "Radial",
+      "Axilar",
+      "Extensión de la rodilla"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 137,
+    "id": 230,
+    "number": 137,
     "question": "Nervio rama del tronco superior",
     "correctAnswer": "Supraescapular",
     "options": [
-      "Mediano",
       "Supraescapular",
-      "Cubital",
-      "Axilar"
+      "Extensión de la rodilla",
+      "Braquioradial Braquiorradial",
+      "Mediano"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 138,
+    "id": 231,
+    "number": 138,
     "question": "Nervio lesionado que produce escápula alada",
     "correctAnswer": "Torácico largo",
     "options": [
-      "Braquial profunda",
-      "Mediano",
       "Torácico largo",
-      "Axilar"
+      "Mediano",
+      "Extensión de la rodilla",
+      "Radial"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 139,
+    "id": 232,
+    "number": 139,
     "question": "Nervio que atraviesa el supinador",
     "correctAnswer": "Rama profunda radial",
     "options": [
+      "Rama profunda radial",
       "Rama profunda del radial",
-      "Axilar",
       "Braquial profunda",
-      "Rama profunda radial"
+      "Radial"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 140,
+    "id": 233,
+    "number": 140,
     "question": "Nervio lesionado en arcada de Frohse",
     "correctAnswer": "Rama profunda radial",
     "options": [
-      "Torácico largo",
       "Rama profunda radial",
+      "Torácico largo",
       "Rama profunda del radial",
       "Mediano"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 141,
+    "id": 234,
+    "number": 141,
     "question": "Derivado embrionario del músculo",
     "correctAnswer": "Miotomo",
     "options": [
+      "Potent aductor del braç, rotador intern del brac i extensor del braç Potente Aductor Del brazo, rotador interno del brazo y extensor del brazo",
+      "Rotador medial del brazo",
       "Miotomo",
-      "Supinador",
-      "Supraespinoso",
-      "Flexor largo de los dedos"
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 142,
+    "id": 235,
+    "number": 142,
     "question": "Derivado embrionario de dermis",
     "correctAnswer": "Dermatomo",
     "options": [
-      "Selar (silla de montar)",
       "Esclerotomo",
-      "Miotomo",
-      "Dermatomo"
+      "Derecha/Izquierda",
+      "Dermatomo",
+      "Miotomo"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 143,
+    "id": 236,
+    "number": 143,
     "question": "Derivado embrionario de vértebras",
     "correctAnswer": "Esclerotomo",
     "options": [
+      "Dermatomo",
+      "Derecha/Izquierda",
       "Esclerotomo",
-      "Miotomo",
-      "Selar (silla de montar)",
-      "Dermatomo"
+      "Miotomo"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 144,
+    "id": 237,
+    "number": 144,
     "question": "Tipo de articulación de la ATM",
     "correctAnswer": "Sinovial compleja con disco",
     "options": [
       "Sinovial compleja con disco",
-      "Trocoide",
       "Disco articular",
-      "Selar (silla de montar)"
+      "Selar (silla de montar)",
+      "Trocoide"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 145,
+    "id": 238,
+    "number": 145,
     "question": "Articulación ATM presenta",
     "correctAnswer": "Disco articular",
     "options": [
-      "Selar (silla de montar)",
-      "Gínglimo (tróclea)",
-      "Disco articular",
-      "Sinovial compleja con disco"
+      "Trocoide",
+      "Sinovial compleja con disco",
+      "Se articula la cabeza del fémur con la carilla semilunar",
+      "Disco articular"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 146,
+    "id": 239,
+    "number": 146,
     "question": "Cápsula ATM",
     "correctAnswer": "Laxa",
     "options": [
-      "Flexión del codo",
+      "Ramos anteriores de L5-S3",
       "Laxa",
-      "Sartorio, grácil y semitendinoso",
-      "Bíceps femoral"
+      "Apófisis xifoides",
+      "Derecha/Izquierda"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 147,
+    "id": 240,
+    "number": 147,
     "question": "Ligamento principal ATM",
     "correctAnswer": "Lateral (temporomandibular)",
     "options": [
-      "Anular del radio",
-      "Lateral (temporomandibular)",
+      "El ligamento amarillo",
       "Ligamento de la cabeza del fémur",
-      "Coracohumeral"
+      "Lateral (temporomandibular)",
+      "Ligamento cruzado posterior"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 148,
+    "id": 241,
+    "number": 148,
     "question": "Músculo propulsor mandibular",
     "correctAnswer": "Pterigoideo lateral",
     "options": [
-      "Aductor del pulgar",
+      "Pterigoïdal lateral Pterigoideo lateral",
+      "A .torácica lateral",
       "Pterigoideo lateral",
-      "Flexor profundo de los dedos",
-      "Supraespinoso"
+      "Rotador lateral del brazo"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 149,
+    "id": 242,
+    "number": 149,
     "question": "Músculo que desplaza lateralmente mandíbula",
     "correctAnswer": "Pterigoideo lateral",
     "options": [
+      "Pterigoïdal lateral Pterigoideo lateral",
       "Pterigoideo lateral",
-      "Temporal",
       "Masetero",
-      "Flexor profundo de los dedos"
+      "Temporal"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 150,
+    "id": 243,
+    "number": 150,
     "question": "Músculo que retrae mandíbula",
     "correctAnswer": "Temporal",
     "options": [
-      "Temporal",
-      "Masetero",
       "Pterigoideo lateral",
-      "Flexor profundo de los dedos"
+      "Masetero",
+      "Temporal",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 151,
+    "id": 244,
+    "number": 151,
     "question": "Arteria NO rama carótida externa",
     "correctAnswer": "Tiroidea inferior",
     "options": [
       "Tiroidea inferior",
-      "Subclavia",
-      "Radial",
+      "Arteria tibi",
+      "A. Tiroidal inferior",
       "Torácica lateral"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 152,
+    "id": 245,
+    "number": 152,
     "question": "Músculo que aumenta presión boca",
     "correctAnswer": "Buccinador",
     "options": [
-      "Semimembranoso",
+      "Peroneo largo",
       "Buccinador",
-      "Supraespinoso",
-      "Flexor profundo de los dedos"
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
+      "Serrato anterior"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 153,
+    "id": 246,
+    "number": 153,
     "question": "Músculo inervado por nervio craneal",
     "correctAnswer": "ECM",
     "options": [
-      "ECM",
+      "Segon lumbrical Segundo lumbrical",
+      "Largo del cuello / esplenio",
       "Trapecio",
-      "Deltoides",
-      "Largo del cuello / esplenio"
+      "ECM"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 154,
+    "id": 247,
+    "number": 154,
     "question": "Músculo inervado por nervio craneal",
     "correctAnswer": "Trapecio",
     "options": [
       "Largo del cuello / esplenio",
       "ECM",
-      "Deltoides",
+      "Segon lumbrical Segundo lumbrical",
       "Trapecio"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 155,
+    "id": 248,
+    "number": 155,
     "question": "Músculo NO inervado por nervio craneal",
     "correctAnswer": "Largo del cuello / esplenio",
     "options": [
-      "Deltoides",
+      "Trapecio",
       "ECM",
       "Largo del cuello / esplenio",
-      "Trapecio"
+      "Segon lumbrical Segundo lumbrical"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 156,
+    "id": 249,
+    "number": 156,
     "question": "Nervio anterior al escaleno",
     "correctAnswer": "Frénico",
     "options": [
-      "Torácico largo",
-      "Axilar",
-      "Rama sensitiva del femoral; acompaña la arteria femoral en el conducto aductor",
-      "Frénico"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 157,
-    "question": "Vena anterior al escaleno",
-    "correctAnswer": "Subclavia",
-    "options": [
-      "Vena femoral",
-      "Subclavia",
+      "Solo de la cara medial del muslo",
+      "Extensión de la rodilla",
       "Frénico",
       "Torácico largo"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 158,
-    "question": "Arteria posterior al escaleno",
+    "id": 250,
+    "number": 157,
+    "question": "Vena anterior al escaleno",
     "correctAnswer": "Subclavia",
     "options": [
-      "Radial",
-      "Subclavia",
-      "Tiroidea inferior",
-      "Torácica lateral"
+      "Por el centro frénico (tendinoso) del diafragma pasa la vena cava inferior",
+      "Vena femoral",
+      "Frènic Frénico",
+      "Subclavia"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 159,
+    "id": 251,
+    "number": 158,
+    "question": "Arteria posterior al escaleno",
+    "correctAnswer": "Subclavia",
+    "options": [
+      "Arteria tibi",
+      "Subclavia",
+      "A. Tiroidal inferior",
+      "Tiroidea inferior"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 252,
+    "number": 159,
     "question": "Plexo braquial posterior al escaleno",
     "correctAnswer": "Raíces",
     "options": [
       "Raíces",
-      "Extensión glenohumeral",
-      "Subescapular, redondo mayor y dorsal ancho",
-      "Aorta"
+      "Nervi cubital",
+      "Ramos anteriores de L5-S3",
+      "Solc del nervi radial"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 160,
+    "id": 253,
+    "number": 160,
     "question": "Estructura más anterior del cuello en corte transversal",
     "correctAnswer": "Esternohioideo",
     "options": [
-      "Deltoides",
-      "Flexión del codo",
       "Esternohioideo",
-      "Aorta"
+      "Aorta",
+      "Derecha/Izquierda",
+      "Apófisis xifoides"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 161,
+    "id": 254,
+    "number": 161,
     "question": "Músculo prevertebral",
     "correctAnswer": "Largo del cuello",
     "options": [
-      "Recto anterior de la cabeza",
-      "Aductor del pulgar",
       "Flexor largo del dedo gordo",
-      "Largo del cuello"
+      "Largo del cuello",
+      "Rotador lateral del brazo",
+      "Recto anterior de la cabeza"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 162,
+    "id": 255,
+    "number": 162,
     "question": "Músculo prevertebral",
     "correctAnswer": "Recto anterior de la cabeza",
     "options": [
-      "Recto anterior de la cabeza",
-      "Esplenio de la cabeza",
+      "Largo del cuello",
       "Recto posterior menor de la cabeza",
-      "Largo del cuello"
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
+      "Recto anterior de la cabeza"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 163,
+    "id": 256,
+    "number": 163,
     "question": "Estructura que cruza hiato esofágico",
     "correctAnswer": "Esófago",
     "options": [
       "Aorta",
+      "Esófago",
       "Esófago y nervios vagos",
-      "Esófago y vagos",
-      "Esófago"
+      "Esófago y vagos"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 164,
+    "id": 257,
+    "number": 164,
     "question": "Estructura que cruza hiato aórtico",
     "correctAnswer": "Conducto torácico",
     "options": [
+      "Abducció polze",
       "Conducto deferente",
-      "Fascia transversalis y tendón conjunto",
-      "Aorta y conducto torácico",
-      "Conducto torácico"
+      "Conducto torácico",
+      "Aorta y conducto torácico"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 165,
+    "id": 258,
+    "number": 165,
     "question": "Estructura más posterior del diafragma",
     "correctAnswer": "Aorta",
     "options": [
-      "Aorta",
       "Esternohioideo",
-      "Flexión del codo",
-      "Deltoides"
+      "Apófisis xifoides",
+      "Nervi cubital",
+      "Aorta"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 166,
+    "id": 259,
+    "number": 166,
     "question": "Músculo que NO provoca rotación contralateral",
     "correctAnswer": "Esplenio de la cabeza",
     "options": [
       "Esplenio de la cabeza",
-      "Flexor profundo de los dedos",
-      "Supraespinoso",
-      "Semimembranoso"
+      "Peroneo largo",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa",
+      "Serrato anterior"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 167,
+    "id": 260,
+    "number": 167,
     "question": "Músculo que rota contralateralmente",
     "correctAnswer": "ECM",
     "options": [
-      "Subescapular",
       "Oblicuo externo",
+      "Infraespinoso",
       "ECM",
-      "Infraespinoso"
+      "Subescapular"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 168,
+    "id": 261,
+    "number": 168,
     "question": "Músculo que rota contralateralmente",
     "correctAnswer": "Oblicuo externo",
     "options": [
-      "Subescapular",
       "Oblicuo externo",
       "ECM",
-      "Infraespinoso"
+      "Subescapular",
+      "Anterior: oblicuo externo, oblicuo interno y transverso; posterior: fascia transversa"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 169,
+    "id": 262,
+    "number": 169,
     "question": "Arteria NO rama subclavia",
     "correctAnswer": "Torácica lateral",
     "options": [
-      "Torácica lateral",
+      "A. Tiroidal inferior",
       "Tiroidea inferior",
-      "Subclavia",
-      "Radial"
+      "Torácica lateral",
+      "Arteria tibi"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 170,
+    "id": 263,
+    "number": 170,
     "question": "Conducto inguinal: pared anterior",
     "correctAnswer": "Aponeurosis oblicuo externo",
     "options": [
-      "Aponeurosis oblicuo externo",
-      "Fascia transversalis",
-      "Oblicuo interno y transverso",
-      "Fascia transversalis y tendón conjunto"
-    ],
-    "source": "main.pdf"
-  },
-  {
-    "id": 171,
-    "question": "Conducto inguinal: pared posterior",
-    "correctAnswer": "Fascia transversalis",
-    "options": [
-      "Oblicuo interno y transverso",
       "Fascia transversalis y tendón conjunto",
       "Aponeurosis oblicuo externo",
+      "Oblicuo interno y transverso",
       "Fascia transversalis"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 172,
+    "id": 264,
+    "number": 171,
+    "question": "Conducto inguinal: pared posterior",
+    "correctAnswer": "Fascia transversalis",
+    "options": [
+      "Fascia transversalis y tendón conjunto",
+      "Aponeurosis oblicuo externo",
+      "Fascia transversalis",
+      "Oblicuo interno y transverso"
+    ],
+    "source": "main.pdf"
+  },
+  {
+    "id": 265,
+    "number": 172,
     "question": "Conducto inguinal: techo",
     "correctAnswer": "Oblicuo interno y transverso",
     "options": [
-      "Oblicuo interno y transverso",
       "Fascia transversalis y tendón conjunto",
+      "Oblicuo interno y transverso",
       "Fascia transversalis",
       "Aponeurosis oblicuo externo"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 173,
+    "id": 266,
+    "number": 173,
     "question": "Conducto inguinal: suelo",
     "correctAnswer": "Ligamento inguinal",
     "options": [
+      "El lligament reflex es troba en l’anell inguinal profund El ligamento reflejo se encuentra en el anillo inguinal profundo",
       "Ligamento redondo",
-      "Ligamento inguinal",
-      "Ligamento de la cabeza del fémur",
-      "Tendón conjunto"
+      "El ligamento amarillo",
+      "Ligamento inguinal"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 174,
+    "id": 267,
+    "number": 174,
     "question": "Ligamento umbilical medial",
     "correctAnswer": "Fosa supravesical delimitada lateralmente por",
     "options": [
-      "Anular del radio",
-      "Coracohumeral",
       "Fosa supravesical delimitada lateralmente por",
-      "Ligamento de la cabeza del fémur"
+      "Ligamento cruzado posterior",
+      "Ligamento de la cabeza del fémur",
+      "El ligamento amarillo"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 175,
+    "id": 268,
+    "number": 175,
     "question": "Fosa inguinal medial delimitada lateralmente por",
     "correctAnswer": "Vasos epigástricos inferiores",
     "options": [
-      "Extensor largo del pulgar",
+      "Derecha/Izquierda",
+      "Vasos epigastric inferiors Vasos epigástricos inferiores",
       "Vasos epigástricos inferiores",
-      "Flexión del codo",
-      "Sartorio, grácil y semitendinoso"
+      "N. Vague N. Vago"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 176,
+    "id": 269,
+    "number": 176,
     "question": "Estructura ventral al cordón espermático",
     "correctAnswer": "Aponeurosis oblicuo externo",
     "options": [
-      "Aorta",
-      "Flexión del codo",
       "Aponeurosis oblicuo externo",
-      "Esternohioideo"
+      "Somatopleura",
+      "Esternohioideo",
+      "M. Oblic extern de l'abdomen M. Oblicuo externo del abdomen"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 177,
+    "id": 270,
+    "number": 177,
     "question": "Contenido del conducto inguinal",
     "correctAnswer": "Ilioinguinal",
     "options": [
       "Ilioinguinal",
-      "Conducto deferente",
       "Fascia transversalis y tendón conjunto",
-      "Aorta y conducto torácico"
+      "Aorta y conducto torácico",
+      "Conducto deferente"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 178,
+    "id": 271,
+    "number": 178,
     "question": "Contenido conducto inguinal masculino",
     "correctAnswer": "Conducto deferente",
     "options": [
@@ -2136,26 +3523,28 @@
     "source": "main.pdf"
   },
   {
-    "id": 179,
+    "id": 272,
+    "number": 179,
     "question": "Contenido conducto inguinal femenino",
     "correctAnswer": "Ligamento redondo",
     "options": [
-      "Ligamento de la cabeza del fémur",
       "Ligamento redondo",
+      "El lligament reflex es troba en l’anell inguinal profund El ligamento reflejo se encuentra en el anillo inguinal profundo",
       "Ligamento inguinal",
-      "Arteria femoral"
+      "El ligamento amarillo"
     ],
     "source": "main.pdf"
   },
   {
-    "id": 180,
+    "id": 273,
+    "number": 180,
     "question": "Ligamento intracapsular de la cadera",
     "correctAnswer": "Ligamento de la cabeza del fémur",
     "options": [
+      "El ligamento amarillo",
       "Anular del radio",
       "Ligamento de la cabeza del fémur",
-      "Transverso del atlas",
-      "Ligamento colateral cubital"
+      "Ligamento cruzado posterior"
     ],
     "source": "main.pdf"
   }
