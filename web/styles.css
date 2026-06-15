@@ -87,8 +87,59 @@ button:hover {
   color: #fff;
 }
 
-.status,
-#feedback {
-  margin-top: 14px;
+.review-toggle-btn {
+  margin-left: auto;
+  background: #4b5563;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+}
+
+.review-toggle-btn:hover {
+  background: #374151;
+}
+
+.review-panel {
+  margin-top: 16px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.review-panel h3 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+  color: #374151;
+}
+
+.review-item {
+  border-left: 4px solid #d1d5db;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  background: #f9fafb;
+}
+
+.review-item.review-correct {
+  border-color: #16a34a;
+}
+
+.review-item.review-incorrect {
+  border-color: #dc2626;
+}
+
+.review-meta {
+  margin: 0 0 4px;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.review-question {
+  margin: 0 0 6px;
   font-weight: 600;
+}
+
+.review-answer {
+  margin: 2px 0 0;
+  font-size: 0.9rem;
+  color: #374151;
 }
