@@ -122,6 +122,10 @@ button:hover {
   z-index: 20;
 }
 
+.review-modal[hidden] {
+  display: none;
+}
+
 .review-backdrop {
   position: absolute;
   inset: 0;

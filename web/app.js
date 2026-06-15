@@ -283,7 +283,7 @@ async function fetchQuestionsFrom(path) {
 }
 
 async function loadQuestions() {
-  const paths = ["./data/questions.json", "../data/questions.json"];
+  const paths = ["../data/questions.json", "./data/questions.json"];
   const errors = [];
 
   for (const path of paths) {
@@ -309,6 +309,11 @@ function startGame(selectedMode) {
     statusEl.textContent = "No questions available.";
     return;
   }
+  if (nextQuestionTimeout !== null) {
+    clearTimeout(nextQuestionTimeout);
+    nextQuestionTimeout = null;
+  }
+  closeReview();
   mode = selectedMode;
   startCycle();
   renderQuestion(nextQuestion());
